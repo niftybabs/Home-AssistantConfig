@@ -1,0 +1,315 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: 53.534319
+  longitude: -1.143976
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 16
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Europe/London
+  # Customization file
+  customize: !include customize.yaml
+  customize_domain: !include domain.yaml
+# Show links to resources in log and frontend
+# introduction:
+
+# Enables the frontend
+frontend: 
+  themes: !include themes.yaml
+  javascript_version: latest
+  extra_html_url:
+    - /local/custom_ui/state-card-custom-ui.html
+    - /local/custom_ui/state-card-tiles.html
+
+  extra_html_url_es5:
+    - /local/custom_ui/state-card-custom-ui-es5.html
+    - /local/custom_ui/state-card-tiles.html
+  
+panel_iframe:
+  emby:
+    title: 'Emby'
+    url: 'http://localhost:8096/web/home.html'
+   
+
+# Enables configuration UI
+config:
+
+#http:
+  # Secrets are defined in the file secrets.yaml
+  # api_password: !secret http_password
+  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+  # base_url: example.duckdns.org:8123
+
+
+updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+recorder:
+
+# Enables support for tracking state changes over time
+history:
+
+      
+history_graph:
+  gr1:
+    name: Room Temperature
+    entities:
+      - sensor.dht_sensor_temperature
+    hours_to_show: 48
+    refresh: 60
+
+  gr2:
+    name: Stairs Bottom Temp
+    entities:
+      - sensor.sn1_temperature
+    hours_to_show: 48
+    refresh: 60
+
+  gr3:
+    name: Landing Temp
+    entities:
+      - sensor.sn2_temperature
+
+# View all events in a logbook
+logbook:
+
+# Enables a map showing the location of tracked devices
+map:
+
+
+# Track the sun
+sun:
+
+# Weather prediction
+weather:
+  - platform: metoffice
+    api_key: c70106f8-6d5f-48c1-8dba-ac9ebe19c72c
+
+  - platform: darksky
+    api_key: 7976bcbf56382620dbc7494f9433c348
+    
+binary_sensor:
+  - platform: iss
+
+camera:
+  - platform: generic
+    name: ISS
+    still_image_url: https://maps.googleapis.com/maps/api/staticmap?center={{ states.binary_sensor.iss.attributes.lat }},{{ states.binary_sensor.iss.attributes.long }}&zoom=5&size=500x500&maptype=roadmap&markers=color:blue%7Clabel:P%7C{{ states.binary_sensor.iss.attributes.lat }},{{ states.binary_sensor.iss.attributes.long }}
+    limit_refetch_to_url_change: true
+
+
+
+
+
+
+# Text to speech
+tts:
+  - platform: google
+
+# Cloud
+cloud:
+  alexa:
+    filter:
+      include_entities:
+        - switch.lg_tv_power
+        - switch.sky_power
+        - switch.sound_bar
+        - switch.stair_lights
+        - switch.settee_lights
+        - switch.wall_lights
+        - switch.upstairs_lights
+        - media_player.lg_tv
+      exclude_domains:
+        - script
+        - automation
+        - group
+        - lock
+        - media_player
+        - switch
+        - cover
+        - alert
+        - sensor
+    entity_config:
+      switch.lg_tv_power:
+        name: TV
+      switch.sky_power:
+        name: Sky
+      switch.sound_bar:
+        name: Sound Bar
+      switch.stair_lights:
+        name: Stair lights
+      switch.settee_lights:
+        name: Settee lights
+      switch.wall_lights:
+        name: Wall lights
+      switch.upstairs_lights:
+        name: Upstairs lights
+      
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+switch: !include switches.yaml
+sensor: !include sensors.yaml 
+media_player: !include mediaplayers.yaml
+
+device_tracker:
+  - platform: nmap_tracker
+    hosts: 192.168.1.0/24
+    exclude:
+     - 192.168.1.78
+     - 192.168.1.115
+     - 192.168.1.116
+     - 192.168.1.120
+     - 192.168.1.66
+     - 192.168.1.119
+     - 192.168.1.254
+  
+mqtt:
+  discovery: true
+
+light:  
+  - platform: mqtt_json  
+    name: "SN1 LED"  
+    state_topic: "bruh/sensornode1"  
+    command_topic: "bruh/sensornode1/set"  
+    brightness: true  
+    flash: true  
+    rgb: true  
+    optimistic: false  
+    qos: 0 
+
+  
+
+
+
+android_ip_webcam:
+  - host: 192.168.1.118
+    port: 8080
+    sensors:
+      - audio_connections
+      - battery_level
+      - battery_temp
+      - light
+      - pressure
+    switches:
+      - exposure_lock
+      - ffc
+      - focus
+      - gps_active
+      - night_vision
+      - overlay
+      - torch
+      - whitebalance_lock
+      - video_recording
+
+  - host: 192.168.1.66
+    port: 8080
+    sensors:
+      - audio_connections
+      - battery_level
+      - battery_temp
+      - light
+      - pressure
+    switches:
+      - exposure_lock
+      - ffc
+      - focus
+      - gps_active
+      - night_vision
+      - overlay
+      - torch
+      - whitebalance_lock
+      - video_recording
+
+  - host: 192.168.1.124
+    port: 8080
+    sensors:
+      - audio_connections
+      - battery_level
+      - battery_temp
+      - light
+      - pressure
+    switches:
+      - exposure_lock
+      - ffc
+      - focus
+      - gps_active
+      - night_vision
+      - overlay
+      - torch
+      - whitebalance_lock
+      - video_recording
+  
+
+
+input_select:
+  spotify_playlist:
+    name: Playlist
+    options: 
+      - Claire
+      - faves
+      - 30's 40's 50's
+      - Ash - 1977
+      - Garbage - Bleed Like Me
+      - Garbage - Garbage
+      - Garbage - Version 2.0
+      - Garbage - Beautiful Garbage
+      - Garbage - Not Your Kind Of People
+      - Garbage - Strange Little Birds
+      - AFI
+      - Alice in Chains - Dirt
+      - Alice in Chains - Facelift
+      - Ariana Granda - Dangerous Women
+      - Ash - The Best Of
+      - The Beautiful South - Blue is the Colour
+      - The Beautiful South - Carry on up the Charts
+      - The Beautiful South - Choke
+      - The Beautiful South - Mioaw
+      - The Beautiful South - Quench
+      - Bitch Alert - Kill your Darlings
+      - Courtney Love - America's Sweetheart
+      - The distillers - Coral Fang
+      - Dropkick Murpheys - 11 Short Stories of Pain and Glory
+      - The Duke Spirit - Cut Across the Land
+      - Elastica - elastica
+      - Elastica - The Menace
+      - Eminem - The Revival
+      - The Epoxies - Stop the Future
+      - The Epoxies - Synthesized
+      
+      
+input_text:
+  command:
+    name: Button
+  dummy_tiles:
+    name: dummy
+
+
+
+
+
+  
+
+
+
+ 
+
+
+
+
+  
+
+
+
+
