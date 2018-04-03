@@ -3,11 +3,11 @@
 
   - platform: emby
     host: 192.168.1.78
-    api_key: "784c83ec619649db9faa51152246ba5e"
+    api_key: **
 
   - platform: spotify
-    client_id:  5a0928e69f824e9caf9806fb3913517b
-    client_secret:  d920b10f11aa4f069fa7aeb3bcb65060
+    client_id:  **
+    client_secret:  **
 
 
   - platform: lg_netcast
