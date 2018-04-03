@@ -1,0 +1,1440 @@
+Night:
+  # MyVariables
+  base-hue: '220' #Controls the base (and accent) color hue (0-360) | 0=Red 60=Yellow 120=Green 180=Cyan 240=Blue 300=Magenta 360=Red
+  base-sat: '5%' #Controls the saturation of the theme (0%-100%) | 0%=Grey 100%=Full Saturation
+  # MyVar
+  huesat: 'var(--base-hue), var(--base-sat),'
+  # Primary Color
+  primary-color: 'hsl(var(--huesat) 36%)' #header colors and some text colors
+  dark-primary-color: 'hsl(var(--huesat) 60%)'
+  light-primary-color: 'hsl(var(--huesat) 90%)'
+  accent-color: 'hsl(var(--huesat) 30%)'
+  # Backgrounds
+  primary-background-color: 'hsl(var(--huesat) 16%)'
+  secondary-background-color: 'hsl(var(--huesat) 16%)' # background behind cards
+  paper-listbox-background-color: 'hsl(var(--huesat) 16%)'
+  paper-card-background-color: 'hsl(var(--huesat) 12%)'
+  paper-dialog-background-color: 'var(--paper-card-background-color)'
+  table-row-background-color: 'hsl(var(--huesat) 12%)'
+  table-row-alternative-background-color: 'hsl(var(--huesat) 10%)'
+  # Divider
+  divider-color: 'hsla(0, 0%, 0%, 0)'
+  dark-divider-opacity: '0'
+  light-divider-opacity: '0'
+  dark-secondary-opacity: '1'
+  # Text colors
+  primary-text-color: 'hsl(var(--huesat) 90%)'
+  text-primary-color: 'hsl(var(--huesat) 80%)'
+  secondary-text-color: 'hsl(var(--huesat) 80%)'
+  disabled-text-color: 'hsl(var(--huesat) 70%)'
+  sidebar-text_-_color: 'hsl(var(--huesat) 90%)'
+  sidebar-text-color: 'hsl(var(--huesat) 90%)'
+  paper-card-header-color: 'hsl(var(--huesat) 90%)'
+  paper-button-ink-color: 'hsl(var(--huesat) 50%)'
+  # Text Adjustments
+  paper-font-headline_-_letter-spacing: '-0.5px'
+  paper-font-headline_-_font-weight: '400'
+  paper-font-body1_-_font-weight: '300'
+  # Nav Menu
+  paper-listbox-color: 'hsl(var(--huesat) 50%)'
+  paper-grey-50: 'hsl(var(--huesat) 50%)'
+  paper-grey-200: 'hsl(var(--huesat) 10%)' #active menu item
+  # Paper card
+  paper-item-icon-color: 'hsl(var(--huesat) 40%)'
+  paper-item-icon-active-color: 'var(--paper-item-icon-color)'
+  paper-item-icon_-_color: 'var(--paper-item-icon-color)'
+  paper-item-selected_-_background-color: 'hsla(0, 0%, 0%, 0.2)'
+  paper-item-selected_-_color: 'hsl(var(--huesat) 20%)' #?
+  paper-tabs-selection-bar-color: 'hsla(0, 0%, 0%, 0.2)'
+  paper-tab-ink: 'hsl(var(--huesat) 70%)'
+  paper-input-container-color: 'hsl(var(--huesat) 60%)'
+  # Labels
+  label-badge-red: 'var(--paper-card-background-color)'
+  label-badge-border-color: 'var(--label-badge-red)'
+  label-badge-background-color: 'var(--paper-card-background-color)'
+  label-badge-text-color: 'var(--primary-text-color)'
+  # Shadows
+  shadow-elevation-2dp_-_box-shadow: '0px 0px 0px 0px hsl(var(--huesat) 10%)'
+  shadow-elevation-16dp_-_box-shadow: '0px 0px 0px 0px hsl(var(--huesat) 25%)'
+  # Switches
+  paper-toggle-button-checked-button-color: 'hsl(var(--base-hue), 90%, 50%)'
+  paper-toggle-button-checked-bar-color: 'hsl(var(--huesat) 25%)'
+  paper-toggle-button-unchecked-button-color: 'hsl(var(--huesat) 25%)'
+  paper-toggle-button-unchecked-bar-color: 'hsl(var(--huesat) 5%)'
+  # Sliders
+  paper-slider-knob-color:  'hsl(var(--base-hue), 90%, 50%)'
+  paper-slider-knob-start-color: 'hsl(var(--base-hue), 80%, 25%)'
+  paper-slider-pin-color:  'hsl(var(--base-hue), 90%, 50%)'
+  paper-slider-active-color:  'hsl(var(--base-hue), 90%, 50%)'
+  paper-slider-container-color: 'hsl(var(--huesat) 28%)'
+  paper-slider-secondary-color: 'hsl(var(--huesat) 90%)'
+  paper-slider-disabled-active-color: 'hsl(var(--base-hue), 80%, 25%)'
+  paper-slider-disabled-secondary-color: 'hsl(var(--base-hue), 80%, 25%)'
+  paper-dialog-color: 'hsl(var(--base-hue), 20%, 80%)'
+
+
+Dark:
+  # Main Stuff #
+  primary-color: "#1ABA92" # Primary (most of the UI)
+  primary-background-color: "#303030" # Primary background colour (dialogs, e.t.c)
+  secondary-background-color: "#303030" # Secondary background colour (main UI background)
+  paper-card-background-color: "#424242" # Card background colour
+  paper-item-icon-color: "#1ABA92" # Icon colour
+  primary-text-color: "#FFFFFF" # Primary text colour
+  secondary-text-color: "rgba(255, 255, 255, 0.7)" # Secondary text colour
+  disabled-text-color: "rgba(255, 255, 255, 0.5)" # Disabled text colour
+  divider-color: "rgba(255, 255, 255, 0.12)" # Divider colour
+  paper-card-header-color: "#FFFFFF" # Card header text colour
+
+  # Nav Menu #
+  paper-listbox-background-color: "#424242" # Listbox background colour
+  paper-listbox-color: "#FFFFFF" # Listbox text colour
+  paper-grey-200: "#616161" # Listbox selected item background colour
+
+  # Switches #
+  paper-toggle-button-checked-ink-color: "#1ABA92"
+  paper-toggle-button-checked-button-color: "#1ABA92"
+  paper-toggle-button-checked-bar-color: "#1ABA92"
+
+  # Sliders #
+  paper-slider-knob-color: "#1ABA92"
+  paper-slider-knob-start-color: "#1ABA92"
+  paper-slider-pin-color: "#1ABA92"
+  paper-slider-active-color: "#1ABA92"
+  paper-slider-secondary-color: "#33F2D8"
+
+
+Dark_Green:
+  light_green: "#08a8a5"
+  dark_green: "#017775"
+  dark_grey: "#232326"
+  light_grey: "#344249"
+
+  red: "#d10404"
+  yellow: "#fffa0c"
+  white: "#f7f7f7"
+  pink: "#ff0090"
+
+#Top bar, activate text on script, selected icon on home assistant menu, top panel of media players, text in config page, text on developer tools states page, mqtt publish text, logbook text
+  primary-color: "var(--light_green)"
+# divider on dev tools info page
+  light-primary-color: "var(--red)"
+# some hyperlinked text
+  dark-primary-color: "var(--red)"
+# not sure where used
+  text-primary-color: "var(--pink)"
+# main background, top of side panel
+  primary-background-color: "var(--dark_grey)"
+# not sure where used 
+  sidebar-text_-_background: "var(--pink)"
+# card background colour, part of media player background
+  paper-card-background-color: "var(--light_grey)"
+# mqtt pubish header and thats it 
+  paper-card-header-color: "var(--white)"
+# main background colour of states page
+  secondary-background-color: "var(--dark_grey)"
+# most of the text used
+  primary-text-color: "var(--white)"
+#secondary pieces of text 
+  secondary-text-color: "var(--white)"
+#main background of side panel 
+  paper-listbox-background-color: "var(--light_grey)"
+#not sure where used
+  paper-toggle-button-checked-ink-color: "var(--pink)"
+#switch colour when on
+  paper-toggle-button-checked-button-color: "var(--yellow)"
+#Backgroud of switch/toggle when on
+  paper-toggle-button-checked-bar-color: "var(--yellow)"
+#slide knob on brightness/volumes when not 0
+  paper-slider-knob-color: "var(--yellow)"
+#slide knob on brightness/volumes when 0
+  paper-slider-knob-start-color: "var(--red)"
+#don't know where used
+  paper-slider-pin-color: "var(--pink)"
+#colour of brightness/volume slider line in used portion 
+  paper-slider-active-color: "var(--yellow)"
+#not sure where used
+  paper-slider-secondary-color: "var(--pink)"
+# background of brightness/volume slider line not used portion 
+  paper-slider-container-color: "var(--red)"
+#not sure where used
+  paper-progress-secondary-color: "var(--pink)"
+#background of theme selection toggle tiny use 
+  paper-item-selected_-_background-color: "var(--light_green)"
+#text, not sure which one "var(--white)"
+  paper-item-icon_-_color: "var(--pink)"
+# icon on state page when off
+  paper-item-icon-color: "var(--dark_green)"
+#states icon when active 
+  paper-item-icon-active-color: "var(--yellow)"
+#colour of switch toggle when off, icon on selected page of menu 
+  paper-grey-50: "var(--light_green)"
+#background of selected screen on menu "var(--light_green)"
+  paper-grey-200: "var(--dark_green)"
+#Backgound of label icon
+  label-badge-background-color: "var(--light_grey)"
+#colour of text in label icon 
+  label-badge-text-color: "var(--white)"
+#colour of edge of sensor labels
+  label-badge-red: "var(--red)"
+#not sure where used
+  label-badge-blue: "var(--pink)"
+  label-badge-green: "var(--pink)"
+  label-badge-yellow: "var(--pink)"
+  label-badge-grey: "var(--pink)"
+# Row 1 on entities page
+  table-row-background-color: "var(--light_grey)"
+# row 2 on entities page
+  table-row-alternative-background-color: "var(--dark_grey)"
+
+
+
+Dark_red:
+# Main colors that can be changed
+  dark-primary-color: "#c66900"
+  disabled-text-color: "#545454"
+  divider-color: "rgba(255, 255, 255, 0.12)"
+  light-primary-color: "#e06c6c"
+  paper-card-background-color: "#1d1d1d"
+  paper-grey-200: "#191919"
+  paper-item-icon-color: "#d3d3d3"
+  paper-listbox-background-color: "#202020"
+  primary-background-color: "#303030"
+  primary-color: "#d32f2f"
+  primary-text-color: "#cfcfcf"
+  secondary-background-color: "#131313"
+  sidebar-text_-_background: "#62717b" 
+# Colors based on variables, see above
+  paper-card-header-color: "var(--paper-item-icon-color)" 
+  paper-item-icon-active-color: "var(--primary-color)"
+  paper-item-icon_-_color: "var(--primary-text-color)"
+  paper-listbox-color: "var(--primary-text-color)"
+  paper-grey-50: "var(--primary-text-color)"
+  paper-slider-active-color: "var(--primary-color)"
+  paper-slider-knob-color: "var(--primary-color)"
+  paper-slider-knob-start-color: "var(--primary-color)"
+  paper-slider-pin-color: "var(--primary-color)"
+  paper-slider-secondary-color: "var(--light-primary-color)"
+  paper-toggle-button-checked-ink-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-button-color: "var(--primary-color)"
+  paper-toggle-button-checked-bar-color: "var(--light-primary-color)"
+  paper-toggle-button-unchecked-bar-color: "var(--primary-text-color)"
+  secondary-text-color: "var(--primary-color)"
+  table-row-background-color: "var(--paper-card-background-color)"
+  table-row-alternative-background-color: "var(--sidebar-text_-_background)"
+
+
+
+Dark_orange:
+  primary-color: "#ff9800"
+  light-primary-color: "#ffc947"
+  dark-primary-color: "#c66900"
+  text-primary-color: "#ffffff"
+  primary-background-color: "#37464f"
+  sidebar-text_-_background: "#62717b"
+  paper-card-background-color: "#263137"
+  paper-card-header-color: "var(--text-primary-color)"
+  secondary-background-color: "var(--primary-background-color)"
+  primary-text-color: "var(--text-primary-color)"
+  secondary-text-color: "var(--primary-color)"
+  paper-listbox-background-color: "var(--sidebar-text_-_background)"
+  paper-toggle-button-checked-ink-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-button-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-bar-color: "var(--dark-primary-color)"
+  paper-slider-knob-color: "var(--primary-color)"
+  paper-slider-knob-start-color: "var(--primary-color)"
+  paper-slider-pin-color: "var(--primary-color)"
+  paper-slider-active-color: "var(--primary-color)"
+  paper-slider-secondary-color: "var(--light-primary-color)"
+  paper-slider-container-color: "var(--sidebar-text_-_background)"
+  paper-progress-secondary-color: "var(--sidebar-text_-_background)"
+  paper-item-selected_-_background-color: "var(--primary-color)"
+  paper-item-icon_-_color: "var(--text-primary-color)"
+  paper-item-icon-color: "var(--sidebar-text_-_background)"
+  paper-item-icon-active-color: "var(--primary-color)"
+  paper-grey-50: "var(--sidebar-text_-_background)"
+  paper-grey-200: "var(--primary-background-color)"
+  label-badge-background-color: "var(--sidebar-text_-_background)"
+  label-badge-text-color: "var(--text-primary-color)"
+  label-badge-red: "var(--primary-color)"
+  label-badge-blue: "var(--light-primary-color)"
+  label-badge-green: "var(--dark-primary-color)"
+  label-badge-yellow: "var(--text-primary-color)"
+  label-badge-grey: "var(--paper-grey-500)"
+  table-row-background-color: "var(--paper-card-background-color)"
+  table-row-alternative-background-color: "var(--sidebar-text_-_background)"
+
+
+Solarized-light:
+   # Main colors
+    primary-color: '#586e75'                                                        # Header
+    accent-color: '#fdf6e3'                                                         # Accent color
+    dark-primary-color: '#586e75'                                                   # Hyperlinks                                         
+    light-primary-color: 'var(--accent-color)'                                      # Horizontal line in about
+                                                                                
+    # Text colors                                                                  
+    primary-text-color: '#657b83'                                                   # Primary text colour, here is referencing dark-primary-color
+    text-primary-color: 'var(--primary-text-color)'                                 # Primary text colour
+    secondary-text-color: '#93a1a1'                                                 # For secondary titles in more info boxes etc.
+    disabled-text-color: '#7F848E'                                                  # Disabled text colour
+    label-badge-border-color: 'green'                                               # Label badge border, just a reference value   
+
+    # Background colors                                                            
+    primary-background-color: '#fdf6e3'                                             # Settings background
+    secondary-background-color: '#eee8d5'                                           # Main card UI background  
+    divider-color: 'rgba(0, 0, 0, .12)'                                             # Divider 
+      
+
+    # Table rows                                                                   
+    table-row-background-color: '#fdf6e3'                                           # Table row
+    table-row-alternative-background-color: '#eee8d5'                               # Table row alternative
+                                                                                
+    # Nav Menu                                                                   
+    paper-listbox-color: 'var(--primary-color)'                                     # Navigation menu selection hoover
+    paper-listbox-background-color: 'var(--accent-color)'                           # Navigation menu background
+    paper-grey-50: 'var(--primary-text-color)'                                   
+    paper-grey-200: 'var(--accent-color)'                                           # Navigation menu selection
+                                                                                
+    # Paper card                                                               
+    paper-card-header-color: 'var(--dark-primary-color)'                            # Card header text colour
+    paper-card-background-color: 'var(--accent-color)'                              # Card background colour
+    paper-dialog-background-color: '#fdf6e3'                                        # Card dialog background colour
+    paper-item-icon-color: 'var(--primary-text-color)'                              # Icon color
+    paper-item-icon-active-color: '#b58900'                                         # Icon color active
+    paper-item-icon_-_color: 'green'           
+    paper-item-selected_-_color: 'var(--accent-color)'
+    paper-item-selected_-_background-color: '#cb4b16'                               # Popup item select                      
+    paper-tabs-selection-bar-color: 'green'
+
+    # Labels 
+    label-badge-red: '#586e75'                                                      # References the brand colour label badge border
+    label-badge-text-color: 'var(--primary-text-color)'                             # Now same as label badge border but that's a matter of taste
+    label-badge-background-color: 'var(--accent-color)'                             # Same, but can also be set to transparent here
+
+    # Switches
+    paper-toggle-button-checked-button-color: '#268bd2'
+    paper-toggle-button-checked-bar-color: 'var(--primary-color)'
+    paper-toggle-button-checked-ink-color: '#268bd2'
+    paper-toggle-button-unchecked-button-color: 'var(--secondary-background-color)'
+    paper-toggle-button-unchecked-bar-color: 'var(--secondary-text-color)'
+    paper-toggle-button-unchecked-ink-color: 'var(--secondary-background-color)'  
+
+    # Sliders
+    paper-slider-knob-color: 'var(--secondary-text-color)'
+    paper-slider-knob-start-color: 'var(--secondary-text-color)'
+    paper-slider-pin-color: 'var(--secondary-text-color)'
+    paper-slider-active-color: 'var(--secondary-text-color)'
+    paper-slider-container-color: 'linear-gradient(var(--primary-background-color), var(--secondary-background-color)) no-repeat'
+    paper-slider-secondary-color: 'var(--secondary-background-color)'
+    paper-slider-disabled-active-color: 'var(--disabled-text-color)'
+    paper-slider-disabled-secondary-color: 'var(--disabled-text-color)'
+
+    # Google colors
+    google-red-500: '#dc322f'
+    google-green-500: '#859900'
+
+Dark_Cyan:
+# Main colors that can be changed
+  primary-color: "#00bcd4"
+  disabled-text-color: "#545454"
+  divider-color: "rgba(255, 255, 255, 0.12)"
+  paper-card-background-color: "#4e4e4e"
+  paper-grey-200: "#191919"
+  paper-item-icon-color: "#d3d3d3"
+  paper-listbox-background-color: "#202020"
+  paper-listbox-color: "#FFFFFF"      
+  primary-background-color: "#303030"
+  primary-text-color: "#cfcfcf"      
+  secondary-background-color: "#2b2b2b"
+  secondary-text-color: "#04a7bc"
+# Colors based on variables, see above
+  label-badge-background-color: "var(--secondary-background-color)"
+  label-badge-text-color: "var(--text-primary-color)"
+  paper-card-header-color: "#var(--paper-item-icon-color)"
+  paper-grey-50: "var(--primary-text-color)"
+  paper-item-icon-active-color: "var(--primary-color)"
+  paper-item-icon_-_color: "var(--primary-text-color)"
+  paper-slider-active-color: "var(--primary-color)"
+  paper-slider-knob-color: "var(--primary-color)"
+  paper-slider-knob-start-color: "var(--primary-color)"
+  paper-slider-pin-color: "var(--primary-color)"
+  paper-slider-secondary-color: "var(--light-primary-color)"     
+  paper-toggle-button-checked-ink-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-button-color: "var(--primary-color)"
+  paper-toggle-button-checked-bar-color: "var(--light-primary-color)"
+  paper-toggle-button-unchecked-bar-color: "var(--primary-text-color)"
+
+
+
+Vintage: 
+
+  turmeric-color: "#DEB853"
+
+  light-turmeric-color: "#E2D9A2"
+
+  slate-color: "#0A373A" 
+
+  light-slate-color: "#789F8A"
+
+  maroon-color: "#862715"
+
+  primary-font-family: "Lucida Console"        
+
+  paper-listbox-background-color: "var(--turmeric-color)"
+
+  light-primary-color: "var(--light-turmeric-color)"
+
+  paper-item-selected_-_background-color: "var(--light-turmeric-color)"
+
+  paper-grey-200: "var(--light-turmeric-color)"   
+
+  divider-color: "var(--light-turmeric-color)"        
+
+  primary-background-color: "var(--light-turmeric-color)"
+
+  secondary-background-color: "var(--light-turmeric-color)"
+
+  paper-slider-secondary-color: "var(--light-turmeric-color)" 
+
+  paper-toggle-button-checked-bar-color: "var(--light-turmeric-color)"        
+
+  primary-color: "var(--slate-color)"
+
+  paper-grey-50: "var(--slate-color)"        
+
+  primary-text-color: "var(--slate-color)" 
+
+  secondary-text-color: "var(--slate-color)"
+
+  paper-item-icon-color: "var(--slate-color)"
+
+  label-badge-text-color: "var(--slate-color)"
+
+  paper-item-icon_-_color: "var(--slate-color)"
+
+  paper-slider-knob-color: "var(--slate-color)"
+
+  paper-slider-knob-start-color: "var(--slate-color)"
+
+  paper-slider-pin-color: "var(--slate-color)"
+
+  paper-toggle-button-checked-button-color: "var(--slate-color)"
+
+  paper-toggle-button-unchecked-bar-color: "var(--slate-color)"        
+
+  paper-card-header-color: "var(--slate-color)"  
+
+  disabled-text-color: "var(--light-slate-color)"
+
+  paper-card-background-color: "var(--light-slate-color)"     
+
+  label-badge-background-color: "var(--light-slate-color)"         
+
+  dark-primary-color: "var(--maroon-color)"
+
+  paper-listbox-color: "var(--maroon-color)" 
+
+  paper-item-icon-active-color: "var(--maroon-color)" 
+
+  label-badge-red: "var(--maroon-color)"
+
+  paper-slider-active-color: "var(--maroon-color)"        
+
+  paper-toggle-button-checked-ink-color: "var(--maroon-color)"  
+
+  paper-font-common-base_-_font-family: "var(--primary-font-family)"
+
+  paper-font-common-code_-_font-family: "var(--primary-font-family)"
+
+  paper-font-body1_-_font-family: "var(--primary-font-family)"
+
+  paper-font-subhead_-_font-family: "var(--primary-font-family)"
+
+  paper-font-headline_-_font-family: "var(--primary-font-family)"
+
+  paper-font-caption_-_font-family: "var(--primary-font-family)"    
+
+  paper-font-title_-_font-family: "var(--primary-font-family)"  
+
+
+Dark_blue:
+     primary-color: "#396FB6"
+     light-primary-color: "#77a0d4"
+     dark-primary-color: "#3539ce"
+     text-primary-color: "#ffffff"
+     primary-background-color: "#37464f"
+     sidebar-text_-_background: "#3c4348"
+     paper-card-background-color: "#263137"
+     paper-card-header-color: "var(--text-primary-color)"
+     secondary-background-color: "var(--primary-background-color)"
+     primary-text-color: "var(--text-primary-color)"
+     secondary-text-color: "var(--primary-color)"
+     paper-listbox-background-color: "var(--sidebar-text_-_background)"
+     paper-toggle-button-checked-ink-color: "var(--dark-primary-color)"
+     paper-toggle-button-checked-button-color: "var(--dark-primary-color)"
+     paper-toggle-button-checked-bar-color: "var(--dark-primary-color)"
+     paper-slider-knob-color: "var(--primary-color)"
+     paper-slider-knob-start-color: "var(--primary-color)"
+     paper-slider-pin-color: "var(--primary-color)"
+     paper-slider-active-color: "var(--primary-color)"
+     paper-slider-secondary-color: "var(--light-primary-color)"
+     paper-slider-container-color: "var(--sidebar-text_-_background)"
+     paper-progress-secondary-color: "var(--sidebar-text_-_background)"
+     paper-item-selected_-_background-color: "var(--primary-color)"
+     paper-item-icon_-_color: "var(--text-primary-color)"
+     paper-item-icon-color: "var(--sidebar-text_-_background)"
+     paper-item-icon-active-color: "var(--primary-color)"
+     paper-grey-50: "var(--sidebar-text_-_background)"
+     paper-grey-200: "var(--primary-background-color)"
+     label-badge-background-color: "var(--sidebar-text_-_background)"
+     label-badge-text-color: "var(--text-primary-color)"
+     label-badge-red: "var(--primary-color)"
+     label-badge-blue: "var(--light-primary-color)"
+     label-badge-green: "var(--dark-primary-color)"
+     label-badge-yellow: "var(--text-primary-color)"
+     label-badge-grey: "var(--paper-grey-500)"
+     table-row-background-color: "var(--paper-card-background-color)"
+     table-row-alternative-background-color: "var(--sidebar-text_-_background)"
+
+
+Teal:
+  # Main Stuff #
+  primary-color: "#1DE9B6" # Primary (most of the UI)
+  primary-background-color: "#303030" # Primary background colour (dialogs, e.t.c)
+  secondary-background-color: "#303030" # Secondary background colour (main UI background)
+  paper-card-background-color: "#424242" # Card background colour
+  paper-item-icon-color: "#1DE9B6" # Icon colour
+  primary-text-color: "#FFFFFF" # Primary text colour
+  secondary-text-color: "rgba(255, 255, 255, 0.7)" # Secondary text colour
+  disabled-text-color: "rgba(255, 255, 255, 0.5)" # Disabled text colour
+  divider-color: "rgba(255, 255, 255, 0.12)" # Divider colour
+  paper-card-header-color: "#FFFFFF" # Card header text colour
+
+  # Nav Menu #
+  paper-listbox-background-color: "#424242" # Listbox background colour
+  paper-listbox-color: "#FFFFFF" # Listbox text colour
+  paper-grey-200: "#616161" # Listbox selected item background colour
+
+  # Switches #
+  paper-toggle-button-checked-ink-color: "#1DE9B6"
+  paper-toggle-button-checked-button-color: "#1DE9B6"
+  paper-toggle-button-checked-bar-color: "#1DE9B6"
+
+  # Sliders #
+  paper-slider-knob-color: "#1DE9B6"
+  paper-slider-knob-start-color: "#1DE9B6"
+  paper-slider-pin-color: "#1DE9B6"
+  paper-slider-active-color: "#1DE9B6"
+  paper-slider-secondary-color: "#33F2D8"
+
+
+Red:
+  primary-color: "#f44336"
+  light-primary-color: "#ffc947"
+  dark-primary-color: "#c66900"
+  text-primary-color: "#ffffff"
+  primary-background-color: "#37464f"
+  sidebar-text_-_background: "#62717b"
+  paper-card-background-color: "#263137"
+  paper-card-header-color: "var(--text-primary-color)"
+  secondary-background-color: "var(--primary-background-color)"
+  primary-text-color: "var(--text-primary-color)"
+  secondary-text-color: "var(--primary-color)"
+  paper-listbox-background-color: "var(--sidebar-text_-_background)"
+  paper-toggle-button-checked-ink-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-button-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-bar-color: "var(--dark-primary-color)"
+  paper-slider-knob-color: "var(--primary-color)"
+  paper-slider-knob-start-color: "var(--primary-color)"
+  paper-slider-pin-color: "var(--primary-color)"
+  paper-slider-active-color: "var(--primary-color)"
+  paper-slider-secondary-color: "var(--light-primary-color)"
+  paper-slider-container-color: "var(--sidebar-text_-_background)"
+  paper-progress-secondary-color: "var(--sidebar-text_-_background)"
+  paper-item-selected_-_background-color: "var(--primary-color)"
+  paper-item-icon_-_color: "var(--text-primary-color)"
+  paper-item-icon-color: "var(--sidebar-text_-_background)"
+  paper-item-icon-active-color: "var(--primary-color)"
+  paper-grey-50: "var(--sidebar-text_-_background)"
+  paper-grey-200: "var(--primary-background-color)"
+  label-badge-background-color: "var(--sidebar-text_-_background)"
+  label-badge-text-color: "var(--text-primary-color)"
+  label-badge-red: "var(--primary-color)"
+  label-badge-blue: "var(--light-primary-color)"
+  label-badge-green: "var(--dark-primary-color)"
+  label-badge-yellow: "var(--text-primary-color)"
+  label-badge-grey: "var(--paper-grey-500)"
+  table-row-background-color: "var(--paper-card-background-color)"
+  table-row-alternative-background-color: "var(--sidebar-text_-_background)"
+Pink:
+  primary-color: "#e91e63"
+  light-primary-color: "#ffc947"
+  dark-primary-color: "#c66900"
+  text-primary-color: "#ffffff"
+  primary-background-color: "#37464f"
+  sidebar-text_-_background: "#62717b"
+  paper-card-background-color: "#263137"
+  paper-card-header-color: "var(--text-primary-color)"
+  secondary-background-color: "var(--primary-background-color)"
+  primary-text-color: "var(--text-primary-color)"
+  secondary-text-color: "var(--primary-color)"
+  paper-listbox-background-color: "var(--sidebar-text_-_background)"
+  paper-toggle-button-checked-ink-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-button-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-bar-color: "var(--dark-primary-color)"
+  paper-slider-knob-color: "var(--primary-color)"
+  paper-slider-knob-start-color: "var(--primary-color)"
+  paper-slider-pin-color: "var(--primary-color)"
+  paper-slider-active-color: "var(--primary-color)"
+  paper-slider-secondary-color: "var(--light-primary-color)"
+  paper-slider-container-color: "var(--sidebar-text_-_background)"
+  paper-progress-secondary-color: "var(--sidebar-text_-_background)"
+  paper-item-selected_-_background-color: "var(--primary-color)"
+  paper-item-icon_-_color: "var(--text-primary-color)"
+  paper-item-icon-color: "var(--sidebar-text_-_background)"
+  paper-item-icon-active-color: "var(--primary-color)"
+  paper-grey-50: "var(--sidebar-text_-_background)"
+  paper-grey-200: "var(--primary-background-color)"
+  label-badge-background-color: "var(--sidebar-text_-_background)"
+  label-badge-text-color: "var(--text-primary-color)"
+  label-badge-red: "var(--primary-color)"
+  label-badge-blue: "var(--light-primary-color)"
+  label-badge-green: "var(--dark-primary-color)"
+  label-badge-yellow: "var(--text-primary-color)"
+  label-badge-grey: "var(--paper-grey-500)"
+  table-row-background-color: "var(--paper-card-background-color)"
+  table-row-alternative-background-color: "var(--sidebar-text_-_background)"
+Purple:
+  primary-color: "#9c27b0"
+  light-primary-color: "#ffc947"
+  dark-primary-color: "#c66900"
+  text-primary-color: "#ffffff"
+  primary-background-color: "#37464f"
+  sidebar-text_-_background: "#62717b"
+  paper-card-background-color: "#263137"
+  paper-card-header-color: "var(--text-primary-color)"
+  secondary-background-color: "var(--primary-background-color)"
+  primary-text-color: "var(--text-primary-color)"
+  secondary-text-color: "var(--primary-color)"
+  paper-listbox-background-color: "var(--sidebar-text_-_background)"
+  paper-toggle-button-checked-ink-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-button-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-bar-color: "var(--dark-primary-color)"
+  paper-slider-knob-color: "var(--primary-color)"
+  paper-slider-knob-start-color: "var(--primary-color)"
+  paper-slider-pin-color: "var(--primary-color)"
+  paper-slider-active-color: "var(--primary-color)"
+  paper-slider-secondary-color: "var(--light-primary-color)"
+  paper-slider-container-color: "var(--sidebar-text_-_background)"
+  paper-progress-secondary-color: "var(--sidebar-text_-_background)"
+  paper-item-selected_-_background-color: "var(--primary-color)"
+  paper-item-icon_-_color: "var(--text-primary-color)"
+  paper-item-icon-color: "var(--sidebar-text_-_background)"
+  paper-item-icon-active-color: "var(--primary-color)"
+  paper-grey-50: "var(--sidebar-text_-_background)"
+  paper-grey-200: "var(--primary-background-color)"
+  label-badge-background-color: "var(--sidebar-text_-_background)"
+  label-badge-text-color: "var(--text-primary-color)"
+  label-badge-red: "var(--primary-color)"
+  label-badge-blue: "var(--light-primary-color)"
+  label-badge-green: "var(--dark-primary-color)"
+  label-badge-yellow: "var(--text-primary-color)"
+  label-badge-grey: "var(--paper-grey-500)"
+  table-row-background-color: "var(--paper-card-background-color)"
+  table-row-alternative-background-color: "var(--sidebar-text_-_background)"
+Deep-purple:
+  primary-color: "#673ab7"
+  light-primary-color: "#ffc947"
+  dark-primary-color: "#c66900"
+  text-primary-color: "#ffffff"
+  primary-background-color: "#37464f"
+  sidebar-text_-_background: "#62717b"
+  paper-card-background-color: "#263137"
+  paper-card-header-color: "var(--text-primary-color)"
+  secondary-background-color: "var(--primary-background-color)"
+  primary-text-color: "var(--text-primary-color)"
+  secondary-text-color: "var(--primary-color)"
+  paper-listbox-background-color: "var(--sidebar-text_-_background)"
+  paper-toggle-button-checked-ink-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-button-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-bar-color: "var(--dark-primary-color)"
+  paper-slider-knob-color: "var(--primary-color)"
+  paper-slider-knob-start-color: "var(--primary-color)"
+  paper-slider-pin-color: "var(--primary-color)"
+  paper-slider-active-color: "var(--primary-color)"
+  paper-slider-secondary-color: "var(--light-primary-color)"
+  paper-slider-container-color: "var(--sidebar-text_-_background)"
+  paper-progress-secondary-color: "var(--sidebar-text_-_background)"
+  paper-item-selected_-_background-color: "var(--primary-color)"
+  paper-item-icon_-_color: "var(--text-primary-color)"
+  paper-item-icon-color: "var(--sidebar-text_-_background)"
+  paper-item-icon-active-color: "var(--primary-color)"
+  paper-grey-50: "var(--sidebar-text_-_background)"
+  paper-grey-200: "var(--primary-background-color)"
+  label-badge-background-color: "var(--sidebar-text_-_background)"
+  label-badge-text-color: "var(--text-primary-color)"
+  label-badge-red: "var(--primary-color)"
+  label-badge-blue: "var(--light-primary-color)"
+  label-badge-green: "var(--dark-primary-color)"
+  label-badge-yellow: "var(--text-primary-color)"
+  label-badge-grey: "var(--paper-grey-500)"
+  table-row-background-color: "var(--paper-card-background-color)"
+  table-row-alternative-background-color: "var(--sidebar-text_-_background)"
+Indigo:
+  primary-color: "#3f51b5"
+  light-primary-color: "#ffc947"
+  dark-primary-color: "#c66900"
+  text-primary-color: "#ffffff"
+  primary-background-color: "#37464f"
+  sidebar-text_-_background: "#62717b"
+  paper-card-background-color: "#263137"
+  paper-card-header-color: "var(--text-primary-color)"
+  secondary-background-color: "var(--primary-background-color)"
+  primary-text-color: "var(--text-primary-color)"
+  secondary-text-color: "var(--primary-color)"
+  paper-listbox-background-color: "var(--sidebar-text_-_background)"
+  paper-toggle-button-checked-ink-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-button-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-bar-color: "var(--dark-primary-color)"
+  paper-slider-knob-color: "var(--primary-color)"
+  paper-slider-knob-start-color: "var(--primary-color)"
+  paper-slider-pin-color: "var(--primary-color)"
+  paper-slider-active-color: "var(--primary-color)"
+  paper-slider-secondary-color: "var(--light-primary-color)"
+  paper-slider-container-color: "var(--sidebar-text_-_background)"
+  paper-progress-secondary-color: "var(--sidebar-text_-_background)"
+  paper-item-selected_-_background-color: "var(--primary-color)"
+  paper-item-icon_-_color: "var(--text-primary-color)"
+  paper-item-icon-color: "var(--sidebar-text_-_background)"
+  paper-item-icon-active-color: "var(--primary-color)"
+  paper-grey-50: "var(--sidebar-text_-_background)"
+  paper-grey-200: "var(--primary-background-color)"
+  label-badge-background-color: "var(--sidebar-text_-_background)"
+  label-badge-text-color: "var(--text-primary-color)"
+  label-badge-red: "var(--primary-color)"
+  label-badge-blue: "var(--light-primary-color)"
+  label-badge-green: "var(--dark-primary-color)"
+  label-badge-yellow: "var(--text-primary-color)"
+  label-badge-grey: "var(--paper-grey-500)"
+  table-row-background-color: "var(--paper-card-background-color)"
+  table-row-alternative-background-color: "var(--sidebar-text_-_background)"
+Blue:
+  primary-color: "#2196f3"
+  light-primary-color: "#ffc947"
+  dark-primary-color: "#c66900"
+  text-primary-color: "#ffffff"
+  primary-background-color: "#37464f"
+  sidebar-text_-_background: "#62717b"
+  paper-card-background-color: "#263137"
+  paper-card-header-color: "var(--text-primary-color)"
+  secondary-background-color: "var(--primary-background-color)"
+  primary-text-color: "var(--text-primary-color)"
+  secondary-text-color: "var(--primary-color)"
+  paper-listbox-background-color: "var(--sidebar-text_-_background)"
+  paper-toggle-button-checked-ink-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-button-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-bar-color: "var(--dark-primary-color)"
+  paper-slider-knob-color: "var(--primary-color)"
+  paper-slider-knob-start-color: "var(--primary-color)"
+  paper-slider-pin-color: "var(--primary-color)"
+  paper-slider-active-color: "var(--primary-color)"
+  paper-slider-secondary-color: "var(--light-primary-color)"
+  paper-slider-container-color: "var(--sidebar-text_-_background)"
+  paper-progress-secondary-color: "var(--sidebar-text_-_background)"
+  paper-item-selected_-_background-color: "var(--primary-color)"
+  paper-item-icon_-_color: "var(--text-primary-color)"
+  paper-item-icon-color: "var(--sidebar-text_-_background)"
+  paper-item-icon-active-color: "var(--primary-color)"
+  paper-grey-50: "var(--sidebar-text_-_background)"
+  paper-grey-200: "var(--primary-background-color)"
+  label-badge-background-color: "var(--sidebar-text_-_background)"
+  label-badge-text-color: "var(--text-primary-color)"
+  label-badge-red: "var(--primary-color)"
+  label-badge-blue: "var(--light-primary-color)"
+  label-badge-green: "var(--dark-primary-color)"
+  label-badge-yellow: "var(--text-primary-color)"
+  label-badge-grey: "var(--paper-grey-500)"
+  table-row-background-color: "var(--paper-card-background-color)"
+  table-row-alternative-background-color: "var(--sidebar-text_-_background)"
+Light-blue:
+  primary-color: "#03a9f4"
+  light-primary-color: "#ffc947"
+  dark-primary-color: "#c66900"
+  text-primary-color: "#ffffff"
+  primary-background-color: "#37464f"
+  sidebar-text_-_background: "#62717b"
+  paper-card-background-color: "#263137"
+  paper-card-header-color: "var(--text-primary-color)"
+  secondary-background-color: "var(--primary-background-color)"
+  primary-text-color: "var(--text-primary-color)"
+  secondary-text-color: "var(--primary-color)"
+  paper-listbox-background-color: "var(--sidebar-text_-_background)"
+  paper-toggle-button-checked-ink-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-button-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-bar-color: "var(--dark-primary-color)"
+  paper-slider-knob-color: "var(--primary-color)"
+  paper-slider-knob-start-color: "var(--primary-color)"
+  paper-slider-pin-color: "var(--primary-color)"
+  paper-slider-active-color: "var(--primary-color)"
+  paper-slider-secondary-color: "var(--light-primary-color)"
+  paper-slider-container-color: "var(--sidebar-text_-_background)"
+  paper-progress-secondary-color: "var(--sidebar-text_-_background)"
+  paper-item-selected_-_background-color: "var(--primary-color)"
+  paper-item-icon_-_color: "var(--text-primary-color)"
+  paper-item-icon-color: "var(--sidebar-text_-_background)"
+  paper-item-icon-active-color: "var(--primary-color)"
+  paper-grey-50: "var(--sidebar-text_-_background)"
+  paper-grey-200: "var(--primary-background-color)"
+  label-badge-background-color: "var(--sidebar-text_-_background)"
+  label-badge-text-color: "var(--text-primary-color)"
+  label-badge-red: "var(--primary-color)"
+  label-badge-blue: "var(--light-primary-color)"
+  label-badge-green: "var(--dark-primary-color)"
+  label-badge-yellow: "var(--text-primary-color)"
+  label-badge-grey: "var(--paper-grey-500)"
+  table-row-background-color: "var(--paper-card-background-color)"
+  table-row-alternative-background-color: "var(--sidebar-text_-_background)"
+Cyan:
+  primary-color: "#00bcd4"
+  light-primary-color: "#ffc947"
+  dark-primary-color: "#c66900"
+  text-primary-color: "#ffffff"
+  primary-background-color: "#37464f"
+  sidebar-text_-_background: "#62717b"
+  paper-card-background-color: "#263137"
+  paper-card-header-color: "var(--text-primary-color)"
+  secondary-background-color: "var(--primary-background-color)"
+  primary-text-color: "var(--text-primary-color)"
+  secondary-text-color: "var(--primary-color)"
+  paper-listbox-background-color: "var(--sidebar-text_-_background)"
+  paper-toggle-button-checked-ink-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-button-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-bar-color: "var(--dark-primary-color)"
+  paper-slider-knob-color: "var(--primary-color)"
+  paper-slider-knob-start-color: "var(--primary-color)"
+  paper-slider-pin-color: "var(--primary-color)"
+  paper-slider-active-color: "var(--primary-color)"
+  paper-slider-secondary-color: "var(--light-primary-color)"
+  paper-slider-container-color: "var(--sidebar-text_-_background)"
+  paper-progress-secondary-color: "var(--sidebar-text_-_background)"
+  paper-item-selected_-_background-color: "var(--primary-color)"
+  paper-item-icon_-_color: "var(--text-primary-color)"
+  paper-item-icon-color: "var(--sidebar-text_-_background)"
+  paper-item-icon-active-color: "var(--primary-color)"
+  paper-grey-50: "var(--sidebar-text_-_background)"
+  paper-grey-200: "var(--primary-background-color)"
+  label-badge-background-color: "var(--sidebar-text_-_background)"
+  label-badge-text-color: "var(--text-primary-color)"
+  label-badge-red: "var(--primary-color)"
+  label-badge-blue: "var(--light-primary-color)"
+  label-badge-green: "var(--dark-primary-color)"
+  label-badge-yellow: "var(--text-primary-color)"
+  label-badge-grey: "var(--paper-grey-500)"
+  table-row-background-color: "var(--paper-card-background-color)"
+  table-row-alternative-background-color: "var(--sidebar-text_-_background)"
+Teal2:
+  primary-color: "#009688"
+  light-primary-color: "#ffc947"
+  dark-primary-color: "#c66900"
+  text-primary-color: "#ffffff"
+  primary-background-color: "#37464f"
+  sidebar-text_-_background: "#62717b"
+  paper-card-background-color: "#263137"
+  paper-card-header-color: "var(--text-primary-color)"
+  secondary-background-color: "var(--primary-background-color)"
+  primary-text-color: "var(--text-primary-color)"
+  secondary-text-color: "var(--primary-color)"
+  paper-listbox-background-color: "var(--sidebar-text_-_background)"
+  paper-toggle-button-checked-ink-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-button-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-bar-color: "var(--dark-primary-color)"
+  paper-slider-knob-color: "var(--primary-color)"
+  paper-slider-knob-start-color: "var(--primary-color)"
+  paper-slider-pin-color: "var(--primary-color)"
+  paper-slider-active-color: "var(--primary-color)"
+  paper-slider-secondary-color: "var(--light-primary-color)"
+  paper-slider-container-color: "var(--sidebar-text_-_background)"
+  paper-progress-secondary-color: "var(--sidebar-text_-_background)"
+  paper-item-selected_-_background-color: "var(--primary-color)"
+  paper-item-icon_-_color: "var(--text-primary-color)"
+  paper-item-icon-color: "var(--sidebar-text_-_background)"
+  paper-item-icon-active-color: "var(--primary-color)"
+  paper-grey-50: "var(--sidebar-text_-_background)"
+  paper-grey-200: "var(--primary-background-color)"
+  label-badge-background-color: "var(--sidebar-text_-_background)"
+  label-badge-text-color: "var(--text-primary-color)"
+  label-badge-red: "var(--primary-color)"
+  label-badge-blue: "var(--light-primary-color)"
+  label-badge-green: "var(--dark-primary-color)"
+  label-badge-yellow: "var(--text-primary-color)"
+  label-badge-grey: "var(--paper-grey-500)"
+  table-row-background-color: "var(--paper-card-background-color)"
+  table-row-alternative-background-color: "var(--sidebar-text_-_background)"
+Green:
+  primary-color: "#4caf50"
+  light-primary-color: "#ffc947"
+  dark-primary-color: "#c66900"
+  text-primary-color: "#ffffff"
+  primary-background-color: "#37464f"
+  sidebar-text_-_background: "#62717b"
+  paper-card-background-color: "#263137"
+  paper-card-header-color: "var(--text-primary-color)"
+  secondary-background-color: "var(--primary-background-color)"
+  primary-text-color: "var(--text-primary-color)"
+  secondary-text-color: "var(--primary-color)"
+  paper-listbox-background-color: "var(--sidebar-text_-_background)"
+  paper-toggle-button-checked-ink-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-button-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-bar-color: "var(--dark-primary-color)"
+  paper-slider-knob-color: "var(--primary-color)"
+  paper-slider-knob-start-color: "var(--primary-color)"
+  paper-slider-pin-color: "var(--primary-color)"
+  paper-slider-active-color: "var(--primary-color)"
+  paper-slider-secondary-color: "var(--light-primary-color)"
+  paper-slider-container-color: "var(--sidebar-text_-_background)"
+  paper-progress-secondary-color: "var(--sidebar-text_-_background)"
+  paper-item-selected_-_background-color: "var(--primary-color)"
+  paper-item-icon_-_color: "var(--text-primary-color)"
+  paper-item-icon-color: "var(--sidebar-text_-_background)"
+  paper-item-icon-active-color: "var(--primary-color)"
+  paper-grey-50: "var(--sidebar-text_-_background)"
+  paper-grey-200: "var(--primary-background-color)"
+  label-badge-background-color: "var(--sidebar-text_-_background)"
+  label-badge-text-color: "var(--text-primary-color)"
+  label-badge-red: "var(--primary-color)"
+  label-badge-blue: "var(--light-primary-color)"
+  label-badge-green: "var(--dark-primary-color)"
+  label-badge-yellow: "var(--text-primary-color)"
+  label-badge-grey: "var(--paper-grey-500)"
+  table-row-background-color: "var(--paper-card-background-color)"
+  table-row-alternative-background-color: "var(--sidebar-text_-_background)"
+Light-green:
+  primary-color: "#8bc34a"
+  light-primary-color: "#ffc947"
+  dark-primary-color: "#c66900"
+  text-primary-color: "#ffffff"
+  primary-background-color: "#37464f"
+  sidebar-text_-_background: "#62717b"
+  paper-card-background-color: "#263137"
+  paper-card-header-color: "var(--text-primary-color)"
+  secondary-background-color: "var(--primary-background-color)"
+  primary-text-color: "var(--text-primary-color)"
+  secondary-text-color: "var(--primary-color)"
+  paper-listbox-background-color: "var(--sidebar-text_-_background)"
+  paper-toggle-button-checked-ink-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-button-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-bar-color: "var(--dark-primary-color)"
+  paper-slider-knob-color: "var(--primary-color)"
+  paper-slider-knob-start-color: "var(--primary-color)"
+  paper-slider-pin-color: "var(--primary-color)"
+  paper-slider-active-color: "var(--primary-color)"
+  paper-slider-secondary-color: "var(--light-primary-color)"
+  paper-slider-container-color: "var(--sidebar-text_-_background)"
+  paper-progress-secondary-color: "var(--sidebar-text_-_background)"
+  paper-item-selected_-_background-color: "var(--primary-color)"
+  paper-item-icon_-_color: "var(--text-primary-color)"
+  paper-item-icon-color: "var(--sidebar-text_-_background)"
+  paper-item-icon-active-color: "var(--primary-color)"
+  paper-grey-50: "var(--sidebar-text_-_background)"
+  paper-grey-200: "var(--primary-background-color)"
+  label-badge-background-color: "var(--sidebar-text_-_background)"
+  label-badge-text-color: "var(--text-primary-color)"
+  label-badge-red: "var(--primary-color)"
+  label-badge-blue: "var(--light-primary-color)"
+  label-badge-green: "var(--dark-primary-color)"
+  label-badge-yellow: "var(--text-primary-color)"
+  label-badge-grey: "var(--paper-grey-500)"
+  table-row-background-color: "var(--paper-card-background-color)"
+  table-row-alternative-background-color: "var(--sidebar-text_-_background)"
+Lime:
+  primary-color: "#cddc39"
+  light-primary-color: "#ffc947"
+  dark-primary-color: "#c66900"
+  text-primary-color: "#ffffff"
+  primary-background-color: "#37464f"
+  sidebar-text_-_background: "#62717b"
+  paper-card-background-color: "#263137"
+  paper-card-header-color: "var(--text-primary-color)"
+  secondary-background-color: "var(--primary-background-color)"
+  primary-text-color: "var(--text-primary-color)"
+  secondary-text-color: "var(--primary-color)"
+  paper-listbox-background-color: "var(--sidebar-text_-_background)"
+  paper-toggle-button-checked-ink-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-button-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-bar-color: "var(--dark-primary-color)"
+  paper-slider-knob-color: "var(--primary-color)"
+  paper-slider-knob-start-color: "var(--primary-color)"
+  paper-slider-pin-color: "var(--primary-color)"
+  paper-slider-active-color: "var(--primary-color)"
+  paper-slider-secondary-color: "var(--light-primary-color)"
+  paper-slider-container-color: "var(--sidebar-text_-_background)"
+  paper-progress-secondary-color: "var(--sidebar-text_-_background)"
+  paper-item-selected_-_background-color: "var(--primary-color)"
+  paper-item-icon_-_color: "var(--text-primary-color)"
+  paper-item-icon-color: "var(--sidebar-text_-_background)"
+  paper-item-icon-active-color: "var(--primary-color)"
+  paper-grey-50: "var(--sidebar-text_-_background)"
+  paper-grey-200: "var(--primary-background-color)"
+  label-badge-background-color: "var(--sidebar-text_-_background)"
+  label-badge-text-color: "var(--text-primary-color)"
+  label-badge-red: "var(--primary-color)"
+  label-badge-blue: "var(--light-primary-color)"
+  label-badge-green: "var(--dark-primary-color)"
+  label-badge-yellow: "var(--text-primary-color)"
+  label-badge-grey: "var(--paper-grey-500)"
+  table-row-background-color: "var(--paper-card-background-color)"
+  table-row-alternative-background-color: "var(--sidebar-text_-_background)"
+Yellow:
+  primary-color: "#ffeb3b"
+  light-primary-color: "#ffc947"
+  dark-primary-color: "#c66900"
+  text-primary-color: "#ffffff"
+  primary-background-color: "#37464f"
+  sidebar-text_-_background: "#62717b"
+  paper-card-background-color: "#263137"
+  paper-card-header-color: "var(--text-primary-color)"
+  secondary-background-color: "var(--primary-background-color)"
+  primary-text-color: "var(--text-primary-color)"
+  secondary-text-color: "var(--primary-color)"
+  paper-listbox-background-color: "var(--sidebar-text_-_background)"
+  paper-toggle-button-checked-ink-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-button-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-bar-color: "var(--dark-primary-color)"
+  paper-slider-knob-color: "var(--primary-color)"
+  paper-slider-knob-start-color: "var(--primary-color)"
+  paper-slider-pin-color: "var(--primary-color)"
+  paper-slider-active-color: "var(--primary-color)"
+  paper-slider-secondary-color: "var(--light-primary-color)"
+  paper-slider-container-color: "var(--sidebar-text_-_background)"
+  paper-progress-secondary-color: "var(--sidebar-text_-_background)"
+  paper-item-selected_-_background-color: "var(--primary-color)"
+  paper-item-icon_-_color: "var(--text-primary-color)"
+  paper-item-icon-color: "var(--sidebar-text_-_background)"
+  paper-item-icon-active-color: "var(--primary-color)"
+  paper-grey-50: "var(--sidebar-text_-_background)"
+  paper-grey-200: "var(--primary-background-color)"
+  label-badge-background-color: "var(--sidebar-text_-_background)"
+  label-badge-text-color: "var(--text-primary-color)"
+  label-badge-red: "var(--primary-color)"
+  label-badge-blue: "var(--light-primary-color)"
+  label-badge-green: "var(--dark-primary-color)"
+  label-badge-yellow: "var(--text-primary-color)"
+  label-badge-grey: "var(--paper-grey-500)"
+  table-row-background-color: "var(--paper-card-background-color)"
+  table-row-alternative-background-color: "var(--sidebar-text_-_background)"
+Amber:
+  primary-color: "#ffc107"
+  light-primary-color: "#ffc947"
+  dark-primary-color: "#c66900"
+  text-primary-color: "#ffffff"
+  primary-background-color: "#37464f"
+  sidebar-text_-_background: "#62717b"
+  paper-card-background-color: "#263137"
+  paper-card-header-color: "var(--text-primary-color)"
+  secondary-background-color: "var(--primary-background-color)"
+  primary-text-color: "var(--text-primary-color)"
+  secondary-text-color: "var(--primary-color)"
+  paper-listbox-background-color: "var(--sidebar-text_-_background)"
+  paper-toggle-button-checked-ink-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-button-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-bar-color: "var(--dark-primary-color)"
+  paper-slider-knob-color: "var(--primary-color)"
+  paper-slider-knob-start-color: "var(--primary-color)"
+  paper-slider-pin-color: "var(--primary-color)"
+  paper-slider-active-color: "var(--primary-color)"
+  paper-slider-secondary-color: "var(--light-primary-color)"
+  paper-slider-container-color: "var(--sidebar-text_-_background)"
+  paper-progress-secondary-color: "var(--sidebar-text_-_background)"
+  paper-item-selected_-_background-color: "var(--primary-color)"
+  paper-item-icon_-_color: "var(--text-primary-color)"
+  paper-item-icon-color: "var(--sidebar-text_-_background)"
+  paper-item-icon-active-color: "var(--primary-color)"
+  paper-grey-50: "var(--sidebar-text_-_background)"
+  paper-grey-200: "var(--primary-background-color)"
+  label-badge-background-color: "var(--sidebar-text_-_background)"
+  label-badge-text-color: "var(--text-primary-color)"
+  label-badge-red: "var(--primary-color)"
+  label-badge-blue: "var(--light-primary-color)"
+  label-badge-green: "var(--dark-primary-color)"
+  label-badge-yellow: "var(--text-primary-color)"
+  label-badge-grey: "var(--paper-grey-500)"
+  table-row-background-color: "var(--paper-card-background-color)"
+  table-row-alternative-background-color: "var(--sidebar-text_-_background)"
+Orange:
+  primary-color: "#ff9800"
+  light-primary-color: "#ffc947"
+  dark-primary-color: "#c66900"
+  text-primary-color: "#ffffff"
+  primary-background-color: "#37464f"
+  sidebar-text_-_background: "#62717b"
+  paper-card-background-color: "#263137"
+  paper-card-header-color: "var(--text-primary-color)"
+  secondary-background-color: "var(--primary-background-color)"
+  primary-text-color: "var(--text-primary-color)"
+  secondary-text-color: "var(--primary-color)"
+  paper-listbox-background-color: "var(--sidebar-text_-_background)"
+  paper-toggle-button-checked-ink-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-button-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-bar-color: "var(--dark-primary-color)"
+  paper-slider-knob-color: "var(--primary-color)"
+  paper-slider-knob-start-color: "var(--primary-color)"
+  paper-slider-pin-color: "var(--primary-color)"
+  paper-slider-active-color: "var(--primary-color)"
+  paper-slider-secondary-color: "var(--light-primary-color)"
+  paper-slider-container-color: "var(--sidebar-text_-_background)"
+  paper-progress-secondary-color: "var(--sidebar-text_-_background)"
+  paper-item-selected_-_background-color: "var(--primary-color)"
+  paper-item-icon_-_color: "var(--text-primary-color)"
+  paper-item-icon-color: "var(--sidebar-text_-_background)"
+  paper-item-icon-active-color: "var(--primary-color)"
+  paper-grey-50: "var(--sidebar-text_-_background)"
+  paper-grey-200: "var(--primary-background-color)"
+  label-badge-background-color: "var(--sidebar-text_-_background)"
+  label-badge-text-color: "var(--text-primary-color)"
+  label-badge-red: "var(--primary-color)"
+  label-badge-blue: "var(--light-primary-color)"
+  label-badge-green: "var(--dark-primary-color)"
+  label-badge-yellow: "var(--text-primary-color)"
+  label-badge-grey: "var(--paper-grey-500)"
+  table-row-background-color: "var(--paper-card-background-color)"
+  table-row-alternative-background-color: "var(--sidebar-text_-_background)"
+Deep-orange:
+  primary-color: "#ff5722"
+  light-primary-color: "#ffc947"
+  dark-primary-color: "#c66900"
+  text-primary-color: "#ffffff"
+  primary-background-color: "#37464f"
+  sidebar-text_-_background: "#62717b"
+  paper-card-background-color: "#263137"
+  paper-card-header-color: "var(--text-primary-color)"
+  secondary-background-color: "var(--primary-background-color)"
+  primary-text-color: "var(--text-primary-color)"
+  secondary-text-color: "var(--primary-color)"
+  paper-listbox-background-color: "var(--sidebar-text_-_background)"
+  paper-toggle-button-checked-ink-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-button-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-bar-color: "var(--dark-primary-color)"
+  paper-slider-knob-color: "var(--primary-color)"
+  paper-slider-knob-start-color: "var(--primary-color)"
+  paper-slider-pin-color: "var(--primary-color)"
+  paper-slider-active-color: "var(--primary-color)"
+  paper-slider-secondary-color: "var(--light-primary-color)"
+  paper-slider-container-color: "var(--sidebar-text_-_background)"
+  paper-progress-secondary-color: "var(--sidebar-text_-_background)"
+  paper-item-selected_-_background-color: "var(--primary-color)"
+  paper-item-icon_-_color: "var(--text-primary-color)"
+  paper-item-icon-color: "var(--sidebar-text_-_background)"
+  paper-item-icon-active-color: "var(--primary-color)"
+  paper-grey-50: "var(--sidebar-text_-_background)"
+  paper-grey-200: "var(--primary-background-color)"
+  label-badge-background-color: "var(--sidebar-text_-_background)"
+  label-badge-text-color: "var(--text-primary-color)"
+  label-badge-red: "var(--primary-color)"
+  label-badge-blue: "var(--light-primary-color)"
+  label-badge-green: "var(--dark-primary-color)"
+  label-badge-yellow: "var(--text-primary-color)"
+  label-badge-grey: "var(--paper-grey-500)"
+  table-row-background-color: "var(--paper-card-background-color)"
+  table-row-alternative-background-color: "var(--sidebar-text_-_background)"
+brown:
+  primary-color: "#795548"
+  light-primary-color: "#ffc947"
+  dark-primary-color: "#c66900"
+  text-primary-color: "#ffffff"
+  primary-background-color: "#37464f"
+  sidebar-text_-_background: "#62717b"
+  paper-card-background-color: "#263137"
+  paper-card-header-color: "var(--text-primary-color)"
+  secondary-background-color: "var(--primary-background-color)"
+  primary-text-color: "var(--text-primary-color)"
+  secondary-text-color: "var(--primary-color)"
+  paper-listbox-background-color: "var(--sidebar-text_-_background)"
+  paper-toggle-button-checked-ink-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-button-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-bar-color: "var(--dark-primary-color)"
+  paper-slider-knob-color: "var(--primary-color)"
+  paper-slider-knob-start-color: "var(--primary-color)"
+  paper-slider-pin-color: "var(--primary-color)"
+  paper-slider-active-color: "var(--primary-color)"
+  paper-slider-secondary-color: "var(--light-primary-color)"
+  paper-slider-container-color: "var(--sidebar-text_-_background)"
+  paper-progress-secondary-color: "var(--sidebar-text_-_background)"
+  paper-item-selected_-_background-color: "var(--primary-color)"
+  paper-item-icon_-_color: "var(--text-primary-color)"
+  paper-item-icon-color: "var(--sidebar-text_-_background)"
+  paper-item-icon-active-color: "var(--primary-color)"
+  paper-grey-50: "var(--sidebar-text_-_background)"
+  paper-grey-200: "var(--primary-background-color)"
+  label-badge-background-color: "var(--sidebar-text_-_background)"
+  label-badge-text-color: "var(--text-primary-color)"
+  label-badge-red: "var(--primary-color)"
+  label-badge-blue: "var(--light-primary-color)"
+  label-badge-green: "var(--dark-primary-color)"
+  label-badge-yellow: "var(--text-primary-color)"
+  label-badge-grey: "var(--paper-grey-500)"
+  table-row-background-color: "var(--paper-card-background-color)"
+  table-row-alternative-background-color: "var(--sidebar-text_-_background)"
+grey:
+  primary-color: "#9e9e9e"
+  light-primary-color: "#ffc947"
+  dark-primary-color: "#c66900"
+  text-primary-color: "#ffffff"
+  primary-background-color: "#37464f"
+  sidebar-text_-_background: "#62717b"
+  paper-card-background-color: "#263137"
+  paper-card-header-color: "var(--text-primary-color)"
+  secondary-background-color: "var(--primary-background-color)"
+  primary-text-color: "var(--text-primary-color)"
+  secondary-text-color: "var(--primary-color)"
+  paper-listbox-background-color: "var(--sidebar-text_-_background)"
+  paper-toggle-button-checked-ink-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-button-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-bar-color: "var(--dark-primary-color)"
+  paper-slider-knob-color: "var(--primary-color)"
+  paper-slider-knob-start-color: "var(--primary-color)"
+  paper-slider-pin-color: "var(--primary-color)"
+  paper-slider-active-color: "var(--primary-color)"
+  paper-slider-secondary-color: "var(--light-primary-color)"
+  paper-slider-container-color: "var(--sidebar-text_-_background)"
+  paper-progress-secondary-color: "var(--sidebar-text_-_background)"
+  paper-item-selected_-_background-color: "var(--primary-color)"
+  paper-item-icon_-_color: "var(--text-primary-color)"
+  paper-item-icon-color: "var(--sidebar-text_-_background)"
+  paper-item-icon-active-color: "var(--primary-color)"
+  paper-grey-50: "var(--sidebar-text_-_background)"
+  paper-grey-200: "var(--primary-background-color)"
+  label-badge-background-color: "var(--sidebar-text_-_background)"
+  label-badge-text-color: "var(--text-primary-color)"
+  label-badge-red: "var(--primary-color)"
+  label-badge-blue: "var(--light-primary-color)"
+  label-badge-green: "var(--dark-primary-color)"
+  label-badge-yellow: "var(--text-primary-color)"
+  label-badge-grey: "var(--paper-grey-500)"
+  table-row-background-color: "var(--paper-card-background-color)"
+  table-row-alternative-background-color: "var(--sidebar-text_-_background)"
+blue-grey:
+  primary-color: "#607d8b"
+  light-primary-color: "#ffc947"
+  dark-primary-color: "#c66900"
+  text-primary-color: "#ffffff"
+  primary-background-color: "#37464f"
+  sidebar-text_-_background: "#62717b"
+  paper-card-background-color: "#263137"
+  paper-card-header-color: "var(--text-primary-color)"
+  secondary-background-color: "var(--primary-background-color)"
+  primary-text-color: "var(--text-primary-color)"
+  secondary-text-color: "var(--primary-color)"
+  paper-listbox-background-color: "var(--sidebar-text_-_background)"
+  paper-toggle-button-checked-ink-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-button-color: "var(--dark-primary-color)"
+  paper-toggle-button-checked-bar-color: "var(--dark-primary-color)"
+  paper-slider-knob-color: "var(--primary-color)"
+  paper-slider-knob-start-color: "var(--primary-color)"
+  paper-slider-pin-color: "var(--primary-color)"
+  paper-slider-active-color: "var(--primary-color)"
+  paper-slider-secondary-color: "var(--light-primary-color)"
+  paper-slider-container-color: "var(--sidebar-text_-_background)"
+  paper-progress-secondary-color: "var(--sidebar-text_-_background)"
+  paper-item-selected_-_background-color: "var(--primary-color)"
+  paper-item-icon_-_color: "var(--text-primary-color)"
+  paper-item-icon-color: "var(--sidebar-text_-_background)"
+  paper-item-icon-active-color: "var(--primary-color)"
+  paper-grey-50: "var(--sidebar-text_-_background)"
+  paper-grey-200: "var(--primary-background-color)"
+  label-badge-background-color: "var(--sidebar-text_-_background)"
+  label-badge-text-color: "var(--text-primary-color)"
+  label-badge-red: "var(--primary-color)"
+  label-badge-blue: "var(--light-primary-color)"
+  label-badge-green: "var(--dark-primary-color)"
+  label-badge-yellow: "var(--text-primary-color)"
+  label-badge-grey: "var(--paper-grey-500)"
+  table-row-background-color: "var(--paper-card-background-color)"
+  table-row-alternative-background-color: "var(--sidebar-text_-_background)"
+
+
+Minimal:
+  dark-primary-color: "#192231"
+  primary-color: "#98878f"
+  light-primary-color: "#98878f"
+  paper-toggle-button-checked-ink-color: "#494e6b"
+  paper-toggle-button-checked-button-color: "#494e6b"
+  paper-toggle-button-checked-bar-color: "#494e6b"
+  paper-slider-knob-color: "#494e6b"
+  paper-slider-knob-start-color: "#494e6b"
+  paper-slider-pin-color: "#494e6b"
+  paper-slider-active-color: "#494e6b"
+
+PmxMonolight:
+  # MyVar
+  huesat: '0, 0%,'
+  # Primary Color
+  primary-color: 'hsl(var(--huesat) 80%)'
+  dark-primary-color: 'hsl(var(--huesat) 20%)'
+  light-primary-color: 'hsl(var(--huesat) 90%)'
+  accent-color: 'hsl(var(--huesat) 30%)'
+  # Backgrounds
+  primary-background-color: 'var(--primary-color)'
+  secondary-background-color: 'hsl(var(--huesat) 86%)'
+  paper-listbox-background-color: 'var(--primary-color)'
+  paper-card-background-color: 'hsl(var(--huesat) 90%)'
+  paper-dialog-background-color: 'var(--paper-card-background-color)'
+  table-row-background-color: 'hsl(var(--huesat) 88%)'
+  table-row-alternative-background-color: 'hsl(var(--huesat) 90%)'
+  # Devider
+  divider-color: 'hsla(0, 0%, 0%, 0)'
+  dark-divider-opacity: '0'
+  light-divider-opacity: '0'
+  dark-secondary-opacity: '0.4'
+  # Text colors
+  primary-text-color: 'hsl(var(--huesat) 46%)'
+  text-primary-color: 'hsl(var(--huesat) 46%)'
+  secondary-text-color: 'hsl(var(--huesat) 56%)'
+  disabled-text-color: 'hsl(var(--huesat) 30%)'
+  sidebar-text_-_color: 'hsl(var(--huesat) 5%)'
+  sidebar-text-color: 'hsl(var(--huesat) 5%)'
+  paper-card-header-color: 'hsl(hsl(var(--huesat) 50%)'
+  paper-button-ink-color: 'hsl(hsl(var(--huesat) 50%)'
+  # Text Adjustments
+  paper-font-headline_-_letter-spacing: '-0.5px'
+  paper-font-headline_-_font-weight: '500'
+  paper-font-body1_-_font-weight: '500'
+  # Nav Menu
+  paper-listbox-color: 'hsl(var(--huesat) 50%)'
+  paper-grey-50: 'hsl(var(--huesat) 40%)'
+  paper-grey-200: 'hsl(var(--huesat) 72%)'
+  # Paper card
+  paper-item-icon-color: 'hsl(var(--huesat) 70%)'
+  paper-item-icon-active-color: 'var(--paper-item-icon-color)'
+  paper-item-icon_-_color: 'hsl(var(--huesat) 70%)'
+  paper-item-selected_-_background-color: 'hsla(0, 0%, 100%, 0.2)'
+  paper-item-selected_-_color: 'hsl(var(--huesat) 20%)'
+  paper-tabs-selection-bar-color: 'hsl(var(--huesat) 70%)'
+  paper-tab-ink: 'hsl(var(--huesat) 70%)'
+  paper-input-container-color: 'hsl(var(--huesat) 66%)'
+  # Labels
+  label-badge-red: 'hsl(var(--huesat) 80%)'
+  label-badge-border-color: 'var(--label-badge-red)'
+  label-badge-background-color: 'hsl(var(--huesat) 82%)'
+  label-badge-text-color: 'var(--primary-text-color)'
+  # Shadows
+  shadow-elevation-2dp_-_box-shadow: 'inset 0px 0px 0px 3px hsla(var(--huesat) 91%, 0.2)'
+  shadow-elevation-16dp_-_box-shadow: 'inset 0px 0px 0px 3px hsla(var(--huesat) 91%, 0.2)'
+  paper-input-container-shared-input-style_-_background: '#000'
+  # Switches
+  paper-toggle-button-checked-button-color: 'hsl(var(--huesat) 50%)'
+  paper-toggle-button-checked-bar-color: 'hsl(var(--huesat) 66%)'
+  paper-toggle-button-unchecked-button-color: 'hsl(var(--huesat) 85%)'
+  paper-toggle-button-unchecked-bar-color: 'hsl(var(--huesat) 80%)'
+  # Sliders
+  paper-slider-knob-color:  'hsl(var(--huesat) 45%)'
+  paper-slider-knob-start-color: 'hsl(var(--huesat) 60%)'
+  paper-slider-pin-color:  'hsl(var(--huesat) 60%)'
+  paper-slider-active-color:  'hsl(var(--huesat) 60%)'
+  paper-slider-container-color: 'hsl(var(--huesat) 76%)'
+  paper-slider-secondary-color: 'hsl(var(--huesat) 10%)'
+  paper-slider-disabled-active-color: 'hsl(var(--huesat) 75%)'
+  paper-slider-disabled-secondary-color: 'hsl(var(--huesat) 75%)'
+  #Toast
+  paper-toast-color: 'hsl(var(--huesat) 45%)'
+  paper-toast-background-color: 'hsl(var(--huesat) 90%)'
+
+Matrix_Theme:
+  name: 'Matrix Theme'
+  # MyVariables
+  base-hue: '120' #Controls the base (and accent) color hue (0-360) | 0=Red 60=Yellow 120=Green 180=Cyan 240=Blue 300=Magenta 360=Red
+  base-sat: '16%' #Controls the saturation of the theme (0%-100%) | 0%=Grey 100%=Full Saturation
+  # MyVar
+  huesat: 'var(--base-hue), var(--base-sat),'
+  # Primary Color
+  primary-color: 'hsl(var(--huesat) 20%)'
+  # Backgrounds
+  primary-background-color: 'var(--primary-color)'
+  secondary-background-color: 'hsl(var(--huesat) 16%)'
+  paper-listbox-background-color: 'var(--primary-color)'
+  paper-card-background-color: 'hsl(var(--huesat) 12%)'
+  paper-dialog-background-color: 'var(--paper-card-background-color)'
+  table-row-background-color: 'hsl(var(--huesat) 12%)'
+  table-row-alternative-background-color: 'hsl(var(--huesat) 10%)'
+  # Devider
+  divider-color: 'hsla(0, 0%, 0%, 0)'
+  dark-divider-opacity: '0'
+  light-divider-opacity: '0'
+  # Text colors
+  primary-text-color: 'hsl(var(--huesat) 60%)'
+  text-primary-color: 'hsl(var(--huesat) 60%)'
+  secondary-text-color: 'hsl(var(--huesat) 60%)'
+  disabled-text-color: 'hsl(var(--huesat) 70%)'
+  sidebar-text_-_color: 'hsl(var(--huesat) 90%)'
+  sidebar-text-color: 'hsl(var(--huesat) 90%)'
+  paper-card-header-color: 'hsl(var(--base-hue), 90%, 50%)'
+  # Text Adjustments
+  paper-font-headline_-_letter-spacing: '-0.5px'
+  paper-font-headline_-_font-weight: '500'
+  paper-font-body1_-_font-weight: '500'
+  # Nav Menu
+  paper-listbox-color: 'hsl(var(--huesat) 50%)'
+  paper-grey-50: 'hsl(var(--huesat) 50%)'
+  paper-grey-200: 'hsla(var(--huesat) 26%)'
+  # Paper card
+  paper-item-icon-color: 'hsl(var(--huesat) 30%)'
+  paper-item-icon-active-color: 'var(--paper-item-icon-color)'
+  paper-item-icon_-_color: 'var(--paper-item-icon-color)'
+  paper-item-selected_-_background-color: 'hsla(0, 0%, 0%, 0.2)'
+  paper-tabs-selection-bar-color: 'hsla(0, 0%, 0%, 0.2)'
+  # Labels
+  label-badge-red: 'hsla(0, 0%, 0%, 0)'
+  label-badge-border-color: 'var(--label-badge-red)'
+  label-badge-background-color: 'var(--paper-card-background-color)'
+  label-badge-text-color: 'var(--primary-text-color)'
+  # Shadows
+  shadow-elevation-2dp_-_box-shadow: 'inset 0px 0px 0px 4px hsl(var(--huesat) 18%)'
+  shadow-elevation-16dp_-_box-shadow: 'inset 0px 0px 0px 4px hsl(var(--huesat) 28%)'
+  # Switches
+  paper-toggle-button-checked-button-color: 'hsl(var(--base-hue), 90%, 50%)'
+  paper-toggle-button-checked-bar-color: 'hsl(var(--huesat) 25%)'
+  paper-toggle-button-unchecked-button-color: 'hsl(var(--huesat) 25%)'
+  paper-toggle-button-unchecked-bar-color: 'hsl(var(--huesat) 5%)'
+  # Sliders
+  paper-slider-knob-color:      'hsl(var(--base-hue), 90%, 50%)'
+  paper-slider-knob-start-color: 'hsl(var(--base-hue), 80%, 25%)'
+  paper-slider-pin-color:      'hsl(var(--base-hue), 90%, 50%)'
+  paper-slider-active-color:      'hsl(var(--base-hue), 90%, 50%)'
+  paper-slider-container-color: 'hsl(var(--huesat) 28%)'
+  paper-slider-secondary-color: 'hsl(var(--huesat) 90%)'
+  paper-slider-disabled-active-color: 'hsl(var(--base-hue), 80%, 25%)'
+  paper-slider-disabled-secondary-color: 'hsl(var(--base-hue), 80%, 25%)'
+  paper-dialog-color: 'hsl(var(--base-hue), 20%, 80%)'
+
+crs:
+  # Main Stuff #
+  primary-color: "#FF0000" # Primary (most of the UI)
+  primary-background-color: "#101010" # Primary background colour (dialogs, e.t.c)
+  secondary-background-color: "#202020" # Secondary background colour (main UI background)
+  paper-card-background-color: "#000000" # Card background colour
+  paper-item-icon-color: "#FF3030" # Icon colour
+  primary-text-color: "#BBBBBB" # Primary text colour
+  secondary-text-color: "#777777)" # Secondary text colour
+  disabled-text-color: "#444444" # Disabled text colour
+  divider-color: "#777777" # Divider colour
+  paper-card-header-color: "#FFFFFF" # Card header text colour
+
+  # Nav Menu #
+  paper-listbox-background-color: "#FFFFFF" # Listbox background colour
+  paper-listbox-color: "#000000" # Listbox text colour
+  paper-grey-200: "#404040" # Listbox selected item background colour
+
+  # Switches #
+  paper-toggle-button-checked-ink-color: "#AAAAAA"
+  paper-toggle-button-checked-button-color: "FF0000"
+  paper-toggle-button-checked-bar-color: "#FFFFFF"
+
+  # Sliders #
+  paper-slider-knob-color: "#FFFFFF"
+  paper-slider-knob-start-color: "#CCCCCC"
+  paper-slider-pin-color: "#FF0000"
+  paper-slider-active-color: "#C00000"
+  paper-slider-secondary-color: "#AAAAAA"
+
+  # Tables #
+  table-row-background-color: "#666666"
+  table-row-alternative-background-color: "#444444"

@@ -1,0 +1,429 @@
+default_view:
+  name: Home
+  view: yes
+  entities:
+    - group.people
+    - group.mediag
+    - group.lighttoggles
+    - weather.met_office_bentley_south_yorkshire
+    - camera.ip_webcam
+    - camera.ip_webcam_2
+    - camera.ip_webcam_3
+    - group.temps
+
+    
+music:
+  name: Mum's Music
+  view: yes
+  entities:
+    - group.music_spotify
+    
+
+Weather:
+  name: Weather
+  view: yes
+  entities:
+    - group.weathermet
+    - group.sun
+    - group.iss
+    - group.darksky
+    - weather.dark_sky
+    - weather.met_office_bentley_south_yorkshire
+
+
+Lights:
+  name: Lights
+  view: yes
+  entities:
+  - group.walllights
+  - group.setteelights
+  - group.stairlights
+  - group.upstairslights
+
+
+Media:
+  name: Media Control
+  view: yes
+  entities:
+  - group.lgtv
+  - group.sky
+  - group.soundbar
+  - media_player.emby_homeassistant
+  - media_player.lg_tv
+  - media_player.kodi
+
+Sensors:
+  name: Sensors
+  view: yes
+  entities:
+  - group.sensor_node_1_card
+  - group.sensor_node_2_card
+  - group.roomtemps
+  - group.outsidetemps
+
+
+Camerainfo:
+  name: Camera INFO
+  view: yes
+  entities:
+    - group.webcamsensors
+    - group.webcamswitches
+    - group.webcamswitches2
+    - group.webcamsensors2
+    - group.webcamsensors3
+    - group.webcamswitches3
+    - camera.ip_webcam
+    - camera.ip_webcam_2
+    - camera.ip_webcam_3
+
+Camerafeed:
+  name: Camera FEED
+  view: yes
+  entities:
+    - camera.ip_webcam
+    - camera.ip_webcam_2
+    - camera.ip_webcam_3
+    
+
+
+Status:
+  name: Device status
+  view: yes
+  entities:
+    - group.devicestatus
+    - group.pisensors
+    - group.livingroomsens
+    - group.phones
+    
+
+Test:
+  name: Test
+  view: yes
+  entities:
+    - switch.cold
+    - switch.hot
+    - switch.mid
+    - switch.green1
+    - switch.red1
+    - switch.green2
+    - switch.red2
+  
+Autos:
+  name: Autos
+  view: yes
+  entities:
+    - automation.rule_1_light_on_in_the_evening
+    - automation.stair_lights_on_motion
+    - automation.turn_off_stair_light_10_minutes_after_last_movement
+    - automation.upstairs_lights_on_motion
+    - automation.turn_off_up_light_10_minutes_after_last_movement
+    - automation.led_off_on_standby
+    - automation.led_2_off_standby
+  
+temps:
+  name: Temps
+  entities:
+    - sensor.met_office_temperature
+    - sensor.dht_sensor_temperature
+    - sensor.sn1_temperature    
+    - sensor.sn2_temperature 
+
+iss:
+  name: ISS
+  entities:
+    - binary_sensor.iss
+    - camera.iss  
+
+  
+
+webcamswitches:
+  name: Switches - Front
+  entities:
+    - switch.ip_webcam_focus
+    - switch.ip_webcam_frontfacing_camera
+    - switch.ip_webcam_night_vision
+    - switch.ip_webcam_overlay
+    - switch.ip_webcam_torch
+    - switch.ip_webcam_video_recording
+
+
+webcamsensors:
+  name: Sensors - Front
+  entities:
+    - sensor.ip_webcam_audio_connection
+    - sensor.ip_webcam_battery_level
+    - sensor.ip_webcam_battery_temperature
+    - sensor.ip_webcam_light_level
+    - sensor.ip_webcam_pressure
+
+webcamswitches2:
+  name: Switches - Back
+  entities:
+    - switch.ip_webcam_focus_2
+    - switch.ip_webcam_frontfacing_camera_2
+    - switch.ip_webcam_night_vision_2
+    - switch.ip_webcam_overlay_2
+    - switch.ip_webcam_torch_2
+    - switch.ip_webcam_video_recording_2
+
+
+webcamsensors2:
+  name: Sensors - Back
+  entities:
+    - sensor.ip_webcam_audio_connection_2
+    - sensor.ip_webcam_battery_level_2
+    - sensor.ip_webcam_battery_temperature_2
+    - sensor.ip_webcam_light_level_2
+    - sensor.ip_webcam_pressure_2
+    
+
+webcamswitches3:
+  name: Switches - Moto
+  entities:
+    - switch.ip_webcam_focus_3
+    - switch.ip_webcam_frontfacing_camera_3
+    - switch.ip_webcam_night_vision_3
+    - switch.ip_webcam_overlay_3
+    - switch.ip_webcam_torch_3
+    - switch.ip_webcam_video_recording_3
+
+
+webcamsensors3:
+  name: Sensors - Moto
+  entities:
+    - sensor.ip_webcam_audio_connection_3
+    - sensor.ip_webcam_battery_level_3
+    - sensor.ip_webcam_battery_temperature_3
+    - sensor.ip_webcam_light_level_3
+    - sensor.ip_webcam_pressure_3
+
+
+people:
+  name: Family Whereabouts
+  entities: 
+  - device_tracker.ec88926884b5
+  - device_tracker.ac3743505cb2
+  - device_tracker.0021dfc45c05
+  - device_tracker.04d6aa726da0
+   
+mediag:
+  name: Telly Switches
+  entities:
+  - switch.lg_tv_power
+  - switch.sky_power
+  - switch.sound_bar
+  - switch.computer
+
+lighttoggles:
+  name: Light Switches
+  entities:
+  - switch.wall_lights
+  - switch.settee_lights
+  - switch.stair_lights
+  - switch.upstairs_lights
+
+evelights:
+  name: Eve lights
+  entities:
+  - switch.wall_lights
+  - switch.settee_lights
+
+  
+lgtv:
+  name: TV
+  entities:
+  - switch.lg_tv_power
+  - switch.hdmi1_pc
+  - switch.hdmi2_XBOX
+  - switch.hdmi3_SKY
+  - switch.tv_mute
+  - script.1522432662840
+  - script.voldown
+
+sky:
+  name: SKY
+  entities:
+  - switch.sky_power
+
+soundbar: 
+ name: SOUNDBAR
+ entities:
+ - switch.sound_bar
+ - script.sbarfunc
+
+
+Devicestatus:
+ name: Status
+ entities:
+  - device_tracker.fc65de691ac5
+  - device_tracker.34ea34429ac3
+  - device_tracker.34ea34431757
+  - device_tracker.ruthlaptop
+
+kodi:
+ name: kodi
+ entities:
+ - media_player.kodi
+
+
+walllights:
+ name: Wall lights
+ entities:
+ - switch.wall_lights
+ - switch.wall_lights_white
+ - switch.wall_lights_yellow
+ - switch.wall_orange
+ - switch.wall_purple
+ - switch.wall_blue
+ - switch.wall_red
+
+
+pisensors:
+ name: Pi Sensors
+ entities:
+ - sensor.disk_use_percent_home
+ - sensor.memory_free
+ - sensor.fastcom_download
+ - sensor.speedtest_download
+ - sensor.speedtest_upload
+ - sensor.last_boot
+ - sensor.processor_use
+
+weathermet:
+  name: Weather Met Office
+  entities:
+  - sensor.met_office_weather
+  - sensor.met_office_temperature
+  - sensor.met_office_feels_like_temperature
+  - sensor.met_office_probability_of_precipitation
+  - sensor.met_office_wind_gust
+  - sensor.met_office_wind_direction
+  - sensor.met_office_wind_speed 
+  - sensor.met_office_humidity
+
+sun:
+  name: Sun
+  entities:
+  - sun.sun
+  - sensor.moon
+
+
+livingroomsens:
+  name: Device sensors
+  entities:
+  - sensor.living_room_phone_battery
+  - sensor.living_room_phone_light
+  - sensor.room_tablet_battery
+  - sensor.room_tablet_light
+  - sensor.s3_battery
+
+
+setteelights:
+  name: Settee Lights
+  entities:
+  - switch.settee_lights
+  - switch.settee_white
+  - switch.settee_lights_blue
+  - switch.settee_lights_red
+  - switch.settee_green
+  - switch.settee_orange
+  - switch.settee_purple
+  - switch.settee_yellow
+
+stairlights:
+  name: Stair Lights
+  entities:
+  - switch.stair_lights
+  - switch.stairs_white
+  - switch.stair_lights_blue
+  - switch.stair_lights_red
+  - switch.stairs_green
+  - switch.stairs_orange
+  - switch.stairs_purple
+  - switch.stairs_yellow
+
+upstairslights:
+  name: Upstairs Lights
+  entities:
+  - switch.upstairs_lights
+  - switch.upstairs_lights_white
+  - switch.upstairs_orange
+  - switch.upstairs_purple
+  - switch.upstairs_red
+  - switch.upstairs_yellow
+  - switch.upstairs_blue
+
+phones:
+  name: Phones
+  entities:
+  - sensor.lornas_battery
+  - sensor.claires_battery
+
+
+music_spotify:
+ name: Mum's Amazing Music!!
+ entities:
+ - input_select.spotify_playlist
+ - media_player.spotify
+ - script.spotify_music
+ - automation.set_spotify_playlist
+
+room_lights:
+ name: room lights
+ entities:
+ - switch.settee_lights
+ - switch.wall_lights
+
+
+darksky:
+  name: Dark Sky
+  entities:
+  - sensor.dark_sky_apparent_temperature
+  - sensor.dark_sky_cloud_coverage
+  - sensor.dark_sky_dew_point
+  - sensor.dark_sky_humidity
+  - sensor.dark_sky_precip
+  - sensor.dark_sky_precip_intensity
+  - sensor.dark_sky_precip_probability
+  - sensor.dark_sky_pressure
+  - sensor.dark_sky_wind_speed
+  - sensor.dark_sky_wind_bearing
+  - sensor.dark_sky_temperature
+  - sensor.dark_sky_daily_summary
+  - sensor.dark_sky_hourly_summary
+  - sensor.dark_sky_minutely_summary
+  - sensor.dark_sky_summary
+ 
+sensor_node_1_card:  
+  name: Sensor Node 1
+  entities:  
+  - sensor.sn1_temperature 
+  - sensor.sn1_real_feel
+  - sensor.sn1_humidity   
+  - sensor.sn1_pir  
+  - light.sn1_led
+  - switch.red1
+
+
+
+sensor_node_2_card:  
+  name: Sensor Node 2
+  entities:  
+  - sensor.sn2_temperature  
+  - sensor.sn2_real_feel
+  - sensor.sn2_humidity   
+  - sensor.sn2_pir  
+  - switch.red2
+
+roomtemps:
+  name: Room
+  entities:
+  - sensor.dht_sensor_humidity
+  - sensor.dht_sensor_temperature
+
+outsidetemps:
+  name: Outside
+  entities:
+  - sensor.met_office_temperature
+  - sensor.met_office_feels_like_temperature
+  

@@ -1,0 +1,154 @@
+  - platform: systemmonitor
+    resources:
+      - type: disk_use_percent
+        arg: /home
+      - type: memory_free
+      - type: network_in
+        arg: eno1
+      - type: network_out
+        arg: eno1
+      - type: last_boot
+      - type: processor_use
+      - type: load_1m
+  
+  
+  - platform: fastdotcom
+
+  - platform: speedtest
+    monitored_conditions:
+      - ping
+      - download
+      - upload
+
+  - platform: moon
+
+  - platform: metoffice
+    api_key: c70106f8-6d5f-48c1-8dba-ac9ebe19c72c
+    monitored_conditions:
+      - weather
+      - temperature
+      - feels_like_temperature
+      - wind_speed
+      - wind_direction
+      - wind_gust
+      - visibility
+      - visibility_distance
+      - uv
+      - precipitation
+      - humidity
+
+
+  - platform: darksky
+    api_key: 7976bcbf56382620dbc7494f9433c348
+    monitored_conditions:
+      - summary
+      - icon
+      - nearest_storm_distance
+      - precip_type
+      - precip_intensity
+      - precip_probability
+      - temperature
+      - apparent_temperature
+      - dew_point
+      - wind_speed
+      - wind_bearing
+      - cloud_cover
+      - humidity
+      - pressure
+      - minutely_summary
+      - hourly_summary
+      - daily_summary
+            
+  - platform: mqtt
+    state_topic: zanzito/clairephone/battery_level
+    name: Claires battery
+    unit_of_measurement: "%"
+
+  - platform: mqtt
+    state_topic: zanzito/livingroomphone/battery_level
+    name: Living room phone battery
+    unit_of_measurement: "%"
+
+  - platform: mqtt
+    state_topic: zanzito/livingroomphone/ct406_light_sensor
+    name: living room phone light
+
+  - platform: mqtt
+    state_topic: zanzito/lornasphone/battery_level
+    name: Lornas battery
+    unit_of_measurement: "%"
+
+  - platform: mqtt
+    state_topic: zanzito/S3/gp2a_proximity_sensor
+    name: s3 movement sensor
+
+  - platform: mqtt
+    state_topic: zanzito/S3/battery_level
+    name: s3 battery 
+    unit_of_measurement: "%"
+
+  - platform: mqtt
+    state_topic: zanzito/roomtablet/battery_level
+    name: Room Tablet Battery
+    unit_of_measurement: "%"
+
+  - platform: mqtt
+    state_topic: zanzito/roomtablet/gp2a_light_sensor
+    name: Room Tablet Light
+    unit_of_measurement: "lx"
+
+
+
+  - platform: mqtt  
+    state_topic: "bruh/sensornode1"  
+    name: "SN1 Humidity"  
+    unit_of_measurement: "%"  
+    value_template: '{{ value_json.humidity | round(1) }}'  
+  
+  
+  - platform: mqtt  
+    state_topic: "bruh/sensornode1"  
+    name: "SN1 PIR"  
+    value_template: '{{ value_json.motion }}'  
+  
+  - platform: mqtt  
+    state_topic: "bruh/sensornode1"  
+    name: "SN1 Temperature"  
+    unit_of_measurement: "°F"  
+    value_template: '{{ value_json.temperature | round(1) }}'  
+
+  - platform: mqtt
+    state_topic: "bruh/sensornode1"
+    name: "SN1 Real Feel"
+    unit_of_measurement: "°F"
+    value_template: '{{ value_json.heatIndex | round(1) }}'
+
+  - platform: mqtt  
+    state_topic: "bruh/sensornode2"  
+    name: "SN2 Humidity"  
+    unit_of_measurement: "%"  
+    value_template: '{{ value_json.humidity | round(1) }}'  
+
+  - platform: mqtt  
+    state_topic: "bruh/sensornode2"  
+    name: "SN2 PIR"  
+    value_template: '{{ value_json.motion }}'  
+  
+  - platform: mqtt  
+    state_topic: "bruh/sensornode2"  
+    name: "SN2 Temperature"  
+    unit_of_measurement: "°F"  
+    value_template: '{{ value_json.temperature | round(1) }}'  
+
+  - platform: mqtt
+    state_topic: "bruh/sensornode2"
+    name: "SN2 Real Feel"
+    unit_of_measurement: "°F"
+    value_template: '{{ value_json.heatIndex | round(1) }}'
+
+  - platform: dht
+    sensor: DHT22
+    pin: 4
+    monitored_conditions:
+      - temperature
+      - humidity

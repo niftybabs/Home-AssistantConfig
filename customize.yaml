@@ -1,0 +1,268 @@
+device_tracker.ec88926884b5:
+  friendly_name: LORNA
+  icon: mdi:human-handsup
+media_player.emby__emby_for_android_mobile__nexus_6:
+  friendly_name: Lorna's Emby
+switch.lg_tv_power:
+  friendly_name: TV Power
+  icon: mdi:power
+sensor.claires_battery:
+  entity_picture: /local/claire.png
+sensor.lornas_battery:
+  entity_picture: /local/lorna.png
+sensor.living_room_phone_battery:
+  icon: mdi:battery
+sensor.living_room_phone_light:
+  friendly_name: living room phone light
+  icon: mdi:flashlight
+  unit_of_measurement: lux
+group.all_switches: {}
+switch.sky_power:
+  icon: mdi:power
+sensor.met_office_wind_speed:
+  friendly_name: Wind Speed
+  icon: mdi:weather-hurricane
+sensor.met_office_wind_gust:
+  friendly_name: Wind Gust
+  icon: mdi:weather-hurricane
+sensor.met_office_wind_direction:
+  friendly_name: Wind Direction
+  icon: mdi:compass
+sensor.met_office_feels_like_temperature:
+  friendly_name: Feels Like Temperature
+sensor.met_office_humidity:
+  friendly_name: Humidity
+sensor.ip_webcam_battery_level:
+  friendly_name: Battery Level
+  icon: mdi:power
+group.lighttoggles:
+  icon: mdi:lightbulb-outline
+sensor.met_office_temperature:
+  friendly_name: Temperature
+sensor.met_office_probability_of_precipitation:
+  friendly_name: Probability of Precipitation
+  icon: mdi:weather-pouring
+sensor.ip_webcam_battery_temperature:
+  friendly_name: Battery Temperature
+switch.ip_webcam_focus:
+  friendly_name: Focus
+switch.ip_webcam_exposure_lock:
+  friendly_name: Exposure Lock
+switch.ip_webcam_frontfacing_camera:
+  friendly_name: Front-facing Camera
+switch.ip_webcam_video_recording:
+  friendly_name: Video Recording
+sensor.ip_webcam_light_level:
+  friendly_name: Light Level
+switch.ip_webcam_night_vision:
+  friendly_name: Night Vision
+switch.ip_webcam_torch:
+  friendly_name: Torch
+switch.ip_webcam_overlay:
+  friendly_name: Overlay
+sensor.ip_webcam_pressure:
+  friendly_name: Pressure
+group.weathermet:
+  icon: mdi:theme-light-dark
+switch.wall_lights:
+  icon: mdi:power
+switch.stair_lights:
+  icon: mdi:power
+switch.settee_lights:
+  icon: mdi:power
+switch.sound_bar:
+  icon: mdi:power
+switch.computer:
+  icon: mdi:laptop-windows
+device_tracker.0021dfc45c05:
+  icon: mdi:human
+device_tracker.ac3743505cb2:
+  icon: mdi:human-handsdown
+device_tracker.04d6aa726da0:
+  icon: mdi:human-greeting
+device_tracker.fc65de691ac5:
+  entity_picture: /local/alexa.png
+switch.upstairs_lights:
+  icon: mdi:power
+sensor.memory_free: {}
+device_tracker.34ea34431757:
+  entity_picture: /local/rmpro.png
+device_tracker.34ea34429ac3:
+  entity_picture: /local/rmmini.png
+sensor.dark_sky_apparent_temperature:
+  friendly_name: Apparent Temperature
+sensor.dark_sky_cloud_coverage:
+  friendly_name: Cloud Coverage
+sensor.dark_sky_daily_high_apparent_temperature:
+  friendly_name: Daily High Apparent Temp
+sensor.dark_sky_daily_high_temperature:
+  friendly_name: Daily High Temp
+sensor.dark_sky_daily_low_apparent_temperature:
+  friendly_name: Daily Low Apparent Temp
+sensor.dark_sky_daily_low_temperature:
+  friendly_name: Daily Low Temp
+sensor.dark_sky_daily_max_precip_intensity:
+  friendly_name: Max Precip Intensity
+sensor.dark_sky_wind_speed:
+  friendly_name: Wind Speed
+sensor.dark_sky_wind_bearing:
+  friendly_name: Wind Bearing
+sensor.dark_sky_daily_summary:
+  icon: /static/images/darksky/weather-pouring.svg
+  friendly_name: Daily Summary
+sensor.dark_sky_dew_point:
+  friendly_name: Dew Point
+sensor.dark_sky_humidity:
+  friendly_name: Humidity
+sensor.dark_sky_icon:
+  friendly_name: 'Dark Sky '
+sensor.dark_sky_ozone:
+  friendly_name: Ozone
+sensor.dark_sky_uv_index:
+  friendly_name: UV Index
+sensor.dark_sky_summary:
+  friendly_name: Summary
+sensor.dark_sky_precip:
+  friendly_name: Precip
+sensor.dark_sky_minutely_summary:
+  friendly_name: Minutely Summary
+sensor.dark_sky_visibility:
+  friendly_name: Visibility
+sensor.dark_sky_nearest_storm_distance:
+  friendly_name: Nearest Storm Distance
+sensor.dark_sky_precip_accumulation:
+  friendly_name: Precip Accumulation
+sensor.dark_sky_precip_intensity:
+  friendly_name: Precip Intensity
+sensor.dark_sky_precip_probability:
+  friendly_name: Precip Probability
+sensor.dark_sky_pressure:
+  friendly_name: Pressure
+sensor.dark_sky_temperature:
+  friendly_name: Temperature
+automation.rule_1_light_on_in_the_evening:
+  friendly_name: Lights on in the evening
+automation.movementupstairs:
+  friendly_name: Motion Upstairs Lights
+camera.ip_webcam:
+  friendly_name: House Back
+camera.ip_webcam_2:
+  friendly_name: House Front
+script.spotify_music:
+  entity_picture: /local/spotify.png
+input_select.spotify_playlist:
+  entity_picture: /local/spotifyp.png
+group.setteelights:
+  icon: mdi:lightbulb-on
+group.stairlights:
+  icon: mdi:lightbulb-on
+group.upstairslights:
+  icon: mdi:lightbulb-on
+group.walllights:
+  icon: mdi:lightbulb-on
+switch.settee_lights_blue:
+  friendly_name: Settee  Blue
+  icon: mdi:lightbulb-on
+switch.settee_purple:
+  icon: mdi:lightbulb-on
+switch.settee_lights_red:
+  friendly_name: Settee Red
+  icon: mdi:lightbulb-on
+switch.settee_white:
+  icon: mdi:lightbulb-on
+switch.settee_yellow:
+  icon: mdi:lightbulb-on
+switch.stair_lights_blue:
+  friendly_name: Stair Blue
+  icon: mdi:lightbulb-on
+switch.stair_lights_red:
+  friendly_name: Stair Red
+  icon: mdi:lightbulb-on
+switch.stairs_green:
+  icon: mdi:lightbulb-on
+switch.stairs_orange:
+  icon: mdi:lightbulb-on
+switch.stairs_purple:
+  icon: mdi:lightbulb-on
+switch.stairs_white:
+  icon: mdi:lightbulb-on
+switch.stairs_yellow:
+  icon: mdi:lightbulb-on
+switch.upstairs_blue:
+  icon: mdi:lightbulb-on
+switch.upstairs_lights_white:
+  friendly_name: Upstairs White
+  icon: mdi:lightbulb-on
+switch.upstairs_yellow:
+  icon: mdi:lightbulb-on
+switch.wall_blue:
+  icon: mdi:lightbulb-on
+switch.wall_lights_white:
+  friendly_name: Wall White
+  icon: mdi:lightbulb-on
+switch.wall_lights_yellow:
+  friendly_name: Wall Yellow
+  icon: mdi:lightbulb-on
+switch.wall_red:
+  icon: mdi:lightbulb-on
+switch.settee_green:
+  icon: mdi:lightbulb-on
+switch.settee_orange:
+  icon: mdi:lightbulb-on
+switch.wall_orange:
+  icon: mdi:lightbulb-on
+switch.wall_purple:
+  icon: mdi:lightbulb-on
+switch.upstairs_purple:
+  icon: mdi:lightbulb-on
+switch.upstairs_orange:
+  icon: mdi:lightbulb-on
+switch.upstairs_red:
+  icon: mdi:lightbulb-on
+switch.tv_vol_up:
+  icon: mdi:volume-plus
+switch.tv_vol_down:
+  icon: mdi:volume-minus
+switch.hdmi2_xbox:
+  friendly_name: 'input - XBOX '
+  icon: mdi:google-controller
+switch.hdmi1_pc:
+  friendly_name: input -  PC
+  icon: mdi:windows
+switch.tv_mute:
+  icon: mdi:volume-mute
+script.1522432662840:
+  icon: mdi:volume-plus
+script.voldown:
+  icon: mdi:volume-minus
+switch.hdmi3_sky:
+  friendly_name: input -  SKY
+  icon: mdi:television-guide
+script.sbarfunc:
+  icon: mdi:music
+sensor.sn1_temperature:
+  friendly_name: Stairs Bottom Temperature
+sensor.sn1_humidity:
+  friendly_name: Stairs Bottom Humidity
+light.sn1_led:
+  friendly_name: Stairs Bottom LED
+sensor.sn1_pir:
+  friendly_name: Stairs Bottom PIR
+group.sensor_node_1_card:
+  friendly_name: Stairs Bottom
+sensor.sn2_pir:
+  friendly_name: Landing PIR
+sensor.sn2_temperature:
+  friendly_name: Landing Temperature
+sensor.sn2_humidity:
+  friendly_name: Landing Humidity
+sensor.sn2_real_feel:
+  friendly_name: Landing Real Feel
+group.sensor_node_2_card:
+  friendly_name: Landing
+sensor.sn1_real_feel:
+  friendly_name: Stairs Bottom Real Feel
+sensor.dht_sensor_temperature:
+  friendly_name: Room Temperature
+sensor.dht_sensor_humidity:
+  friendly_name: Room Humidity
