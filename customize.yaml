@@ -80,7 +80,11 @@ device_tracker.ac3743505cb2:
   icon: mdi:human-handsdown
 device_tracker.04d6aa726da0:
   icon: mdi:human-greeting
-device_tracker.fc65de691ac5:
+device_tracker.amazon57f0f8923:
+  friendly_name: Alexa
+  entity_picture: /local/alexa.png
+device_tracker.amazonee55902ec:
+  friendly_name: Echo
   entity_picture: /local/alexa.png
 switch.upstairs_lights:
   icon: mdi:power
@@ -266,3 +270,19 @@ sensor.dht_sensor_temperature:
   friendly_name: Room Temperature
 sensor.dht_sensor_humidity:
   friendly_name: Room Humidity
+light.60019495eaf2_1921681133:
+  friendly_name: Stairs
+binary_sensor.button1:
+  friendly_name: 1 Wall Lights
+binary_sensor.button2:
+  friendly_name: 2 TV
+binary_sensor.button4:
+  friendly_name: 4 Settee
+binary_sensor.button5:
+  friendly_name: 5 Sky
+switch.eleven:
+  friendly_name: PC Lamp
+script.rlights_script:
+  friendly_name: Room Lights script
+script.hassrestart:
+  friendly_name: Hass Restart

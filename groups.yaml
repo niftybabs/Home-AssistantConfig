@@ -37,9 +37,9 @@ Lights:
   entities:
   - group.walllights
   - group.setteelights
-  - group.stairlights
   - group.upstairslights
-
+  - light.60019495eaf2_1921681133
+  - switch.eleven
 
 Media:
   name: Media Control
@@ -60,6 +60,8 @@ Sensors:
   - group.sensor_node_2_card
   - group.roomtemps
   - group.outsidetemps
+  - group.buttons
+  - group.lbuttons
 
 
 Camerainfo:
@@ -84,8 +86,6 @@ Camerafeed:
     - camera.ip_webcam_2
     - camera.ip_webcam_3
     
-
-
 Status:
   name: Device status
   view: yes
@@ -94,22 +94,44 @@ Status:
     - group.pisensors
     - group.livingroomsens
     - group.phones
-    
 
 Test:
   name: Test
   view: yes
   entities:
-    - switch.cold
-    - switch.hot
-    - switch.mid
-    - switch.green1
-    - switch.red1
-    - switch.green2
-    - switch.red2
+    - switch.thirteen
+    - switch.two
+    - switch.three
+    - switch.four
+    - switch.five
+    - switch.six
+    - switch.seven
+    - switch.eight
+    - switch.nine
+    - switch.ten
+    - switch.twelve
+  
+
+
+buttons:
+  name: Small Buttons
+  entities:
+    - binary_sensor.button1
+    - binary_sensor.button2
+    - binary_sensor.button3
+    - binary_sensor.button4
+    - binary_sensor.button5
+
+lbuttons:
+  name: Large Buttons
+  entities:
+    - binary_sensor.wall
+    - binary_sensor.settee
+    - binary_sensor.tv
+    - binary_sensor.sky
   
 Autos:
-  name: Autos
+  name: Maintenance
   view: yes
   entities:
     - automation.rule_1_light_on_in_the_evening
@@ -117,9 +139,15 @@ Autos:
     - automation.turn_off_stair_light_10_minutes_after_last_movement
     - automation.upstairs_lights_on_motion
     - automation.turn_off_up_light_10_minutes_after_last_movement
-    - automation.led_off_on_standby
-    - automation.led_2_off_standby
-  
+    - automation.room_on_motion
+    - automation.turn_off_room_light_30_minutes_after_last_movement
+    - automation.button_1
+    - automation.button_2
+    - automation.button_3
+    - automation.button_4
+    - script.hassrestart
+    - script.reloadautos
+    - script.rlights_script
 temps:
   name: Temps
   entities:
@@ -219,8 +247,9 @@ lighttoggles:
   entities:
   - switch.wall_lights
   - switch.settee_lights
-  - switch.stair_lights
   - switch.upstairs_lights
+  - light.60019495eaf2_1921681133
+  - switch.eleven
 
 evelights:
   name: Eve lights
@@ -237,8 +266,8 @@ lgtv:
   - switch.hdmi2_XBOX
   - switch.hdmi3_SKY
   - switch.tv_mute
-  - script.1522432662840
-  - script.voldown
+  - script.1523630270958
+  - script.1523630315593
 
 sky:
   name: SKY
@@ -259,7 +288,10 @@ Devicestatus:
   - device_tracker.34ea34429ac3
   - device_tracker.34ea34431757
   - device_tracker.ruthlaptop
-
+  - device_tracker.esp_13a570
+  - device_tracker.esp_1448a5
+  - device_tracker.esp_95eaf2
+  
 kodi:
  name: kodi
  entities:
@@ -330,17 +362,7 @@ setteelights:
   - switch.settee_purple
   - switch.settee_yellow
 
-stairlights:
-  name: Stair Lights
-  entities:
-  - switch.stair_lights
-  - switch.stairs_white
-  - switch.stair_lights_blue
-  - switch.stair_lights_red
-  - switch.stairs_green
-  - switch.stairs_orange
-  - switch.stairs_purple
-  - switch.stairs_yellow
+
 
 upstairslights:
   name: Upstairs Lights
@@ -418,8 +440,10 @@ sensor_node_2_card:
 roomtemps:
   name: Room
   entities:
-  - sensor.dht_sensor_humidity
-  - sensor.dht_sensor_temperature
+  - sensor.roomhumid
+  - sensor.roomtemp
+  - binary_sensor.pir_room
+
 
 outsidetemps:
   name: Outside

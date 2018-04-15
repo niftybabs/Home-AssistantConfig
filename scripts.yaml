@@ -1,85 +1,34 @@
-spotify_music:
-  alias: play spotify playlist
+rlights_script:
   sequence:
-  - service: media_player.play_media
-    data_template:
-      entity_id: media_player.spotify
-      media_content_type: playlist
-      media_content_id: '{% if is_state("input_select.spotify_playlist", "Claire")
-        %} spotify:user:21qd3bbln5zjnalljmwbc47la:playlist:6ng1hmynOXFGn9wHMnkhIa
-        {% elif is_state("input_select.spotify_playlist", "faves") %} spotify:user:ruthed-gb:playlist:5AC8wJLGOVCcDEk1k12jZX
-        {% elif is_state("input_select.spotify_playlist", "Ash - 1977") %} spotify:user:21qd3bbln5zjnalljmwbc47la:playlist:4r09FlpR1qA1y1cbyqd6GZ
-        {% elif is_state("input_select.spotify_playlist", "Garbage - Bleed Like Me")
-        %} spotify:user:21qd3bbln5zjnalljmwbc47la:playlist:60KSlrqQ2Jh2oCeVC8Qzsa
-        {% elif is_state("input_select.spotify_playlist", "Garbage - Garbage") %}
-        spotify:user:21qd3bbln5zjnalljmwbc47la:playlist:41J53jVBdW97tTbulOJp5U         {%
-        elif is_state("input_select.spotify_playlist", "Garbage - Not Your Kind Of
-        People") %} spotify:user:21qd3bbln5zjnalljmwbc47la:playlist:2bJK72mFwk9RDck5srEbB5
-        {% elif is_state("input_select.spotify_playlist", "Garbage - Version 2.0")
-        %} spotify:user:21qd3bbln5zjnalljmwbc47la:playlist:5xOkjbLdnx6LPOJdfX9a4Y
-        {% elif is_state("input_select.spotify_playlist", "Garbage - Strange Little
-        Birds") %} spotify:user:21qd3bbln5zjnalljmwbc47la:playlist:1YqH4iwpZmbUzANbc3CAo7
-        {% elif is_state("input_select.spotify_playlist", "Garbage - Beautiful Garbage")
-        %} spotify:user:21qd3bbln5zjnalljmwbc47la:playlist:39Pi627CNmOUMyK8oRmtiS
-        {% elif is_state("input_select.spotify_playlist", "30''''s 40''''s 50''''s")
-        %} spotify:user:121257224:playlist:4y2BwZE5v5QY79WZbOF6sp {% elif is_state("input_select.spotify_playlist",
-        "AFI") %} spotify:user:21qd3bbln5zjnalljmwbc47la:playlist:4ocEKvqsvuq7GPM6eJY45Z
-        {% elif is_state("input_select.spotify_playlist", "Alice in Chains - Dirt")
-        %} spotify:user:21qd3bbln5zjnalljmwbc47la:playlist:1fAvBWSI0VBvZIBp2nmocC
-        {% elif is_state("input_select.spotify_playlist", "Alice in Chains - Facelift")
-        %} spotify:user:21qd3bbln5zjnalljmwbc47la:playlist:3VxqaHHXp6Zi9DHoeiyOJr
-        {% elif is_state("input_select.spotify_playlist", "Ariana Grande - Dangerous
-        Women") %} spotify:user:21qd3bbln5zjnalljmwbc47la:playlist:1t4ULt4jz6INXcV4ME4nXW
-        {% elif is_state("input_select.spotify_playlist", "Ash - The Best Of") %}
-        spotify:user:21qd3bbln5zjnalljmwbc47la:playlist:0KIUHHGdZo43uoxfQtB8wr {%
-        elif is_state("input_select.spotify_playlist", "The Beautiful South - Blue
-        is the colour") %} spotify:user:21qd3bbln5zjnalljmwbc47la:playlist:6l4o8WXBrcdirlr055w8Bc
-        {% elif is_state("input_select.spotify_playlist", "The Beautiful South - Carry
-        on up the charts") %} spotify:user:21qd3bbln5zjnalljmwbc47la:playlist:3qxLnLLhM7qnQkV1YE0SKn
-        {% elif is_state("input_select.spotify_playlist", "The Beautiful South - Choke")
-        %} spotify:user:21qd3bbln5zjnalljmwbc47la:playlist:5HOEdY2HOeQIJVzWq9Ley9  {%
-        elif is_state("input_select.spotify_playlist", "The Beautiful South - Mioaw")
-        %} spotify:user:21qd3bbln5zjnalljmwbc47la:playlist:61QbmtpjK67P2k00Lwyw6F
-        {% elif is_state("input_select.spotify_playlist", "The Beautiful South - Quench")
-        %} spotify:user:21qd3bbln5zjnalljmwbc47la:playlist:0Rjfr66g6O8PLEA7SQAEel
-        {% elif is_state("input_select.spotify_playlist", "Bitch Alert - Kill your
-        Darlings") %} spotify:user:21qd3bbln5zjnalljmwbc47la:playlist:6XyTqvLBrLnJa920eHeBNN
-        {% elif is_state("input_select.spotify_playlist", "Courtney Love - Amercia''s
-        Sweetheart") %} spotify:user:21qd3bbln5zjnalljmwbc47la:playlist:6j23WtMCW5COG1G4sciSxD
-        {% elif is_state("input_select.spotify_playlist", "The Distillers - Coral
-        Fang") %} spotify:user:21qd3bbln5zjnalljmwbc47la:playlist:5irafU9DWjBKlOMZCpTuAM
-        {% elif is_state("input_select.spotify_playlist", "Dropkick Murpheys - 11
-        Short Stories of Pain and Glory") %} spotify:user:21qd3bbln5zjnalljmwbc47la:playlist:7IsGFLgKo7TttiKhtmoL0G
-        {% elif is_state("input_select.spotify_playlist", "The Duke Spirit - Cut Across
-        the Land") %} spotify:user:21qd3bbln5zjnalljmwbc47la:playlist:5GEXBN5Amvh4qtK3K24XWl
-        {% elif is_state("input_select.spotify_playlist", "Elastica - elastica") %}
-        spotify:user:21qd3bbln5zjnalljmwbc47la:playlist:0KBjJZlV8DL2mctVX4Y8Ox  {%
-        elif is_state("input_select.spotify_playlist", "Elastica - Then Menace") %}
-        spotify:user:21qd3bbln5zjnalljmwbc47la:playlist:4IpimrehKaVMmBQ4EBbJsQ {%
-        elif is_state("input_select.spotify_playlist", "Eminem - The Revival") %}
-        spotify:user:21qd3bbln5zjnalljmwbc47la:playlist:5OFEd12qWjOB6bH4WGCi1I {%
-        elif is_state("input_select.spotify_playlist", "The Epoxies - Stop the Future")
-        %} spotify:user:21qd3bbln5zjnalljmwbc47la:playlist:5H2xFQn6cEvIiQubZ0OFIH
-        {% elif is_state("input_select.spotify_playlist", "The Epoxies - Synthesized")
-        %} spotify:user:21qd3bbln5zjnalljmwbc47la:playlist:6IUTj6Mwv9VL5kSxZnyPWY
-        {% endif %}
-
-        '
-'1522432662840':
-  alias: Volume Up
+  - service: homeassistant.turn_off
+    data:
+      entity_id: switch.wall_lights
+  - service: homeassistant.toggle
+    data:
+      entity_id: switch.settee_lights
+hassrestart:
+  sequence:
+  - service: homeassistant.restart
+reloadautos:
+  sequence:
+  - service: automation.reload
+ulights_script:
+  sequence:
+  - service: homeassistant.turn_off
+    data:
+      entity_id: switch.upstairs_lights
+  - service: homeassistant.turn_off
+    data:
+      entity_id: light.60019495eaf2_1921681133
+'1523630270958':
+  alias: TV Vol +
   sequence:
   - data:
       entity_id: switch.tv_vol_up
-    service: switch.toggle
-'voldown':
-  alias: Volume Down
+    service: homeassistant.turn_on
+'1523630315593':
+  alias: TV Vol -
   sequence:
   - data:
       entity_id: switch.tv_vol_down
-    service: switch.toggle
-'sbarfunc':
-  alias: Function
-  sequence:
-  - data:
-      entity_id: switch.sbar_function
-    service: switch.toggle
+    service: homeassistant.turn_on

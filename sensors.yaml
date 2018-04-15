@@ -23,7 +23,7 @@
   - platform: moon
 
   - platform: metoffice
-    api_key: **
+    api_key: c70106f8-6d5f-48c1-8dba-ac9ebe19c72c
     monitored_conditions:
       - weather
       - temperature
@@ -37,9 +37,42 @@
       - precipitation
       - humidity
 
+  - platform: yweather
+    monitored_conditions:
+      - weather
+      - weather_current
+      - temp_min
+      - temp_max
+      - wind_speed
+      - pressure
+      - visibility
+      - humidity
+      - temperature
+
+  - platform: yweather
+    forecast: 1
+    name: yw_day1
+    monitored_conditions:
+      - weather
+      - temp_min
+      - temp_max
+  - platform: yweather
+    forecast: 2
+    name: yw_day2
+    monitored_conditions:
+      - weather
+      - temp_min
+      - temp_max
+  - platform: yweather
+    forecast: 3
+    name: yw_day3
+    monitored_conditions:
+      - weather
+      - temp_min
+      - temp_max
 
   - platform: darksky
-    api_key: **
+    api_key: 7976bcbf56382620dbc7494f9433c348
     monitored_conditions:
       - summary
       - icon
@@ -146,9 +179,10 @@
     unit_of_measurement: "°F"
     value_template: '{{ value_json.heatIndex | round(1) }}'
 
-  - platform: dht
-    sensor: DHT22
-    pin: 4
-    monitored_conditions:
-      - temperature
-      - humidity
+  - platform: mqtt
+    name: "Roomtemp"
+    state_topic: "/butts/Roomtemp/temp"
+
+  - platform: mqtt
+    name: "Roomhumid"
+    state_topic: "/butts/Roomtemp/humid"

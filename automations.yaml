@@ -1,0 +1,179 @@
+- alias: Rule 1 Light on in the evening
+  trigger:
+  - platform: sun
+    event: sunset
+    offset: -01:00:00
+  action:
+    service: homeassistant.turn_on
+    entity_id: group.evelights
+- alias: Set Spotify Playlist
+  trigger:
+  - platform: state
+    entity_id: input_select.spotify_playlist
+  condition:
+  - condition: template
+    value_template: '{{ not is_state_attr(''media_player.spotify'', ''source'', states(''input_select.spotify_playlist''))
+      }}'
+  action:
+  - service: media_player.media_play
+    entity_id: media_player.spotify
+    data_template:
+      source: '{{ states(''input_select.spotify_playlist'') }}'
+- action:
+  - data:
+      brightness: 255
+      color_name: green
+      entity_id: light.sn1_led
+      flash: short
+    service: light.turn_on
+  - data:
+      brightness: 255
+      color_name: green
+      entity_id: light.60019495eaf2_1921681133
+    service: light.turn_on
+  - data:
+      entity_id: switch.red1
+    service: switch.turn_on
+  alias: Stair lights on motion
+  condition: []
+  id: '1522613484374'
+  trigger:
+  - entity_id: sensor.sn1_pir
+    from: standby
+    platform: state
+    to: motion detected
+- alias: Turn off stair light 10 minutes after last movement
+  trigger:
+    platform: state
+    entity_id: sensor.sn1_pir
+    to: standby
+    for:
+      minutes: 5
+  action:
+    service: light.turn_off
+    entity_id: light.60019495eaf2_1921681133
+- alias: Turn off up light 10 minutes after last movement
+  trigger:
+    platform: state
+    entity_id: sensor.sn2_pir
+    to: standby
+    for:
+      minutes: 5
+  action:
+    service: homeassistant.turn_off
+    entity_id: switch.upstairs_lights
+- action:
+  - data:
+      entity_id: switch.upstairs_lights
+    service: homeassistant.turn_on
+  - data:
+      entity_id: switch.red2
+    service: homeassistant.turn_on
+  alias: upstairs lights on motion
+  condition: []
+  id: '1522687477023'
+  trigger:
+  - entity_id: sensor.sn2_pir
+    from: standby
+    platform: state
+    to: motion detected
+
+
+- action:
+  - data:
+      entity_id: switch.green2
+    service: homeassistant.turn_off
+  alias: Led3 off standby
+  condition: []
+  id: '1523125691495'
+  trigger:
+  - entity_id: binary_sensor.pir_room
+    from: 'on'
+    platform: state
+    to: 'off'
+- action:
+  - data:
+      entity_id: switch.green2
+    service: homeassistant.turn_on
+  - data:
+      entity_id: switch.wall_lights
+    service: homeassistant.turn_on
+  alias: Room on motion
+  condition: []
+  id: '1523125894908'
+  trigger:
+  - entity_id: binary_sensor.pir_room
+    from: 'off'
+    platform: state
+    to: 'on'
+- alias: Turn off room light 30 minutes after last movement
+  trigger:
+    platform: state
+    entity_id: binary_sensor.pir_room
+    to: 'off'
+    for:
+      minutes: 30
+  action:
+    service: homeassistant.turn_off
+    entity_id: switch.wall_lights
+- action:
+  - data:
+      entity_id: switch.wall_lights
+    service: homeassistant.toggle
+  alias: Button 1
+  condition: []
+  id: '1523629592045'
+  trigger:
+  - entity_id: binary_sensor.button1
+    from: 'off'
+    platform: state
+    to: 'on'
+
+- action:
+  - data:
+      entity_id: switch.settee_lights
+    service: homeassistant.toggle
+  alias: Button 2
+  condition: []
+  trigger:
+  - entity_id: binary_sensor.button2
+    from: 'off'
+    platform: state
+    to: 'on'
+
+- action:
+  - data:
+      entity_id: switch.lg_tv_power
+    service: homeassistant.toggle
+  alias: Button 3
+  condition: []
+  trigger:
+  - entity_id: binary_sensor.button3
+    from: 'off'
+    platform: state
+    to: 'on'
+
+- action:
+  - data:
+      entity_id: switch.sky_power
+    service: homeassistant.toggle
+  alias: Button 4
+  condition: []
+  trigger:
+  - entity_id: binary_sensor.button4
+    from: 'off'
+    platform: state
+    to: 'on'
+
+- action:
+  - data:
+      entity_id: switch.wall_lights
+    service: homeassistant.toggle
+  alias: Butts 1
+  condition: []
+  trigger:
+  - entity_id: binary_sensor.wall
+    from: 'on'
+    platform: state
+    to: 'off'
+

@@ -2,8 +2,8 @@ homeassistant:
   # Name of the location where Home Assistant is running
   name: Home
   # Location required to calculate the time the sun rises and sets
-  latitude: 53.534319
-  longitude: -1.143976
+  latitude: !secret latitude_home
+  longitude: !secret longitude_home
   # Impacts weather/sunrise data (altitude above sea level in meters)
   elevation: 16
   # metric for Metric, imperial for Imperial
@@ -33,6 +33,11 @@ panel_iframe:
     title: 'Emby'
     url: 'http://localhost:8096/web/home.html'
    
+  nodered_flows:
+    title: 'Node-RED Flows'
+    url: 'http://hassio.local:1880'
+    icon: mdi:nodejs
+
 
 # Enables configuration UI
 config:
@@ -43,7 +48,6 @@ config:
   # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
   # base_url: example.duckdns.org:8123
 
-
 updater:
   # Optional, allows Home Assistant developers to focus on popular components.
   # include_used_components: true
@@ -51,34 +55,14 @@ updater:
 # Discover some devices automatically
 discovery:
 
-# Allows you to issue voice commands from the frontend in enabled browsers
-conversation:
-
 recorder:
+  purge_keep_days: 5
 
-# Enables support for tracking state changes over time
 history:
-
-      
-history_graph:
-  gr1:
-    name: Room Temperature
-    entities:
-      - sensor.dht_sensor_temperature
-    hours_to_show: 48
-    refresh: 60
-
-  gr2:
-    name: Stairs Bottom Temp
-    entities:
-      - sensor.sn1_temperature
-    hours_to_show: 48
-    refresh: 60
-
-  gr3:
-    name: Landing Temp
-    entities:
-      - sensor.sn2_temperature
+  include:
+    domains:
+      - sensor
+      - switch      
 
 # View all events in a logbook
 logbook:
@@ -86,31 +70,62 @@ logbook:
 # Enables a map showing the location of tracked devices
 map:
 
-
 # Track the sun
 sun:
 
 # Weather prediction
 weather:
   - platform: metoffice
-    api_key: **
+    api_key: !secret metoffice_api_key
 
   - platform: darksky
-    api_key: **
-    
+    api_key: !secret darksky_api_key
+
+  - platform: yweather 
+
 binary_sensor:
   - platform: iss
 
+  - platform: rpi_gpio
+    ports:
+      20: PIR Room
+      21: button1
+      16: button2
+      12: button3
+      23: button4
+      24: button5
+
+  - platform: mqtt
+    name: "wall"
+    state_topic: "/butts/wall/but"
+    payload_on: "1"
+    payload_off: "0"
+
+  - platform: mqtt
+    name: "settee"
+    state_topic: "/butts/settee/but"
+    payload_on: "1"
+    payload_off: "0"
+
+  - platform: mqtt
+    name: "tv"
+    state_topic: "/butts/tv/but"
+    payload_on: "1"
+    payload_off: "0"
+
+  - platform: mqtt
+    name: "sky"
+    state_topic: "/butts/sky/but"
+    payload_on: "1"
+    payload_off: "0"
 camera:
   - platform: generic
     name: ISS
     still_image_url: https://maps.googleapis.com/maps/api/staticmap?center={{ states.binary_sensor.iss.attributes.lat }},{{ states.binary_sensor.iss.attributes.long }}&zoom=5&size=500x500&maptype=roadmap&markers=color:blue%7Clabel:P%7C{{ states.binary_sensor.iss.attributes.lat }},{{ states.binary_sensor.iss.attributes.long }}
     limit_refetch_to_url_change: true
 
-
-
-
-
+ifttt:
+  key: !secret ifttt_key
 
 # Text to speech
 tts:
@@ -124,7 +139,7 @@ cloud:
         - switch.lg_tv_power
         - switch.sky_power
         - switch.sound_bar
-        - switch.stair_lights
+        - light.60019495eaf2_1921681133
         - switch.settee_lights
         - switch.wall_lights
         - switch.upstairs_lights
@@ -146,7 +161,7 @@ cloud:
         name: Sky
       switch.sound_bar:
         name: Sound Bar
-      switch.stair_lights:
+      light.60019495eaf2_1921681133:
         name: Stair lights
       switch.settee_lights:
         name: Settee lights
@@ -166,6 +181,8 @@ media_player: !include mediaplayers.yaml
 device_tracker:
   - platform: nmap_tracker
     hosts: 192.168.1.0/24
+    home_interval: 10
+    interval_seconds: 60
     exclude:
      - 192.168.1.78
      - 192.168.1.115
@@ -174,6 +191,10 @@ device_tracker:
      - 192.168.1.66
      - 192.168.1.119
      - 192.168.1.254
+
+  - platform: bt_home_hub_5
+    host: 192.168.1.254
+    interval_seconds: 60
   
 mqtt:
   discovery: true
@@ -189,7 +210,8 @@ light:
     optimistic: false  
     qos: 0 
 
-  
+  - platform: flux_led
+    automatic_add: True
 
 
 
@@ -251,8 +273,6 @@ android_ip_webcam:
       - whitebalance_lock
       - video_recording
   
-
-
 input_select:
   spotify_playlist:
     name: Playlist
@@ -287,20 +307,15 @@ input_select:
       - Eminem - The Revival
       - The Epoxies - Stop the Future
       - The Epoxies - Synthesized
-      
-      
+     
 input_text:
   command:
     name: Button
   dummy_tiles:
     name: dummy
 
-
-
-
-
-  
-
+arduino:
+  port: /dev/ttyACM0
 
 
  

@@ -1,0 +1,19 @@
+##
+## Main arguments, all optional
+##
+title: Main Panel
+widget_dimensions: [120, 120]
+widget_size: [1, 1]
+widget_margins: [5, 5]
+columns: 8
+global_parameters:
+    use_comma: 0
+    precision: 1
+    use_hass_icon: 1
+layout:
+  -  device_tracker.04d6aa726da0,   device_tracker.ec88926884b5,  device_tracker.ac3743505cb2,  device_tracker.0021dfc45c05,  clock.clock,  sensor.met_office_weather,  sensor.met_office_temperature
+  -  switch.wall_lights,  switch.settee_lights,  switch.stair_lights,  switch.upstairs_lights,  switch.lg_tv_power,  switch.sky_power,  switch.sound_bar,  switch.computer
+  -  switch.settee_lights_red,  switch.settee_lights_blue,  switch.stair_lights_red,  switch.stair_lights_blue
+  -  sensor.lornas_battery, sensor.claires_battery,   sensor.living_room_phone_light,  sensor.speedtest_download,
+  
+  
