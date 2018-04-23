@@ -6,6 +6,7 @@
   action:
     service: homeassistant.turn_on
     entity_id: group.evelights
+
 - alias: Set Spotify Playlist
   trigger:
   - platform: state
@@ -19,6 +20,7 @@
     entity_id: media_player.spotify
     data_template:
       source: '{{ states(''input_select.spotify_playlist'') }}'
+
 - action:
   - data:
       brightness: 255
@@ -32,7 +34,7 @@
       entity_id: light.60019495eaf2_1921681133
     service: light.turn_on
   - data:
-      entity_id: switch.red1
+      entity_id: switch.redled1
     service: switch.turn_on
   alias: Stair lights on motion
   condition: []
@@ -42,7 +44,8 @@
     from: standby
     platform: state
     to: motion detected
-- alias: Turn off stair light 10 minutes after last movement
+
+- alias: Turn off stair light 5 minutes after last movement
   trigger:
     platform: state
     entity_id: sensor.sn1_pir
@@ -52,24 +55,26 @@
   action:
     service: light.turn_off
     entity_id: light.60019495eaf2_1921681133
-- alias: Turn off up light 10 minutes after last movement
+
+- alias: Turn off bathroom light 15 minutes after last movement
   trigger:
     platform: state
-    entity_id: sensor.sn2_pir
-    to: standby
+    entity_id: sensor.bathroom_pir
+    to: '0'
     for:
-      minutes: 5
+      minutes: 15
   action:
     service: homeassistant.turn_off
-    entity_id: switch.upstairs_lights
+    entity_id: switch.rfone
+
 - action:
   - data:
-      entity_id: switch.upstairs_lights
+      entity_id: light.60019495eaf2_1921681133
     service: homeassistant.turn_on
   - data:
-      entity_id: switch.red2
+      entity_id: switch.redled2
     service: homeassistant.turn_on
-  alias: upstairs lights on motion
+  alias: Upstairs lights on motion
   condition: []
   id: '1522687477023'
   trigger:
@@ -77,103 +82,65 @@
     from: standby
     platform: state
     to: motion detected
-
+- action:
+  - data:
+      entity_id: switch.redled1
+    service: homeassistant.turn_off
+  alias: Stairs no motion led off
+  condition: []
+  id: '1524074287908'
+  trigger:
+  - entity_id: sensor.sn1_pir
+    from: motion detected
+    platform: state
+    to: standby
 
 - action:
   - data:
-      entity_id: switch.green2
+      entity_id: switch.redled2
     service: homeassistant.turn_off
-  alias: Led3 off standby
+  alias: Upstairs no motion led2 off
   condition: []
-  id: '1523125691495'
+  id: '1524074445195'
+  trigger:
+  - entity_id: sensor.sn2_pir
+    from: motion detected
+    platform: state
+    to: standby
+
+- action:
+  - data:
+      entity_id: switch.redled3
+    service: homeassistant.turn_off
+  alias: Room no motion led3 off
+  condition: []
   trigger:
   - entity_id: binary_sensor.pir_room
     from: 'on'
     platform: state
     to: 'off'
+
 - action:
   - data:
-      entity_id: switch.green2
+      entity_id: switch.redled3
     service: homeassistant.turn_on
-  - data:
-      entity_id: switch.wall_lights
-    service: homeassistant.turn_on
-  alias: Room on motion
+  alias: Room motion led3 on
   condition: []
-  id: '1523125894908'
   trigger:
   - entity_id: binary_sensor.pir_room
     from: 'off'
     platform: state
     to: 'on'
-- alias: Turn off room light 30 minutes after last movement
-  trigger:
-    platform: state
-    entity_id: binary_sensor.pir_room
-    to: 'off'
-    for:
-      minutes: 30
-  action:
-    service: homeassistant.turn_off
-    entity_id: switch.wall_lights
-- action:
-  - data:
-      entity_id: switch.wall_lights
-    service: homeassistant.toggle
-  alias: Button 1
-  condition: []
-  id: '1523629592045'
-  trigger:
-  - entity_id: binary_sensor.button1
-    from: 'off'
-    platform: state
-    to: 'on'
 
 - action:
   - data:
-      entity_id: switch.settee_lights
-    service: homeassistant.toggle
-  alias: Button 2
+      entity_ id: switch.rfone
+    service: homeassistant.turn_on
+  alias: Bathroom lights on motion
   condition: []
+  id: '1524345030729'
   trigger:
-  - entity_id: binary_sensor.button2
-    from: 'off'
+  - entity_id: sensor.bathroom_pir
+    from: '0'
     platform: state
-    to: 'on'
-
-- action:
-  - data:
-      entity_id: switch.lg_tv_power
-    service: homeassistant.toggle
-  alias: Button 3
-  condition: []
-  trigger:
-  - entity_id: binary_sensor.button3
-    from: 'off'
-    platform: state
-    to: 'on'
-
-- action:
-  - data:
-      entity_id: switch.sky_power
-    service: homeassistant.toggle
-  alias: Button 4
-  condition: []
-  trigger:
-  - entity_id: binary_sensor.button4
-    from: 'off'
-    platform: state
-    to: 'on'
-
-- action:
-  - data:
-      entity_id: switch.wall_lights
-    service: homeassistant.toggle
-  alias: Butts 1
-  condition: []
-  trigger:
-  - entity_id: binary_sensor.wall
-    from: 'on'
-    platform: state
-    to: 'off'
-
+    to: '1'

@@ -177,3 +177,80 @@
       13:
         name: thirteen
 
+  - platform: template
+    switches:
+      kitchen_speakers:
+        friendly_name: "Kitchen"
+        value_template: "{{ is_state('media_player.kitchen', 'on') }}"
+        turn_on:
+          service: homeassistant.turn_on
+          data:
+            entity_id: script.kitchen_on
+        turn_off:
+          service: homeassistant.turn_on
+          data:
+            entity_id: script.kitchen_off
+
+      room_speakers:
+        friendly_name: "Room"
+        value_template: "{{ is_state('media_player.squeezbox', 'on') }}"
+        turn_on:
+          service: homeassistant.turn_on
+          data:
+            entity_id: script.room_on
+        turn_off:
+          service: homeassistant.turn_on
+          data:
+            entity_id: script.room_off
+            
+      laptop_speakers:
+        friendly_name: "Laptop"
+        value_template: "{{ is_state('media_player.laptop', 'on') }}"
+        turn_on:
+          service: homeassistant.turn_on
+          data:
+            entity_id: script.laptop_on
+        turn_off:
+          service: homeassistant.turn_on
+          data:
+            entity_id: script.laptop_off
+
+  - platform: rpi_gpio
+    ports:
+      12: redled1
+      19: redled2
+      26: redled3
+
+  - platform: rpi_rf
+    gpio: 17
+    switches:
+      rfone:
+        pulselength: 191
+        protocol: 1
+        code_on: 4543795
+        code_off: 4543804
+        signal_repetitions: 20
+      rftwo:
+        pulselength: 192
+        protocol: 1
+        code_on: 4543939
+        code_off: 4543948
+        signal_repetitions: 20
+      rfthree:
+        pulselength: 191
+        protocol: 1
+        code_on: 4544259
+        code_off: 4544268
+        signal_repetitions: 20
+      rffour:
+        pulselength: 192
+        protocol: 1
+        code_on: 4545795
+        code_off: 4545804
+        signal_repetitions: 20
+      rffive:
+        pulselength: 191
+        protocol: 1
+        code_on: 4551939
+        code_off: 4551948
+        signal_repetitions: 20

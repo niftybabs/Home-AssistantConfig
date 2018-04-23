@@ -1,48 +1,297 @@
 default_view:
   name: Home
+  icon: mdi:garage
   view: yes
   entities:
     - group.people
     - group.mediag
     - group.lighttoggles
-    - weather.met_office_bentley_south_yorkshire
-    - camera.ip_webcam
-    - camera.ip_webcam_2
-    - camera.ip_webcam_3
+    - weather.yweather
     - group.temps
-
+    - group.weather_card_forecast
     
 music:
-  name: Mum's Music
+  name: Music
+  icon: mdi:music
   view: yes
   entities:
-    - group.music_spotify
+    - media_player.spotify
     
+squeezebox:
+  name: SQUEEZEBOX 
+  icon: mdi:boombox 
+  view: yes
+  entities:
+    - group.squeezeradio
+    - group.squeezesp
+    - group.absoluterad
+    - group.rockm
+    - group.mellow
+    - group.pop
+    - group.country
+
+radio:
+  name: RADIO
+  icon: mdi:music-box
+  view: yes
+  entities:
+    - group.oldies
+    - group.seventies
+    - group.eighties
+    - group.nineties
+
+country:
+  name: Country
+  entities:    
+  - script.country977      
+  - script.realcountry       
+  - script.country80       
+  - script.highwayfm           
+  - script.americascountry      
+  - script.chriscountry
+  - script.downtowncountry
+  - script.country90
+  - script.kickincountry
+  - script.madeintexas
+  - script.classiccountry
+  - script.irishcountry
+  - script.highway65
+  - script.bigmachine
+  - script.todayshotcountry
+  - script.sunradio
+  - script.k95
+  - script.bob95
+  - script.knbt
+  - script.hankfm
+  - script.outlaws
+  - script.radiocountry
+  - script.realtexas
+  - script.countrypop
+  - script.thewolf
+  - script.countrylegends
+  - script.thebull
+  - script.wildcountry
+  - script.starcountry
+  - script.us181
+  - script.kson
+  - script.todaysclassic
+  - script.countrygold
+  - script.skycountry
+  - script.themoose
+  - script.thundercountry
+  - script.theranch
+  - script.bootliquor
+  - script.abccountry
+  - script.bigcountry92
+
+nineties:
+  name: 90's
+  entities:
+  - script.mightymix
+  - script.star90
+  - script.dance90
+  - script.lite90
+
+seventies:
+  name: 70's
+  entities:
+  - script.discopal
+  - script.throwback70
+  - script.disconights
+  - script.rock70
+  - script.super70
+  - script.positively70 
+  - script.thats70schannel
+  - script.gotradio70s
+  - script.absolute70spop
+  - script.discoparadise
+  - script.studio54
+  - script.leftcoast70
+  - script.sanfran70
+  - script.americas70
+  - script.ultimate70  
+  - script.retro70
+  - script.my70
+  - script.classic70
+  - script.flashback70
+  - script.829online
+  - script.phillysoldies
+  - script.discorhythm
+  - script.kflyradio
+  - script.abc70
+  - script.batesfm
+  - script.disco935
+  - script.groovy70
+  - script.unlimited70
+  - script.classicgold
+  - script.oldtimerock
+  - script.calmradio
+  - script.super70
+  - script.kono86
+  - script.memories
+  - script.heart70
+  - script.pen95
+  - script.oldies98
+eighties:
+  name: 80's
+  entities:
+  - script.signal80
+  - script.love80
+  - script.heart80
+  - script.rockin80
+pop:
+  name: Pop
+  entities:
+  - script.hallam
+  - script.heat
+  - script.capital
+  - script.rainbow
+  - script.hitsuk
+  - script.radiox
+  
+oldies:
+  name: 60's
+  entities:
+  - script.classicoldies
+  - script.hits60
+  - script.bigboss
+  - script.gotradio
+    
+squeezesp:
+  name: Squeeze Speakers
+  entities:
+    - input_text.dummy_player_mini
+    - input_text.dummy_player_kitchen
+    - input_text.dummy_window_right
+    - input_text.dummy_player_box
+
+absoluterad:
+  name: Absolute Radio
+  entities:
+  - script.absolcr
+  - script.absol60
+  - script.absol70
+  - script.absol80
+  - script.absol90
+  - script.absol00
+
+rockm:
+  name: Rock
+  entities:
+  - script.kerrang
+  - script.planrock
+  - script.arrow
+  - script.pulserock
+  - script.rockradio
+  - script.classicrock
+  - script.softrock
+  - script.atlanticrock
+  - script.rock106
+  - script.metalradionz
+  - script.blastfm
+  - script.hardrock
+  - script.metalrock
+  - script.rockradio1
+  - script.metaldetector
+  - script.coreradio
+  - script.bigradio80
+  - script.purerock
+  - script.rock181
+  - script.theeagle
+  - script.alt949
+  - script.kxt
+  - script.asteriskradio
+  - script.crucialvelocity
+  - script.thepenguin
+  - script.gratefuldead
+  - script.chloe181
+  - script.gymradio
+  - script.blown
+  - script.thedump
+  - script.therock94
+  - script.thirdrock
+  - script.classic109
+  - script.radioparadise
+  - script.pearljam
+  - script.rock98
+  - script.meanzrock
+  - script.radioexplode
+  - script.metalmadness
+  - script.80metal
+
+mellow:
+  name: Mellow
+  entities:
+  - script.chill
+  - script.hallam2
+  - script.smooth
+  - script.mellowgold
+  - script.mellowmagic
+  - script.mellowchilled
+  - script.alloldies
+  - script.classichits181
+  - script.easy93
+  - script.gold99
+  - script.1000hits
+  - script.1940s
+  - script.easyradio
+  - script.timeless
+  - script.crystal
+  - script.stellar
+  - script.amazingradio
+  - script.bbcradio2
+  - script.softtracks
+  - script.easy80
+  - script.smoothcanada
+  - script.lite99
+  - script.softrock97
+  - script.easyrock
+  - script.easy95
+  - script.variety
+  - script.blackrock
+  - script.softrockclassics
+  - script.croonerradio
+  - script.smoothextra
+  - script.midnightcafe
+  - script.sunshine106
+  - script.positivelyeasy
+  - script.positivelytranquil
+  - script.thebreeze
+  - script.smooth181
+  - script.calmradio
+  - script.heartbeat
+  - script.willow
+
 
 Weather:
   name: Weather
+  icon: mdi:weather-sunny
   view: yes
   entities:
-    - group.weathermet
-    - group.sun
-    - group.iss
-    - group.darksky
     - weather.dark_sky
     - weather.met_office_bentley_south_yorkshire
-
-
+    - weather.yweather
+    - group.weathermet
+    - group.sun
+    - group.darksky
+    - group.yweather
+    - group.yweatherweek
+    - group.iss
+    - group.weather_card_forecast
 Lights:
   name: Lights
+  icon: mdi:lightbulb
   view: yes
   entities:
   - group.walllights
   - group.setteelights
   - group.upstairslights
   - light.60019495eaf2_1921681133
-  - switch.eleven
+  - switch.rfone
 
 Media:
   name: Media Control
+  icon: mdi:television
   view: yes
   entities:
   - group.lgtv
@@ -61,11 +310,19 @@ Sensors:
   - group.roomtemps
   - group.outsidetemps
   - group.buttons
-  - group.lbuttons
+  - group.boxbuttons
+  - group.bathsensors
 
+bathsensors:
+  name: Bathroom
+  entities:
+  - sensor.bathroom_temp
+  - sensor.bathroom_humidity
+  - sensor.bathroom_pir
 
 Camerainfo:
-  name: Camera INFO
+  name: Cameras
+  icon: mdi:cctv
   view: yes
   entities:
     - group.webcamsensors
@@ -77,15 +334,10 @@ Camerainfo:
     - camera.ip_webcam
     - camera.ip_webcam_2
     - camera.ip_webcam_3
-
-Camerafeed:
-  name: Camera FEED
-  view: yes
-  entities:
     - camera.ip_webcam
     - camera.ip_webcam_2
     - camera.ip_webcam_3
-    
+
 Status:
   name: Device status
   view: yes
@@ -94,63 +346,74 @@ Status:
     - group.pisensors
     - group.livingroomsens
     - group.phones
+    - group.boxbuttons
+Graphs:
+  view: yes
+  entities:
+    - history_graph.sun
+    - history_graph.family
+    - history_graph.temperature
 
 Test:
   name: Test
   view: yes
   entities:
-    - switch.thirteen
-    - switch.two
-    - switch.three
-    - switch.four
-    - switch.five
-    - switch.six
-    - switch.seven
-    - switch.eight
-    - switch.nine
-    - switch.ten
-    - switch.twelve
-  
-
+    - switch.rfone
+    - switch.rftwo
+    - switch.rfthree
+    - switch.rffour
+    - switch.rffive
+    - sensor.bathroom_pir
 
 buttons:
   name: Small Buttons
   entities:
     - binary_sensor.button1
     - binary_sensor.button2
-    - binary_sensor.button3
-    - binary_sensor.button4
-    - binary_sensor.button5
 
-lbuttons:
-  name: Large Buttons
+
+boxbuttons:
+  name: Button Box
   entities:
-    - binary_sensor.wall
-    - binary_sensor.settee
-    - binary_sensor.tv
-    - binary_sensor.sky
-  
+    - sensor.d10
+    - sensor.d6
+    - sensor.d7
+    - sensor.room_speak
+    - sensor.kitchen_speak
+    - sensor.laptop_speak
+    - sensor.s12
+    - sensor.s3
+    - sensor.s4
+    - sensor.s5
+    - sensor.s6
+    - sensor.s7    
 Autos:
   name: Maintenance
   view: yes
+  control: hidden
   entities:
-    - automation.rule_1_light_on_in_the_evening
-    - automation.stair_lights_on_motion
-    - automation.turn_off_stair_light_10_minutes_after_last_movement
-    - automation.upstairs_lights_on_motion
-    - automation.turn_off_up_light_10_minutes_after_last_movement
-    - automation.room_on_motion
-    - automation.turn_off_room_light_30_minutes_after_last_movement
-    - automation.button_1
-    - automation.button_2
-    - automation.button_3
-    - automation.button_4
+    - sensor.hline_1
+    - group.my_scripts
+    - group.all_automations
+    - group.redled
+
+redled:
+  name: Pi Led's
+  entities:
+    - switch.redled1
+    - switch.redled2
+    - switch.redled3
+
+my_scripts:
+  name: Scripts
+  entities:
+    - sensor.hline_1
     - script.hassrestart
-    - script.reloadautos
-    - script.rlights_script
+    
 temps:
   name: Temps
   entities:
+    - sensor.hline_1
     - sensor.met_office_temperature
     - sensor.dht_sensor_temperature
     - sensor.sn1_temperature    
@@ -162,10 +425,22 @@ iss:
     - binary_sensor.iss
     - camera.iss  
 
-  
+yweatherweek:
+  name: Weekly
+  entities:
+    - sensor.yw_day1_condition
+    - sensor.yw_day1_temperature_max
+    - sensor.yw_day2_condition
+    - sensor.yw_day2_temperature_max
+    - sensor.yw_day3_condition   
+    - sensor.yw_day3_temperature_max
+    - sensor.yw_day4_condition
+    - sensor.yw_day4_temperature_max
+    - sensor.yw_day5_condition   
+    - sensor.yw_day5_temperature_max  
 
 webcamswitches:
-  name: Switches - Front
+  name: Front
   entities:
     - switch.ip_webcam_focus
     - switch.ip_webcam_frontfacing_camera
@@ -173,19 +448,16 @@ webcamswitches:
     - switch.ip_webcam_overlay
     - switch.ip_webcam_torch
     - switch.ip_webcam_video_recording
-
-
-webcamsensors:
-  name: Sensors - Front
-  entities:
+    - sensor.hline_1
     - sensor.ip_webcam_audio_connection
     - sensor.ip_webcam_battery_level
     - sensor.ip_webcam_battery_temperature
     - sensor.ip_webcam_light_level
     - sensor.ip_webcam_pressure
 
+
 webcamswitches2:
-  name: Switches - Back
+  name: Back
   entities:
     - switch.ip_webcam_focus_2
     - switch.ip_webcam_frontfacing_camera_2
@@ -193,11 +465,7 @@ webcamswitches2:
     - switch.ip_webcam_overlay_2
     - switch.ip_webcam_torch_2
     - switch.ip_webcam_video_recording_2
-
-
-webcamsensors2:
-  name: Sensors - Back
-  entities:
+    - sensor.hline_1
     - sensor.ip_webcam_audio_connection_2
     - sensor.ip_webcam_battery_level_2
     - sensor.ip_webcam_battery_temperature_2
@@ -206,7 +474,7 @@ webcamsensors2:
     
 
 webcamswitches3:
-  name: Switches - Moto
+  name: Moto
   entities:
     - switch.ip_webcam_focus_3
     - switch.ip_webcam_frontfacing_camera_3
@@ -214,21 +482,17 @@ webcamswitches3:
     - switch.ip_webcam_overlay_3
     - switch.ip_webcam_torch_3
     - switch.ip_webcam_video_recording_3
-
-
-webcamsensors3:
-  name: Sensors - Moto
-  entities:
+    - sensor.hline_1
     - sensor.ip_webcam_audio_connection_3
     - sensor.ip_webcam_battery_level_3
     - sensor.ip_webcam_battery_temperature_3
     - sensor.ip_webcam_light_level_3
     - sensor.ip_webcam_pressure_3
 
-
 people:
   name: Family Whereabouts
   entities: 
+  - sensor.hline_1
   - device_tracker.ec88926884b5
   - device_tracker.ac3743505cb2
   - device_tracker.0021dfc45c05
@@ -240,6 +504,7 @@ mediag:
   - switch.lg_tv_power
   - switch.sky_power
   - switch.sound_bar
+  - sensor.hline_4
   - switch.computer
 
 lighttoggles:
@@ -265,6 +530,7 @@ lgtv:
   - switch.hdmi1_pc
   - switch.hdmi2_XBOX
   - switch.hdmi3_SKY
+  - sensor.hline_1
   - switch.tv_mute
   - script.1523630270958
   - script.1523630315593
@@ -288,6 +554,7 @@ Devicestatus:
   - device_tracker.34ea34429ac3
   - device_tracker.34ea34431757
   - device_tracker.ruthlaptop
+  - sensor.hline_1
   - device_tracker.esp_13a570
   - device_tracker.esp_1448a5
   - device_tracker.esp_95eaf2
@@ -302,6 +569,7 @@ walllights:
  name: Wall lights
  entities:
  - switch.wall_lights
+ - sensor.hline_1
  - switch.wall_lights_white
  - switch.wall_lights_yellow
  - switch.wall_orange
@@ -354,6 +622,7 @@ setteelights:
   name: Settee Lights
   entities:
   - switch.settee_lights
+  - sensor.hline_1
   - switch.settee_white
   - switch.settee_lights_blue
   - switch.settee_lights_red
@@ -368,6 +637,7 @@ upstairslights:
   name: Upstairs Lights
   entities:
   - switch.upstairs_lights
+  - sensor.hline_1
   - switch.upstairs_lights_white
   - switch.upstairs_orange
   - switch.upstairs_purple
@@ -416,38 +686,65 @@ darksky:
   - sensor.dark_sky_minutely_summary
   - sensor.dark_sky_summary
  
+yweather:
+  name: Yahoo Weather
+  entities:
+  - sensor.yweather_current
+  - sensor.yweather_temperature
+  - sensor.yweather_temperature_max
+  - sensor.yweather_temperature_min
+  - sensor.yweather_wind_speed
+  - sensor.yweather_condition
+
 sensor_node_1_card:  
   name: Sensor Node 1
-  entities:  
+  entities: 
+  - sensor.hline_1
   - sensor.sn1_temperature 
   - sensor.sn1_real_feel
-  - sensor.sn1_humidity   
+  - sensor.sn1_humidity
+  - sensor.hline_4 
   - sensor.sn1_pir  
   - light.sn1_led
-  - switch.red1
-
-
+  - switch.redled1
 
 sensor_node_2_card:  
   name: Sensor Node 2
-  entities:  
+  entities: 
+  - sensor.hline_1
   - sensor.sn2_temperature  
   - sensor.sn2_real_feel
-  - sensor.sn2_humidity   
+  - sensor.sn2_humidity
+  - sensor.hline_4
   - sensor.sn2_pir  
-  - switch.red2
+  - switch.redled2
 
 roomtemps:
   name: Room
   entities:
-  - sensor.roomhumid
-  - sensor.roomtemp
+  - sensor.dht_sensor_humidity
+  - sensor.dht_sensor_temperature
+  - sensor.hline_4
   - binary_sensor.pir_room
+  - switch.redled3
 
 
 outsidetemps:
   name: Outside
   entities:
+  - sensor.hline_1
   - sensor.met_office_temperature
   - sensor.met_office_feels_like_temperature
   
+weather_card_forecast:
+  name: Forecast
+  icon: mdi:sun
+  entities:
+    - sensor.forecast_0
+    - sensor.forecast_1
+    - sensor.forecast_2
+    - sensor.forecast_3
+    - sensor.forecast_4
+    - sensor.forecast_5
+    - sensor.forecast_6
+    - sensor.forecast_7

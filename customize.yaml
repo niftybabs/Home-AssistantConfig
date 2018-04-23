@@ -146,6 +146,7 @@ sensor.dark_sky_temperature:
   friendly_name: Temperature
 automation.rule_1_light_on_in_the_evening:
   friendly_name: Lights on in the evening
+  icon: mdi:lamp
 automation.movementupstairs:
   friendly_name: Motion Upstairs Lights
 camera.ip_webcam:
@@ -285,4 +286,536 @@ switch.eleven:
 script.rlights_script:
   friendly_name: Room Lights script
 script.hassrestart:
-  friendly_name: Hass Restart
+  friendly_name: Home Assistant
+  icon: mdi:home-assistant
+  custom_ui_state_card: state-card-script-custom-text
+  custom_text: Restart
+sensor.roomtemp:
+  friendly_name: Room Temperature
+sensor.roomhumid:
+  friendly_name: Room Humidity
+sensor.yw_day1_condition:
+  friendly_name: Day 1 Condition
+sensor.yw_day1_temperature_max:
+  friendly_name: Day 1 Temperature max
+sensor.yw_day1_temperature_min:
+  friendly_name: Day 1 Temperature min
+sensor.yw_day2_condition:
+  friendly_name: Day 2 Condition
+sensor.yw_day2_temperature_max:
+  friendly_name: Day 2 Temperature max
+sensor.yw_day2_temperature_min:
+  friendly_name: Day 2 Temperature min
+sensor.yw_day3_condition:
+  friendly_name: Day 3 Condition
+sensor.yw_day3_temperature_max:
+  friendly_name: Day 3 Temperature max
+sensor.yw_day3_temperature_min:
+  friendly_name: Day 3 Temperature min
+sensor.yw_day4_condition:
+  friendly_name: Day 4 Condition
+sensor.yw_day4_temperature_max:
+  friendly_name: Day 4 Temperature max
+sensor.yw_day4_temperature_min:
+  friendly_name: Day 4 Temperature min
+sensor.yw_day5_condition:
+  friendly_name: Day 5 Condition
+sensor.yw_day5_temperature_max:
+  friendly_name: Day 5 Temperature max
+sensor.yw_day5_temperature_min:
+  friendly_name: Day 5 Temperature min
+script.laptop_on:
+  icon: mdi:music
+script.laptop_off:
+  icon: mdi:music-off
+script.room_on:
+  icon: mdi:music
+script.room_off:
+  icon: mdi:music-off
+script.kitchen_on:
+  icon: mdi:music
+script.kitchen_off:
+  icon: mdi:music-off
+switch.room_speakers:
+  icon: mdi:music
+switch.laptop_speakers:
+  icon: mdi:music
+switch.kitchen_speakers:
+  icon: mdi:music
+group.absoluterad:
+  icon: mdi:music
+group.country:
+  icon: mdi:music
+group.rockm:
+  icon: mdi:music
+group.mellow:
+  icon: mdi:music
+group.pop:
+  icon: mdi:music
+group.eighties:
+  icon: mdi:music
+group.oldies:
+  icon: mdi:music
+group.seventies:
+  icon: mdi:music
+group.nineties:
+  icon: mdi:music
+script.disconights:
+  icon: mdi:robot
+script.rock70:
+  icon: mdi:robot
+script.country80:
+  icon: mdi:cow
+script.country977:
+  icon: mdi:cow
+script.realcountry:
+  icon: mdi:cow
+script.highwayfm:
+  icon: mdi:cow
+script.americascountry:
+  icon: mdi:cow
+script.chriscountry:
+  icon: mdi:cow
+script.downtowncountry:
+  icon: mdi:cow
+script.mightymix:
+  icon: mdi:boombox
+script.star90:
+  icon: mdi:boombox
+script.dance90:
+  icon: mdi:boombox
+script.lite90:
+  icon: mdi:boombox
+script.discopal:
+  icon: mdi:robot
+script.throwback70:
+  icon: mdi:robot
+script.signal80:
+  icon: mdi:music-box
+script.love80:
+  icon: mdi:music-box
+script.heart80:
+  icon: mdi:music-box
+script.rockin80:
+  icon: mdi:music-box
+script.hallam:
+  icon: mdi:alien
+script.heat:
+  icon: mdi:alien
+script.capital:
+  icon: mdi:alien
+script.rainbow:
+  icon: mdi:alien
+script.hitsuk:
+  icon: mdi:alien
+script.radiox:
+  icon: mdi:alien
+script.classicoldies:
+  icon: mdi:music-box
+script.hits60:
+  icon: mdi:music-box
+script.bigboss:
+  icon: mdi:music-box
+script.gotradio:
+  icon: mdi:music-box
+script.absolcr:
+  icon: mdi:triangle
+script.absol60:
+  icon: mdi:triangle
+script.absol70:
+  icon: mdi:triangle
+script.absol80:
+  icon: mdi:triangle
+script.absol90:
+  icon: mdi:triangle
+script.absol00:
+  icon: mdi:triangle
+script.kerrang:
+  icon: mdi:guitar-electric
+script.atlanticrock:
+  icon: mdi:guitar-electric
+script.rock106:
+  icon: mdi:guitar-electric
+script.metalradionz:
+  icon: mdi:guitar-electric
+script.blastfm:
+  icon: mdi:guitar-electric
+script.hardrock:
+  icon: mdi:guitar-electric
+script.rock181:
+  icon: mdi:guitar-electric
+script.theeagle:
+  icon: mdi:guitar-electric
+script.alt949:
+  icon: mdi:guitar-electric
+script.kxt:
+  icon: mdi:guitar-electric
+script.asteriskradio:
+  icon: mdi:guitar-electric
+script.crucialvelocity:
+  icon: mdi:guitar-electric
+script.thepenguin:
+  icon: mdi:guitar-electric
+script.gratefuldead:
+  icon: mdi:guitar-electric
+script.chloe181:
+  icon: mdi:guitar-electric
+script.gymradio:
+  icon: mdi:guitar-electric
+script.blown:
+  icon: mdi:guitar-electric
+script.thedump:
+  icon: mdi:guitar-electric
+script.therock94:
+  icon: mdi:guitar-electric
+script.thirdrock:
+  icon: mdi:guitar-electric
+script.classic109:
+  icon: mdi:guitar-electric
+script.radioparadise:
+  icon: mdi:guitar-electric
+script.pearljam:
+  icon: mdi:guitar-electric  
+
+script.metalrock:
+  icon: mdi:guitar-electric
+script.rockradio1:
+  icon: mdi:guitar-electric
+script.metaldetector:
+  icon: mdi:guitar-electric
+script.coreradio:
+  icon: mdi:guitar-electric
+script.bigradio80:
+  icon: mdi:guitar-electric
+script.purerock:
+  icon: mdi:guitar-electric
+script.rock98:
+  icon: mdi:guitar-electric
+script.meanzrock:
+  icon: mdi:guitar-electric
+script.radioexplode:
+  icon: mdi:guitar-electric
+script.metalmadness:
+  icon: mdi:guitar-electric
+script.80metal:
+  icon: mdi:guitar-electric
+script.planrock:
+  icon: mdi:guitar-electric
+script.arrow:
+  icon: mdi:guitar-electric
+script.pulserock:
+  icon: mdi:guitar-electric
+script.rockradio:
+  icon: mdi:guitar-electric
+script.classicrock:
+  icon: mdi:guitar-electric
+script.softrock:
+  icon: mdi:guitar-electric
+script.chill:
+  icon: mdi:sleep
+script.hallam2:
+  icon: mdi:sleep
+script.smooth:
+  icon: mdi:sleep
+script.mellowgold:
+  icon: mdi:sleep
+script.mellowmagic:
+  icon: mdi:sleep
+script.mellowchilled:
+  icon: mdi:sleep
+scripts.alloldies:
+  icon: mdi:sleep
+script.classichits181:
+  icon: mdi:sleep
+script.country90:
+  icon: mdi:cow
+script.kickincountry:
+  icon: mdi:cow
+script.madeintexas:
+  icon: mdi:cow
+script.classiccountry:
+  icon: mdi:cow
+script.irishcountry:
+  icon: mdi:cow
+script.highway65:
+  icon: mdi:cow
+script.bigmachine:
+  icon: mdi:cow
+script.todayshotcountry:
+  icon: mdi:cow
+script.sunradio:
+  icon: mdi:cow
+script.k95:
+  icon: mdi:cow
+script.bob95:
+  icon: mdi:cow
+script.knbt:
+  icon: mdi:cow
+script.hankfm:
+  icon: mdi:cow
+script.super70:
+  icon: mdi:robot
+script.positively70:
+  icon: mdi:robot
+script.that70schannel:
+  icon: mdi:robot
+script.gotradio70s:
+  icon: mdi:robot
+script.absolute70spop:
+  icon: mdi:robot
+script.discoparadise:
+  icon: mdi:robot
+script.studio54:
+  icon: mdi:robot
+script.leftcoast70:
+  icon: mdi:robot
+script.sanfran70:
+  icon: mdi:robot
+script.americas70:
+  icon: mdi:robot
+script.groovy70:
+  icon: mdi:robot
+script.unlimited70:
+  icon: mdi:robot
+script.classicgold:
+  icon: mdi:robot
+script.oldtimerock:
+  icon: mdi:robot
+script.kono86:
+  icon: mdi:robot
+script.memories:
+  icon: mdi:robot
+script.heart70:
+  icon: mdi:robot
+script.pen95:
+  icon: mdi:robot
+script.oldies98:
+  icon: mdi:robot
+script.disco935:
+  icon: mdi:robot
+script.batesfm:
+  icon: mdi:robot
+script.abc70:
+  icon: mdi:robot
+script.kflyradio:
+  icon: mdi:robot
+script.discorhythm:
+  icon: mi:robot
+script.phillysoldies:
+  icon: mdi:robot
+script.829online:
+  icon: mdi:robot
+script.flashback70:
+  icon: mdi:robot
+script.classic70:
+  icon: mdi:robot
+script.my70:
+  icon: mdi:robot
+script.retro70:
+  icon: mdi:robot
+script.ultimate70:
+  icon: mdi:robot
+script.outlaws:
+  icon: mdi:cow
+script.radiocountry:
+  icon: mdi:cow
+script.realtexas:
+  icon: mdi:cow
+script.countrypop:
+  icon: mdi:cow
+script.thewolf:
+  icon: mdi:cow
+script.countrylegends:
+  icon: mdi:cow
+script.thebull:
+  icon: mdi:cow
+script.wildcountry:
+  icon: mdi:cow
+script.starcountry:
+  icon: mdi:cow
+script.us181:
+  icon: mdi:cow
+script.kson:
+  icon: mdi:cow
+script.todaysclassic:
+  icon: mdi:cow
+script.countrygold:
+  icon: mdi:cow
+script.skycountry:
+  icon: mdi:cow
+script.themoose:
+  icon: mdi:cow
+script.thundercountry:
+  icon: mdi:cow
+script.theranch:
+  icon: mdi:cow
+script.bootliquor:
+  icon: mdi:cow
+script.abccountry:
+  icon: mdi:cow
+script.bigcouuntry92:
+  icon: mdi:cow
+script.smoothextra:
+  icon: mdi:sleep
+script.midnightcafe:
+  icon: mdi:sleep
+script.sunshine106:
+  icon: mdi:sleep
+script.positivelyeasy:
+  icon: mdi:sleep
+script.positivelytranquil:
+  icon: mdi:sleep
+script.thebreeze:
+  icon: mdi:sleep
+script.smooth181:
+  icon: mdi:sleep
+script.calmradio:
+  icon: mdi:sleep
+script.heartbeat:
+  icon: mdi:sleep
+script.willow:
+  icon: mdi:sleep
+script.softtracks:
+  icon: mdi:sleep
+script.easy80:
+  icon: mdi:sleep
+script.smoothcanada:
+  icon: mdi:sleep
+script.lite99:
+  icon: mdi:sleep
+script.softrock97:
+  icon: mdi:sleep
+script.easyrock:
+  icon: mdi:sleep
+script.easy95:
+  icon: mdi:sleep
+script.variety:
+  icon: mdi:sleep
+script.blackrock:
+  icon: mdi:sleep
+script.warmhits:
+  icon: mdi:sleep
+script.softrockclassics:
+  icon: mdi:sleep
+script.croonerradio:
+  icon: mdi:sleep
+script.easy93:
+  icon: mdi:sleep
+script.gold99:
+  icon: mdi:sleep
+script.1000hits:
+  icon: mdi:sleep
+script.1940s:
+  icon: mdi:sleep
+script.easyradio:
+  icon: mdi:sleep
+script.timeless:
+  icon: mdi:sleep
+script.crystal:
+  icon: mdi:sleep
+script.stellar:
+  icon: mdi:sleep
+script.amazingradio:
+  icon: mdi:sleep
+script.bbcradio2:
+  icon: mdi:sleep
+script.alloldies:
+  icon: mdi:sleep
+group.default_view:
+  icon: mdi:home
+group.autos:
+  icon: mdi:wrench
+group.radio:
+  icon: mdi:radio
+group.media:
+  icon: mdi:television-box
+group.test:
+  icon: mdi:stethoscope
+group.status:
+  icon: mdi:comment-question
+group.sensors:
+  icon: mdi:chart-bar
+group.graphs:
+  icon: mdi:chart-line
+sensor.hline_1:
+  config:
+    backgroundcolor: black
+    bordertop: 1px solid red
+    height: 0
+    width: 90
+  custom_ui_state_card: state-card-hline
+sensor.hline_2:
+  custom_ui_state_card: state-card-hline
+  config:
+    width: 90
+    height: 0
+    backgroundcolor: white
+    bordertop: 1px dashed red
+sensor.hline_3:
+  custom_ui_state_card: state-card-hline
+  config:
+    width: 65
+    height: 0
+    backgroundcolor: white
+    bordertop: 2px double green
+sensor.hline_4:
+  config:
+    backgroundcolor: white
+    backgroundimage: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.95),
+      rgba(0, 0, 0, 0))
+    bordertop: none
+    height: 1
+    width: 100
+  custom_ui_state_card: state-card-hline
+  friendly_name: Black fade4
+group.all_automations:
+  hidden: false
+switch.redled1:
+  friendly_name: Stairs PIR Led indicator
+switch.redled2:
+  friendly_name: Upstairs PIR Led indicator
+switch.redled3:
+  friendly_name: Room PIR Led indicator
+automation.room_no_motion_led3_off:
+  icon: mdi:run
+automation.room_no_motion_led3_on:
+  icon: mdi:run
+automation.stair_lights_on_motion:
+  icon: mdi:run-fast
+automation.stairs_no_motion_led_off:
+  icon: mdi:run
+automation.turn_off_stair_light_5_minutes_after_last_movement:
+  icon: mdi:run
+automation.turn_off_upstairs_light_5_minutes_after_last_movement:
+  icon: mdi:run
+automation.upstairs_no_motion_led2_off:
+  icon: mdi:run
+automation.upstairs_lights_on_motion:
+  icon: mdi:run-fast
+automation.set_spotify_playlist:
+  icon: mdi:spotify
+input_text.dummy_player_mini:
+  icon: mdi:cast
+  custom_ui_state_card: state-card-mini-media-player
+  config:
+    player: media_player.softsqueeze
+input_text.dummy_player_kitchen:
+  icon: mdi:cast
+  custom_ui_state_card: state-card-mini-media-player
+  config:
+    player: media_player.kitchen
+input_text.dummy_window_right:
+  icon: mdi:cast
+  custom_ui_state_card: state-card-mini-media-player
+  config:
+    player: media_player.moto
+input_text.dummy_player_box:
+  icon: mdi:cast
+  custom_ui_state_card: state-card-mini-media-player
+  config:
+    player: media_player.tabletbox
+switch.rf_one:
+  friendly_name: Bathroom Light
+  icon: mdi:lightbulb-on
+switch.rfone:
+  icon: mdi:lightbulb-on

@@ -1,52 +1,59 @@
 homeassistant:
-  # Name of the location where Home Assistant is running
   name: Home
-  # Location required to calculate the time the sun rises and sets
   latitude: !secret latitude_home
   longitude: !secret longitude_home
-  # Impacts weather/sunrise data (altitude above sea level in meters)
   elevation: 16
-  # metric for Metric, imperial for Imperial
   unit_system: metric
-  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: Europe/London
-  # Customization file
   customize: !include customize.yaml
   customize_domain: !include domain.yaml
-# Show links to resources in log and frontend
-# introduction:
-
-# Enables the frontend
+  packages: !include_dir_named packages
 frontend: 
   themes: !include themes.yaml
   javascript_version: latest
   extra_html_url:
     - /local/custom_ui/state-card-custom-ui.html
     - /local/custom_ui/state-card-tiles.html
-
+    - /local/custom_ui/state-card-hline.html
+    - /local/custom_ui/state-card-script-custom-text.html
+    - /local/custom_ui/state-card-mini-media-player.html
   extra_html_url_es5:
     - /local/custom_ui/state-card-custom-ui-es5.html
     - /local/custom_ui/state-card-tiles.html
-  
+    - /local/custom_ui/state-card-hline_es5.html
+    - /local/custom_ui/state-card-script-custom-text-es5.html
+    - /local/custom_ui/state-card-mini-media-player_es5.html
 panel_iframe:
   emby:
     title: 'Emby'
     url: 'http://localhost:8096/web/home.html'
-   
+    icon: mdi:emby
   nodered_flows:
     title: 'Node-RED Flows'
     url: 'http://hassio.local:1880'
     icon: mdi:nodejs
+  configurator:
+    title: Configurator
+    icon: mdi:wrench
+    url: http://hassio.local:3218
+python_script:
 
+
+panel_custom:
+  - name: floorplan
+    sidebar_title: Floorplan Down
+    sidebar_icon: mdi:home
+    url_path: floorplan
+    config: !include floorplan.yaml
+
+  - name: floorplan
+    sidebar_title: Floorplan Up
+    sidebar_icon: mdi:home
+    url_path: floorplan2
+    config: !include floorplan2.yaml
 
 # Enables configuration UI
 config:
-
-#http:
-  # Secrets are defined in the file secrets.yaml
-  # api_password: !secret http_password
-  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
-  # base_url: example.duckdns.org:8123
 
 updater:
   # Optional, allows Home Assistant developers to focus on popular components.
@@ -60,9 +67,51 @@ recorder:
 
 history:
   include:
-    domains:
-      - sensor
-      - switch      
+    entities:
+      - sun.sun
+      - sensor.moon
+      - device_tracker.ec88926884b5
+      - device_tracker.ac3743505cb2
+      - device_tracker.0021dfc45c05
+      - device_tracker.04d6aa726da0
+      - sensor.speedtest_download
+      - sensor.speedtest_upload
+      - sensor.met_office_wind_speed 
+      - sensor.met_office_temperature
+      - sensor.roomtemp
+      - sensor.sn1_temperature    
+      - sensor.sn2_temperature  
+
+history_graph:
+  gr1:
+    name: Family
+    entities:
+      - device_tracker.ec88926884b5
+      - device_tracker.ac3743505cb2
+      - device_tracker.0021dfc45c05
+      - device_tracker.04d6aa726da0
+    hours_to_show: 240
+    refresh: 120
+
+  gr2:
+    name: Temperature
+    entities:
+      - sensor.sn1_temperature    
+      - sensor.sn2_temperature  
+    hours_to_show: 120
+    refresh: 120
+  gr3:
+    name: Sun
+    entities:
+      - sun.sun
+    hours_to_show: 240
+
+  gr4:
+    name: Outside Temps
+    entities:
+      - sensor.met_office_temperature
+    hours_to_show: 120
+    refresh: 120
 
 # View all events in a logbook
 logbook:
@@ -78,9 +127,6 @@ weather:
   - platform: metoffice
     api_key: !secret metoffice_api_key
 
-  - platform: darksky
-    api_key: !secret darksky_api_key
-
   - platform: yweather 
 
 binary_sensor:
@@ -91,33 +137,8 @@ binary_sensor:
       20: PIR Room
       21: button1
       16: button2
-      12: button3
-      23: button4
-      24: button5
 
-  - platform: mqtt
-    name: "wall"
-    state_topic: "/butts/wall/but"
-    payload_on: "1"
-    payload_off: "0"
 
-  - platform: mqtt
-    name: "settee"
-    state_topic: "/butts/settee/but"
-    payload_on: "1"
-    payload_off: "0"
-
-  - platform: mqtt
-    name: "tv"
-    state_topic: "/butts/tv/but"
-    payload_on: "1"
-    payload_off: "0"
-
-  - platform: mqtt
-    name: "sky"
-    state_topic: "/butts/sky/but"
-    payload_on: "1"
-    payload_off: "0"
 camera:
   - platform: generic
     name: ISS
@@ -135,15 +156,6 @@ tts:
 cloud:
   alexa:
     filter:
-      include_entities:
-        - switch.lg_tv_power
-        - switch.sky_power
-        - switch.sound_bar
-        - light.60019495eaf2_1921681133
-        - switch.settee_lights
-        - switch.wall_lights
-        - switch.upstairs_lights
-        - media_player.lg_tv
       exclude_domains:
         - script
         - automation
@@ -154,21 +166,7 @@ cloud:
         - cover
         - alert
         - sensor
-    entity_config:
-      switch.lg_tv_power:
-        name: TV
-      switch.sky_power:
-        name: Sky
-      switch.sound_bar:
-        name: Sound Bar
-      light.60019495eaf2_1921681133:
-        name: Stair lights
-      switch.settee_lights:
-        name: Settee lights
-      switch.wall_lights:
-        name: Wall lights
-      switch.upstairs_lights:
-        name: Upstairs lights
+
       
 
 group: !include groups.yaml
@@ -191,10 +189,6 @@ device_tracker:
      - 192.168.1.66
      - 192.168.1.119
      - 192.168.1.254
-
-  - platform: bt_home_hub_5
-    host: 192.168.1.254
-    interval_seconds: 60
   
 mqtt:
   discovery: true
@@ -212,8 +206,6 @@ light:
 
   - platform: flux_led
     automatic_add: True
-
-
 
 android_ip_webcam:
   - host: 192.168.1.118
@@ -307,18 +299,22 @@ input_select:
       - Eminem - The Revival
       - The Epoxies - Stop the Future
       - The Epoxies - Synthesized
-     
-input_text:
-  command:
-    name: Button
-  dummy_tiles:
-    name: dummy
+
 
 arduino:
   port: /dev/ttyACM0
 
+input_text:
+  dummy_player_mini:
+    name: Room
+  dummy_player_kitchen:
+    name: Kitchen
+  dummy_window_right:
+    name: Window Right
+  dummy_player_box:
+    name: Tablet Box
 
- 
+
 
 
 

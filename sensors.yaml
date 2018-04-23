@@ -10,8 +10,27 @@
       - type: last_boot
       - type: processor_use
       - type: load_1m
-  
-  
+
+  - platform: dht
+    sensor: DHT22
+    pin: 23
+    name: roomtah
+    monitored_conditions:
+      - temperature
+      - humidity
+
+  - platform: template
+    sensors:
+      hline_1:
+        value_template: hline
+      hline_2:
+        value_template: hline   
+      hline_3:
+        value_template: hline
+      hline_4:
+        value_template: hline  
+
+
   - platform: fastdotcom
 
   - platform: speedtest
@@ -23,7 +42,7 @@
   - platform: moon
 
   - platform: metoffice
-    api_key: c70106f8-6d5f-48c1-8dba-ac9ebe19c72c
+    api_key: !secret metoffice_api_key
     monitored_conditions:
       - weather
       - temperature
@@ -70,27 +89,22 @@
       - weather
       - temp_min
       - temp_max
-
-  - platform: darksky
-    api_key: 7976bcbf56382620dbc7494f9433c348
+  - platform: yweather
+    forecast: 4
+    name: yw_day4
     monitored_conditions:
-      - summary
-      - icon
-      - nearest_storm_distance
-      - precip_type
-      - precip_intensity
-      - precip_probability
-      - temperature
-      - apparent_temperature
-      - dew_point
-      - wind_speed
-      - wind_bearing
-      - cloud_cover
-      - humidity
-      - pressure
-      - minutely_summary
-      - hourly_summary
-      - daily_summary
+      - weather
+      - temp_min
+      - temp_max
+  - platform: yweather
+    forecast: 5
+    name: yw_day5
+    monitored_conditions:
+      - weather
+      - temp_min
+      - temp_max
+
+
             
   - platform: mqtt
     state_topic: zanzito/clairephone/battery_level
@@ -179,10 +193,71 @@
     unit_of_measurement: "°F"
     value_template: '{{ value_json.heatIndex | round(1) }}'
 
-  - platform: mqtt
-    name: "Roomtemp"
-    state_topic: "/butts/Roomtemp/temp"
+
 
   - platform: mqtt
-    name: "Roomhumid"
-    state_topic: "/butts/Roomtemp/humid"
+    name: "Room Speak"
+    state_topic: "/bb2/roomsp/roomsp"
+
+  - platform: mqtt
+    name: "Kitchen Speak"
+    state_topic: "/bb2/kitchsp/kitchsp"   
+
+  - platform: mqtt
+    name: "Laptop Speak"
+    state_topic: "/bb2/lapsp/lapsp"  
+
+  - platform: mqtt
+    name: "d6"
+    state_topic: "/bb2/d6/d6"  
+
+  - platform: mqtt
+    name: "d7"
+    state_topic: "/bb2/d7/d7"  
+
+  - platform: mqtt
+    name: "d10"
+    state_topic: "/bb2/d10/d10"  
+
+  - platform: mqtt
+    name: "s3"
+    state_topic: "/bb1/s3/s3"   
+
+  - platform: mqtt
+    name: "s4"
+    state_topic: "/bb1/s4/s4" 
+
+  - platform: mqtt
+    name: "s5"
+    state_topic: "/bb1/s5/s5"
+
+  - platform: mqtt
+    name: "s6"
+    state_topic: "/bb1/s6/s6"
+
+  - platform: mqtt
+    name: "s7"
+    state_topic: "/bb1/s7/s7"
+
+  - platform: mqtt
+    name: "s12"
+    state_topic: "/bb1/s12/s12"
+
+
+  - platform: mqtt
+    name: "Bathroom PIR"
+    state_topic: "/bath/pir/pir"
+
+  - platform: mqtt
+    name: "Bathroom Temp"
+    state_topic: "/bath/bath/temp"
+
+  - platform: mqtt
+    name: "Bathroom humidity"
+    state_topic: "/bath/bath/humid"
+
+  - platform: time_date
+    display_options:
+      - 'time'
+      - 'date'
+

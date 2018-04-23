@@ -1,0 +1,27 @@
+title: seventies
+widget_dimensions: [100, 100]
+widget_size: [1, 1]
+widget_margins: [2, 2]
+columns: 10
+rows: 6
+global_parameters:
+    use_comma: 0
+    precision: 1
+    use_hass_icon: 1
+
+layout:
+  -  media_player.softsqueeze(2x2),  media_player.kitchen(2x2),  media_player.tabletbox(2x2),  media_player.moto(2x2),  reload,  load_main_panel
+  - 
+  -  script.dicsopal,  script.throwback70,  script.disconights,  script.rock70
+
+reload:
+  widget_type: reload
+  title: Reload
+  icon_active: fa-refresh
+  icon_inactive: fa-refresh
+
+load_main_panel:
+    widget_type: navigate
+    title: Main
+    icon: fa-windows
+    url: /main

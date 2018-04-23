@@ -32,3 +32,4476 @@ ulights_script:
   - data:
       entity_id: switch.tv_vol_down
     service: homeassistant.turn_on
+
+room_on:
+  alias: Room on
+  sequence:
+  - data:
+      entity_id: media_player.softsqueeze
+    service: homeassistant.turn_on  
+
+room_off:
+  alias: Room off
+  sequence:
+  - data:
+      entity_id: media_player.softsqueeze
+    service: homeassistant.turn_off
+
+laptop_on:
+  alias: Laptop on
+  sequence:
+  - data:
+      entity_id: media_player.laptop
+    service: homeassistant.turn_on
+
+laptop_off:
+  alias:  Laptop off
+  sequence:
+  - data:
+      entity_id: media_player.laptop
+    service: homeassistant.turn_off
+
+kitchen_on:
+  alias: Kitchen on
+  sequence:
+  - data:
+      entity_id: media_player.kitchen
+    service: homeassistant.turn_on 
+      
+kitchen_off:
+  alias: Kitchen off
+  sequence:
+  - data:
+      entity_id: media_player.kitchen
+    service: homeassistant.turn_off
+
+                   
+hallam:
+  alias: Hallam
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s6895&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s6895&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s6895&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s6895&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+
+hallam2:
+  alias: Hallam 2
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s46654&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s46654&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s46654&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s46654&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+
+absol00:
+  alias: Absolute 00's
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s131272&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s131272&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s131272&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s131272&partnerId=16&username=brianmolko19998189
+      media_content_type: music    
+
+absol80:
+  alias: Absolute 80's
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s117787&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s117787&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s117787&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s117787&partnerId=16&username=brianmolko19998189
+      media_content_type: music  
+
+absol60:
+  alias: Absolute 60's
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s150147&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s150147&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s150147&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s150147&partnerId=16&username=brianmolko19998189
+      media_content_type: music       
+
+absol70:
+  alias: Absolute 70's
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s150148&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s150148&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s150148&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s150148&partnerId=16&username=brianmolko19998189
+      media_content_type: music 
+
+absol90:
+  alias: Absolute 90's
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s126362&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s126362&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s126362&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s126362&partnerId=16&username=brianmolko19998189
+      media_content_type: music 
+
+absolcr:
+  alias: Absolute Classic Rock
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s49815&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s49815&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s49815&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s49815&partnerId=16&username=brianmolko19998189
+      media_content_type: music 
+
+heat:
+  alias: Heat
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s97623&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s97623&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s97623&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s97623&partnerId=16&username=brianmolko19998189
+      media_content_type: music 
+
+capital:
+  alias: Capital
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s241396&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s241396&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s241396&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s241396&partnerId=16&username=brianmolko19998189
+      media_content_type: music 
+
+kerrang:
+  alias: Kerrang!
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s45579&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s45579&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s45579&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s45579&partnerId=16&username=brianmolko19998189
+      media_content_type: music    
+
+rainbow:
+  alias: Rainbow
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s80778&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s80778&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s80778&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s80778&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+
+love80:
+  alias: Love 80's
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s273204&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s273204&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s273204&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s273204&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+
+signal80:
+  alias: Signal 80's
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s302823&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s302823&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s302823&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s302823&partnerId=16&username=brianmolko19998189
+      media_content_type: music  
+
+planrock:
+  alias: Planet Rock
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s2377&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s2377&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s2377&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s2377&partnerId=16&username=brianmolko19998189
+      media_content_type: music  
+
+chill:
+  alias: Chill
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s53084&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s53084&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s53084&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s53084&partnerId=16&username=brianmolko19998189
+      media_content_type: music 
+classicrock:
+  alias: Classic Rock USA
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s226064&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s226064&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s226064&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s226064&partnerId=16&username=brianmolko19998189
+      media_content_type: music 
+
+arrow:
+  alias: The Arrow
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s25247&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s25247&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s25247&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s25247&partnerId=16&username=brianmolko19998189
+      media_content_type: music    
+
+rockradio1:
+  alias: Rock Radio 1
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s80978&partnerId=16&username=brianmolko19998189&filter=s:n100
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s80978&partnerId=16&username=brianmolko19998189&filter=s:n100
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s80978&partnerId=16&username=brianmolko19998189&filter=s:n100
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s80978&partnerId=16&username=brianmolko19998189&filter=s:n100
+      media_content_type: music    
+
+pulserock:
+  alias: Pulse Rock
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s200609&partnerId=16&username=brianmolko19998189&filter=s:n100
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s200609&partnerId=16&username=brianmolko19998189&filter=s:n100
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s200609&partnerId=16&username=brianmolko19998189&filter=s:n100
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s200609&partnerId=16&username=brianmolko19998189&filter=s:n100
+      media_content_type: music    
+
+smooth:
+  alias: Smooth
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s45501&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s45501&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s45501&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s45501&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+
+mellowgold:
+  alias: Mellow Gold
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s90408&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s90408&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s90408&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s90408&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+
+softrock:
+  alias: Soft Rock
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s113401&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s113401&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s113401&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s113401&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+
+mellowmagic:
+  alias: Mellow Magic
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s265898&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s265898&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s265898&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s265898&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+
+mellowchilled:
+  alias: Mellow Chilled
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s265899&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s265899&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s265899&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s265899&partnerId=16&username=brianmolko19998189
+      media_content_type: music                        
+
+radiox:
+  alias: Radio X
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s81256&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s81256&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s81256&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s81256&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+
+hitsuk:
+  alias: Hits UK
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s113154&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s113154&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s113154&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s113154&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+
+classichits181:
+  alias: Classic Hits 181
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s55022&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s55022&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s55022&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s55022&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+
+alloldies:
+  alias: All Oldies 60's
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s262285&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s262285&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s262285&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s262285&partnerId=16&username=brianmolko19998189
+      media_content_type: music         
+
+bigboss:
+  alias: Big Boss Radio
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s161286&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s161286&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s161286&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s161286&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+
+gotradio:
+  alias: Got Radio 60's
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s656669&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s656669&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s656669&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s656669&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+      
+      
+hits60:
+  alias: Hits Radio 60's
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s244786&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s244786&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s244786&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s244786&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+
+classicoldies:
+  alias: Classic Oldies
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s268898&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s268898&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s268898&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s268898&partnerId=16&username=brianmolko19998189
+      media_content_type: music 
+
+discopal:
+  alias: Disco Palace
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s126780&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s126780&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s126780&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s126780&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+
+rock70:
+  alias: 70's Rock
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s234018&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s234018&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s234018&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s234018&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+            
+disconights:
+  alias: 70's Disco Nights
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s155630&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s155630&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s155630&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s155630&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+
+throwback70:
+  alias: Throwback 70's
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s299020&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s299020&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s299020&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s299020&partnerId=16&username=brianmolko19998189
+      media_content_type: music   
+
+heart80:
+  alias: Heart 80's
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s288395&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s288395&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s288395&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s288395&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+
+rockin80:
+  alias: Rockin 80's
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s496094&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s496094&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s496094&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=496094&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+
+chriscountry:
+  alias: Chris Country
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s196675&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s196675&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s196675&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s196675&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+
+downtowncountry:
+  alias: Downtown Country
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s244231&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s244231&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s244231&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s244231&partnerId=16&username=brianmolko19998189
+      media_content_type: music     
+
+americascountry:
+  alias: Americas Country
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s126270&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s126270&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s126270&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s126270&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+
+highwayfm:
+  alias: Highway FM
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s55025&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s55025&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s55025&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s55025&partnerId=16&username=brianmolko19998189
+      media_content_type: music 
+
+country80:
+  alias: 80's Country
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s216081&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s216081&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s216081&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s216081&partnerId=16&username=brianmolko19998189
+      media_content_type: music    
+
+realcountry:
+  alias: Real Country
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s90449&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s90449&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s90449&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s90449&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+
+country977:
+  alias: Country 977
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s48939&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s48939&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s48939&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s48939&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+
+lite90:
+  alias: Lite 90's
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s90414&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s90414&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s90414&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s90414&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+
+dance90:
+  alias: 90's Dance
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s192770&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s192770&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s192770&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s192770&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+
+star90:
+  alias: Star 90's
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s55019&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s55019&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s55019&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s55019&partnerId=16&username=brianmolko19998189
+      media_content_type: music 
+
+mightymix:
+  alias: Mighty Mix Radio
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s297577&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s297577&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s297577&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s297577&partnerId=16&username=brianmolko19998189
+      media_content_type: music 
+
+country90:
+  alias: 90's country
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s90412&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s90412&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s90412&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s90412&partnerId=16&username=brianmolko19998189
+      media_content_type: music 
+
+kickincountry:
+  alias: Kickin Country
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s51095&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s51095&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s51095&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s51095&partnerId=16&username=brianmolko19998189
+      media_content_type: music       
+
+madeintexas:
+  alias: Made In Texas
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s197435&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s197435&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s197435&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s197435&partnerId=16&username=brianmolko19998189
+      media_content_type: music       
+
+classiccountry:
+  alias: Classic Country
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s87167&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s87167&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s87167&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s87167&partnerId=16&username=brianmolko19998189
+      media_content_type: music       
+
+irishcountry:
+  alias: Irish Country Music
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s108292&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s108292&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s108292&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s108292&partnerId=16&username=brianmolko19998189
+      media_content_type: music       
+
+highway65:
+  alias: Highway 65
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s174864&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s174864&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s174864&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s174864&partnerId=16&username=brianmolko19998189
+      media_content_type: music 
+      
+bigmachine:
+  alias: Big Machine
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s223069&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s223069&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s223069&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s223069&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+
+sunradio:
+  alias: Sun Radio
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s181824&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s181824&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s181824&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s181824&partnerId=16&username=brianmolko19998189
+      media_content_type: music       
+
+k95:
+  alias: K95
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s30191&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s30191&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s30191&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s30191&partnerId=16&username=brianmolko19998189
+      media_content_type: music       
+
+bob95:
+  alias: BOB 95
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s35179&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s35179&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s35179&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s35179&partnerId=16&username=brianmolko19998189
+      media_content_type: music       
+
+knbt:
+  alias: KNBT
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s34232&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s34232&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s34232&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s34232&partnerId=16&username=brianmolko19998189
+      media_content_type: music 
+      
+hankfm:
+  alias: Hank FM
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s30409&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s30409&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s30409&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s30409&partnerId=16&username=brianmolko19998189
+      media_content_type: music        
+
+todayshotcountry:
+  alias: Todays Hot Country
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s140137&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s140137&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s140137&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s140137&partnerId=16&username=brianmolko19998189
+      media_content_type: music            
+
+super70:
+  alias: Super 70's
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s126791&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s126791&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s126791&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s126791&partnerId=16&username=brianmolko19998189
+      media_content_type: music       
+
+positively70s:
+  alias: Positively 70's
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s256165&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s256165&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s256165&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s256165&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+that70schannel:
+  alias: That 70's Channel
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s123174&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s123174&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s123174&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s123174&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+gotradio70s:
+  alias: Got Radio 70's
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s243299&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s243299&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s243299&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s243299&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+absolute70spop:
+  alias: Absolute 70's Pop
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s9115&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s9115&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s9115&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s9115&partnerId=16&username=brianmolko19998189
+      media_content_type: music            
+  
+discoparadise:
+  alias: Disco Paradise
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s249839&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s249839&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s249839&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s249839&partnerId=16&username=brianmolko19998189
+      media_content_type: music            
+      
+studio54:
+  alias: Studio 54
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s49680&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s49680&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s49680&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s49680&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+leftcoast70:
+  alias: Left Coast 70's
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s250404&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s250404&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s250404&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s250404&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+sanfran70:
+  alias: San Fran 70's
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s115612&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s115612&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s115612&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s115612&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+americas70:
+  alias: Americas 70's
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s294324&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s294324&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s294324&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s294324&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+ultimate70:
+  alias: Ultimate 70's
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s204518&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s204518&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s204518&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s204518&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+groovy70:
+  alias: Groovy 70's
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s200477&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s200477&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s200477&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s200477&partnerId=16&username=brianmolko19998189
+      media_content_type: music       
+
+unlimited70:
+  alias: Unlimited 70's 
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s222339&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s222339&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s222339&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s222339&partnerId=16&username=brianmolko19998189
+      media_content_type: music       
+
+classicgold:
+  alias: Classic Gold
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s302296&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s302296&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s302296&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s302296&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+oldtimerock:
+  alias: Old Time Rock
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s198821&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s198821&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s198821&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s198821&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+calmradio:
+  alias: Calm Radio
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s254276&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s254276&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s254276&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s254276&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+kono86:
+  alias: Kono 86
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s44576&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s44576&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s44576&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s44576&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+memories:
+  alias: Memories
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s156218&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s156218&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s156218&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s156218&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+heart70:
+  alias: Heart 70's
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s306294&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s306294&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s306294&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s306294&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+pen95:
+  alias: Pen 95
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s212985&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s212985&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s212985&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s212985&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+oldies98:
+  alias: Oldies 98
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s141622&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s141622&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s141622&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s141622&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+disco935:
+  alias: Disco 935
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s257762&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s257762&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s257762&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s257762&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+batesfm:
+  alias: Bates FM
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s277605&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s277605&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s277605&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s277605&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+abc70:
+  alias: ABC 70's
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s139529&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s139529&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s139529&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s139529&partnerId=16&username=brianmolko19998189
+      media_content_type: music    
+
+kflyradio:
+  alias: K Fly Radio
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s240390&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s240390&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s240390&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s240390&partnerId=16&username=brianmolko19998189
+      media_content_type: music       
+
+discorhythm:
+  alias: Disco Rhythm
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s302394&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s302394&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s302394&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s302394&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+phillysoldies:
+  alias: Phillys Oldies
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s201119&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s201119&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s201119&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s201119&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+829online:
+  alias: 829 Online
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s258549&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s258549&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s258549&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s258549&partnerId=16&username=brianmolko19998189
+      media_content_type: music       
+
+flashback70:
+  alias: Flashback 70's
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s274349&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s274349&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s274349&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s274349&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+classic70:
+  alias: classic 70's
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s305955&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s305955&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s305955&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s305955&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+my70:
+  alias: My 70's
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s111179&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s111179&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s111179&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s111179&partnerId=16&username=brianmolko19998189
+      media_content_type: music       
+
+retro70:
+  alias: Retro 70's
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s296021&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s296021&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s296021&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s296021&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+outlaws:
+  alias: Outlaws
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s125078&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s125078&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s125078&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s125078&partnerId=16&username=brianmolko19998189
+      media_content_type: music       
+
+radiocountry:
+  alias: Radio Country
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s149728&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s149728&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s149728&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s149728&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+realtexas:
+  alias: Real Texas
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s245203&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s245203&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s245203&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s245203&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+countrypop:
+  alias: Country Pop
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s290531&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s290531&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s290531&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s290531&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+thewolf:
+  alias: The Wolf
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s13797&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s13797&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s13797&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s13797&partnerId=16&username=brianmolko19998189
+      media_content_type: music       
+
+countrylegends:
+  alias: Country Legends
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s33643&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s33643&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s33643&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s33543&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+thebull:
+  alias: The Bull
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s26280&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s26280&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s26280&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s26280&partnerId=16&username=brianmolko19998189
+      media_content_type: music       
+
+wildcountry:
+  alias: Wild Country
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s26830&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s26830&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s26830&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s26830&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+starcountry:
+  alias: Star country
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s22850&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s22850&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s22850&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s22580&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+us181:
+  alias: US 181
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s90455&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s90455&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s90455&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s90455&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+kson:
+  alias: KSON
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s203870&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s203870&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s203870&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s203870&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+todaysclassic:
+  alias: Todays Classic
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s97289&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s97289&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s97289&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s97289&partnerId=16&username=brianmolko19998189
+      media_content_type: music   
+
+countrygold:
+  alias: Country Gold
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s234271&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s234271&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s234271&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s234271&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+skycountry:
+  alias: Sky Country
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s255808&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s255808&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s255808&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s255808&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+themoose:
+  alias: The Moose
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s33402&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s33402&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s33402&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s33402&partnerId=16&username=brianmolko19998189
+      media_content_type: music 
+      
+thundercountry:
+  alias: Thunder Country
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=280620&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s28062&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s28062&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s28062&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+theranch:      
+  alias:  The Ranch
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s26717&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s26717&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s26717&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s26717&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+bootliquor:
+  alias: Boot Liquor
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s50955&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s50955&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s50955&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s50955&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+abccountry:
+  alias: ABC Country
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s50462&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s50462&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s50462&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s50462&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+bigcountry92:
+  alias: Big Country92
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s32469&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s32469&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s32469&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s32469&partnerId=16&username=brianmolko19998189
+      media_content_type: music 
+
+smoothextra:
+  alias: Smooth Extra
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s235611&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s235611&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s235611&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s235611&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+midnightcafe:
+  alias: Midnight Cafe
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s269207&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s269207&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s269207&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s269207&partnerId=16&username=brianmolko19998189
+      media_content_type: music  
+      
+sunshine106:
+  alias: Sunshine 106
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s67859&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s67859&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s67859&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s67859&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+positivelyeasy:
+  alias: Positively Easy
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s291384&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s291384&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s291384&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s291384&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+positivelytranquil:
+  alias: Positively tranquil
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s2381750&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s238175&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s238175&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s238175&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+thebreeze:
+  alias: The Breeze
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s55030&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s55030&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s55030&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s55030&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+smooth181:
+  alias: Smooth 181
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s126793&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s126793&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s126793&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s126793&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+heartbeat:
+  alias: Heartbeat
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s130985&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s130985&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s130985&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s130985&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+willow:
+  alias: Willow
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s141947&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s141947&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s141947&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s141947&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+softtracks:
+  alias: Soft Tracks
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s143468&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s143468&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s143468&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s143468&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+easy80:
+  alias: Easy 80's
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s302357&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s302357&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s302357&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s302357&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+smoothcanada:
+  alias: Smooth Canada
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s279483&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s279483&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s279483&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s279483&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+lite99:
+  alias: Lite 99
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s89922&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s89922&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s89922&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s89922&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+softrock97:
+  alias: Soft Rock 97
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s89527&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s89527&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s89527&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s89527&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+easyrock:
+  alias: Easy Rock
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s18931&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s18931&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s18931&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s18931&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+variety:
+  alias: Variety
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s237929&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s237929&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s237929&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s237929&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+blackrock:
+  alias: Black rock
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s129909&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s129909&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s129909&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s129909&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+warmhits:
+  alias: Warm Hits
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s206273&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s206273&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s206273&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s206273&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+softrockclassics:
+  alias: Soft Rock Classics
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s260359&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s260359&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s260359&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s260359&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+croonerradio:
+  alias: Crooner Radio
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s126646&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s126646&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s126646&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s126646&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+easy93:
+  alias: Easy 93
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s27538&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s27538&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s27538&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s27538&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+gold99:
+  alias: Gold 99
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s221091&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s221091&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s221091&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s221091&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+1000hits:
+  alias: 1000 Hits
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s292440&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s292440&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s292440&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s292440&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+1940s:
+  alias: 1940's
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s284305&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s284305&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s284305&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s284305&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+easyradio:
+  alias: Easy Radio
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s163216&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s163216&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s163216&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s163216&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+timeless:
+  alias: Timeless
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s283910&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s283910&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s283910&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s283910&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+crystal:
+  alias: Crystal
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s2434960&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s243496&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s243496&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s243496&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+stellar:
+  alias: Stellar
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s54947&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s54947&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s54947&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s54947&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+amazingradio:
+  alias: Amazing Radio
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s202319&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s202319&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s202319&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s202319&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+bbcradio2:
+  alias: BBC Radio 2
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s24940&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s24940&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s24940&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s24940&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+easy95:
+  alias: Easy 95
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s21166&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s21166&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s21166&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s21166&partnerId=16&username=brianmolko19998189
+      media_content_type: music             
+
+atlanticrock:
+  alias: Atlantic Rock
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s154830&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s154830&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s154830&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s154830&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+      
+rock106:
+  alias: Rock 106
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s117532&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s117532&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s117532&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s117532&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+      
+metalradionz:
+  alias: Metal Radio NZ
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s162669&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s162669&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s162669&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s162669&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+
+blastfm:
+  alias: Blast FM
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=75546&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s75546&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s75546&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s75546&partnerId=16&username=brianmolko19998189
+      media_content_type: music     
+
+hardrock:
+  alias: HardRock
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s122226&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s122226&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s122226&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s122226&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+
+metalrock:
+  alias: Metal Rock
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s230375&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s230375&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s230375&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s230375&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+
+metaldetector:
+  alias: Metal Detector
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s250405&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s250405&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s250405&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s250405&partnerId=16&username=brianmolko19998189
+      media_content_type: music     
+
+coreradio:
+  alias: Core Radio
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s155984&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s155984&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s155984&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s155984&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+
+bigradio80:
+  alias: bigradio80
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s49482&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s49482&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s49482&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s49482&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+
+purerock:
+  alias: Pure Rock
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s90361&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s90361&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s90361&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s90361&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+
+rock98:
+  alias: Rock 98
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s154320&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s154320&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s154320&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s154320&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+
+meanzrock:
+  alias: Meanz Rock
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s124978&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s124978&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s124978&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s124978&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+
+radioexplode:
+  alias: Radio Explode
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s277482&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s277482&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s277482&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s277482&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+
+metalmadness:
+  alias: Metal Madness
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s49687&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s49687&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s49687&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s49687&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+           
+80metal:
+  alias: 80's metal
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s206297&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s206297&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s206297&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s206297&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+            
+rock181:
+  alias: Rock 181
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s90436&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s90436&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s90436&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s90436&partnerId=16&username=brianmolko19998189
+      media_content_type: music            
+
+theeagle:
+  alias: The Eagle
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s55021&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s55021&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s55021&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s55021&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+
+alt949:
+  alias: ALT 949
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s31929&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s31929&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s31929&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s31929&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+
+kxt:
+  alias: KXT
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s26180&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s26180&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s26180&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s26180&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+
+asteriskradio:
+  alias: Asterisk Radio
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s188877&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s188877&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s188877&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s188877&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+
+crucialvelocity:
+  alias: Crucial Velocity
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s202794&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s202794&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s202794&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s202794&partnerId=16&username=brianmolko19998189
+      media_content_type: music     
+            
+thepenguin:
+  alias: The Penguin
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s22767&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s22767&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s22767&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s22767&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+
+gratefuldead:
+  alias: Grateful Dead
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s54607&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s54607&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s54607&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s54607&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+      
+chloe181:
+  alias: Chloe 181
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s95135&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s95135&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s95135&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s95135&partnerId=16&username=brianmolko19998189
+      media_content_type: music            
+
+gymradio:
+  alias: GYM Radio
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s285871&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s285871&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s285871&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s285871&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+
+blown:
+  alias: Blown
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s256973&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s256973&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s256973&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s256973&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+
+thedump:
+  alias: The Dump
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s140358&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s140358&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s140358&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s140358&partnerId=16&username=brianmolko19998189
+      media_content_type: music            
+
+therock94:
+  alias: The Rock 94
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s31251&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s31251&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s31251&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s31251&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+      
+thirdrock:
+  alias: Third Rock
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s151799&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s151799&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s151799&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s151799&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+
+classic109:
+  alias: Classic 109
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s226064&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s226064&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s226064&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s226064&partnerId=16&username=brianmolko19998189
+      media_content_type: music     
+            
+radioparadise:
+  alias: Radio Paradise
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s13606&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s13606&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s13606&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s13606&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+
+pearljam:
+  alias: Pearl Jam 
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s124658&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s124658&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s124658&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s124658&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+
+theoffice:
+  alias: The Office 
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s123440&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s123440&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s123440&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s123440&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+            
+love94:
+  alias: Love 94 
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s261006&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s261006&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s261006&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s261006&partnerId=16&username=brianmolko19998189
+      media_content_type: music            
+
+bedrock:
+  alias: Bedrock
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s215784&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s215784&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s215784&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s215784&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+
+thevibe:
+  alias: The Vibe
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s285034&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s285034&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s285034&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s285034&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+
+oceanradio:
+  alias: Ocean Radio 
+  sequence:
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.squeezebox
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s184305&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.kitchen
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s184305&partnerId=16&username=brianmolko19998189
+      media_content_type: music
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.laptop
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s184305&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+  - service: media_player.play_media
+    data_template:
+      entity_id: media_player.moto
+      media_content_id: http://opml.radiotime.com/Tune.ashx?id=s184305&partnerId=16&username=brianmolko19998189
+      media_content_type: music      
+      
+
+            
+
+            
+
+            
+
+            
+
+            
+
+      
+              
+
+
+            
+
+
+
+            
+
+                  
+            
+              
+
+            
+
+            
+
+            
+
+
+            
+
+                      
+
+                              

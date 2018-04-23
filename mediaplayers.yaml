@@ -6,8 +6,8 @@
     api_key: "784c83ec619649db9faa51152246ba5e"
 
   - platform: spotify
-    client_id:  5a0928e69f824e9caf9806fb3913517b
-    client_secret:  d920b10f11aa4f069fa7aeb3bcb65060
+    client_id:  !secret spotify_client_id
+    client_secret:  !secret spotify_client_secret
 
 
   - platform: lg_netcast
@@ -23,3 +23,20 @@
   - platform: squeezebox
     host: 192.168.56.1
 
+  - platform: squeezebox
+    host: 192.168.1.122
+
+  - platform: squeezebox
+    host: 192.168.1.123
+
+  - platform: squeezebox
+    host: 192.168.1.124
+
+  - platform: squeezebox
+    host: 192.168.1.77
+
+  - platform: squeezebox
+    host: 192.168.1.65
+
+  - platform: squeezebox
+    host: 192.168.1.121
